@@ -1,0 +1,1 @@
+Fatal error during research: When passing a list with SafetySettings objects, every item in a list must be a SafetySetting object.
