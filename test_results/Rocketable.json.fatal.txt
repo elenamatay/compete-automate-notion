@@ -1,0 +1,1 @@
+Fatal error during research: generation_config must either be a GenerationConfig object or a dictionary representation of it.

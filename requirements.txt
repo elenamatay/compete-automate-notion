@@ -1,6 +1,8 @@
 # Core Google AI & Cloud
-google-cloud-aiplatform>=1.50.0  # For Gemini
+# For Gemini
+google-cloud-aiplatform>=1.96.0
 google-auth>=2.0.0
+google-genai>=0.2.0
 
 # Notion API
 notion-client>=2.2.0
@@ -39,7 +41,6 @@ google-cloud-core # dependency
 google-cloud-resource-manager # Retained
 google-cloud-storage # Retained
 google-crc32c # dependency
-google-genai # Explicitly ensure this, though often a sub-dependency
 google-resumable-media # dependency
 googleapis-common-protos # dependency
 grpc-google-iam-v1 # dependency
