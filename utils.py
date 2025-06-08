@@ -491,41 +491,50 @@ async def create_notion_db_from_schema(
     try:
         print(f"Creating Notion database '{db_title}' under page ID {parent_page_id}...")
         
-        # Create property items in the order specified by CSV_SCHEMA
-        property_items = []
+        # First create the database with all properties
         for field_name in CSV_SCHEMA:
             if field_name == title_property_name:
-                property_items.append({"name": field_name, "type": "title"})
+                properties[field_name] = {"title": {}}
             elif field_name == "WebsiteURL":
-                property_items.append({"name": field_name, "type": "url"})
+                properties[field_name] = {"url": {}}
             elif field_name == "Type":
-                property_items.append({
-                    "name": field_name,
-                    "type": "select",
+                properties[field_name] = {
                     "select": {
                         "options": [{"name": t} for t in COMPETITOR_TYPES]
                     }
-                })
+                }
             elif field_name == "Research_Sources":
-                property_items.append({"name": field_name, "type": "rich_text"})
+                properties[field_name] = {"rich_text": {}}  # Will store as formatted text with clickable links
             elif field_name in ["DateAdded", "LastUpdated"]:
-                property_items.append({"name": field_name, "type": "date"})
+                properties[field_name] = {"date": {}}
             elif field_name in ["CompanySize_Employees", "YearFounded", "Pricing_LowestPaidTier_USD", 
                               "Pricing_KeyTier_USD", "Funding_Total_USD", "Total_Reviews_Count",
                               "Average_Rating_Overall"]:
-                property_items.append({"name": field_name, "type": "number"})
+                properties[field_name] = {"number": {}}
             else:
-                property_items.append({"name": field_name, "type": "rich_text"})
+                properties[field_name] = {"rich_text": {}}
         
         response = notion_sync_client.databases.create(
             parent={"type": "page_id", "page_id": parent_page_id},
             title=[{"type": "text", "text": {"content": db_title}}],
             properties=properties,
-            property_items=property_items,  # Add property items to specify order
             is_inline=False 
         )
+        
         db_id = response.get("id")
         if db_id:
+            # Now update the database to set property order
+            try:
+                notion_sync_client.databases.update(
+                    database_id=db_id,
+                    properties=properties,
+                    property_items=[{"name": field_name} for field_name in CSV_SCHEMA]
+                )
+                print(f"Successfully set property order for database {db_id}")
+            except Exception as order_e:
+                print(f"Warning: Could not set property order: {order_e}")
+                print("Properties will remain in alphabetical order.")
+            
             db_url = f"https://www.notion.so/{db_id.replace('-', '')}"
             print(f"Successfully created Notion database with ID: {db_id}")
             print(f"Link: {db_url}")
