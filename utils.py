@@ -54,6 +54,27 @@ COMPETITOR_TYPE_DEFINITIONS = {
 # Derive the list of types from the dictionary keys for validation
 COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
 
+# Add this constant near the top of your utils.py file
+SEIDO_CONTEXT_SUMMARY = """
+**About Our Company: Seido**
+
+*   **Mission:** To empower anyone to build and scale AI-powered businesses.
+*   **Value Proposition:** We provide a comprehensive, no-code platform that empowers anyone with domain expertise to create, launch, and scale fully or near-fully automated businesses using AI-powered multi-agent systems (MAS). Our platform abstracts the complexities of AI and automation, enabling users to focus on their core business ideas.
+*   **Core Problem We Solve:** We help non-technical founders overcome technical complexity, high costs, risk of failure, and tool fragmentation when trying to operationalize AI automation.
+*   **Target Personas (Seido Personas):**
+    *   **The Consultant Turned Founder:** A professional services expert (marketing, HR) looking to scale their services by automating manual processes.
+    *   **The E-commerce Innovator:** A small online store owner needing to automate inventory, customer support, and scaling operations.
+    *   **The Visionary Entrepreneur:** A serial entrepreneur with a tech idea but limited coding knowledge, needing to validate and build an MVP quickly.
+    *   **The Corporate Insider Turned Entrepreneur:** A manager from a large corporation who sees industry inefficiencies and wants to build a tailored solution without corporate bureaucracy.
+*   **Key Differentiators & Approach:**
+    *   **Multi-Agent System (MAS) Focus:** We enable the creation of an entire ecosystem of collaborating AI agents, not just single-task automation. This is a system-level approach.
+    *   **No-Code Orchestration:** Users can build and manage sophisticated agent workflows without writing code.
+    *   **Idea Validation First:** Our MVP includes a free "Automation Assessment" to show users the automation potential of their idea *before* they commit to building.
+    *   **Agent Reusability & Marketplace:** We facilitate the reuse of pre-built and custom agents, fostering network effects.
+    *   **AI as a Technical Cofounder:** This is our core analogy. We handle the complex technical backend, allowing the founder to be the visionary.
+*   **Current Status:** We are launching an MVP. Stage 1 is a free idea assessment (including an idea validation and refinement tool and an automation assessment). Stage 2 is a paid early access subscription for building the full Multi-Agent System that represents the full value chain of the user's company.
+"""
+
 
 # Add the root directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -66,6 +87,7 @@ async def research_competitor_to_json(
     topic_domain: str, 
     research_goal: str, 
     output_folder: str,
+    seido_context: str,
     request_args: Dict[str, Any] = None
 ) -> str | None:
     """
@@ -83,56 +105,56 @@ async def research_competitor_to_json(
     # Format the definitions for inclusion in the prompt
     definitions_text = "\n".join(f"- **{name}:** {desc}" for name, desc in COMPETITOR_TYPE_DEFINITIONS.items())
 
-    prompt = f"""**Role:** You are an expert Market Research Analyst specializing in the tech industry.
+    prompt = f"""**Role:** You are a Senior Market Research Analyst and expert detective working for a startup called 'Seido'. You are skilled at using Google Search to uncover hard-to-find details about tech companies.
 
-**Objective:** Conduct thorough research on the company '{competitor_name}' and provide detailed information for each of the requested fields.
+    **Your Company (Seido) Context:**
+    {SEIDO_CONTEXT_SUMMARY}
 
-**Context:**
-* **Topic Domain:** {topic_domain}
-* **Research Goal:** {research_goal}
+    **Primary Objective:**
+    Conduct a deep-dive analysis of the competitor '{competitor_name}'. Your goal is to fill out EVERY field in the requested JSON schema with accurate, well-researched information. You must also provide a critical competitive assessment from Seido's perspective using the context provided above.
 
-**IMPORTANT: Research Methodology**
-1. Use the provided Google Search tool to find up-to-date information about the company.
-2. Search for multiple aspects of the company including:
-   - Official website and company information
-   - Recent news and developments
-   - Product reviews and user feedback
-   - Pricing information
-   - Company size and funding details
-3. For each piece of information you find, include its source URL in the "Research_Sources" field.
-4. If you can't find specific information after thorough searching, use "N/A" for that field.
+    **IMPORTANT: Research Methodology & Instructions**
 
-**CRITICAL STEP 1: Competitor Type Classification**
-Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, its main target audience (e.g., developers, business users, enterprise IT), and the level of technical skill required to use its product.
+    1.  **Be a Detective, Not Just a Reporter:** Your primary directive is to avoid using "N/A". Do not give up easily. If information like pricing, funding, or employee count isn't on the homepage, your job is to find it. Use advanced search queries. Look in press releases, news articles, blog posts, funding announcements (on sites like Crunchbase or PitchBook), and customer review sites. If you cannot find an exact number, provide a well-reasoned estimate (e.g., "Estimated 11-50 employees based on LinkedIn data") and cite the source of your reasoning. **Use "N/A" ONLY as a final last resort after exhaustive searching for non-critical fields.**
 
-Then, using the definitions below, select the SINGLE most accurate category. Your response for the "Type" field in the final JSON MUST be one of the exact category names provided.
+    2.  **Use the Search Tool Extensively:** You must use the provided Google Search tool to find up-to-date information. Search for multiple aspects of the company including its official website, recent news, product reviews, pricing information, and funding details.
 
-**Category Definitions:**
-{definitions_text}
+    3.  **Analyze from Seido's Perspective:** For all Seido-specific fields (Section VIII in the schema), you MUST use the 'Your Company (Seido) Context' provided above to formulate your answers. This is a critical part of the task.
+        *   `EaseOfUse_For_SeidoPersonas`: Specifically consider our personas (Consultant, E-commerce owner, etc.). Is the competitor's product intuitive for them?
+        *   `Seido_Differentiation_Points`: Based on our differentiators (Multi-Agent System focus, no-code orchestration, idea validation), what makes Seido different? Be specific.
+        *   `Threat_Level_To_Seido`: How directly do they compete for our target customers? (High, Medium, Low). Justify your answer.
+        *   `Opportunity_For_Seido`: What gaps does this competitor leave in the market that Seido can exploit?
 
-**CRITICAL STEP 2: JSON Output Generation**
-For the competitor '{competitor_name}', gather information for all the fields listed below.
-Present your findings STRICTLY as a single, valid JSON object.
-The keys in the JSON object MUST EXACTLY match the field names provided in the 'Fields to Research' list.
+    **CRITICAL STEP 1: Competitor Type Classification**
+    Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, its main target audience (e.g., developers, business users, enterprise IT), and the level of technical skill required to use its product. Then, using the definitions below, select the SINGLE most accurate category. Your response for the "Type" field in the final JSON MUST be one of the exact category names provided.
 
-For each piece of information you find, include its source URL in the "Research_Sources" field as an array of objects with this structure:
-[
-    {{"url": "https://source-url.com", "description": "Brief description of what was found at this source"}}
-]
+    **Category Definitions:**
+    {definitions_text}
 
-If specific information for a field cannot be found after diligent research, use "N/A" as the value for that field. Do not omit any fields.
+    **CRITICAL STEP 2: JSON Output Generation**
+    For the competitor '{competitor_name}', gather information for all the fields listed below. Present your findings STRICTLY as a single, valid JSON object. The keys in the JSON object MUST EXACTLY match the field names provided in the 'Fields to Research' list.
 
-**Fields to Research (JSON Keys):**
-{json.dumps(CSV_SCHEMA, indent=2)}
+    *   **Source Citation:** For every piece of data you find, you MUST add the source URL to the `Research_Sources` field. Create a comprehensive list. The more sources, the better. Use this exact structure for the array:
+        ```json
+        [
+            {{"url": "https://source-url.com", "description": "Brief description of what was found at this source"}}
+        ]
+        ```
+    *   **Completeness:** Do not omit any fields. If, after your exhaustive detective work, you still cannot find information for a field, use "N/A" as the value.
+    *   **Debrief Field:** For the "Debrief" field, provide a single, concise sentence summarizing the company's core offering and value proposition.
 
-**Output Format Instructions:**
-* The output MUST be a single, valid JSON object.
-* Do NOT include any explanatory text, markdown formatting (like ```json ... ```), or comments before or after the JSON object.
-* Ensure all requested fields are present as keys in the JSON.
-* For fields representing lists (e.g., 'Reported_Strengths'), provide the information as a JSON array of strings.
-* For the "Type" field, use EXACTLY one of the predefined competitor types.
-* For the "Debrief" field, provide a single, concise sentence summarizing the company's core offering and value proposition.
-"""
+    **Fields to Research (JSON Keys):**
+    {json.dumps(CSV_SCHEMA, indent=2)}
+
+    **Final Output Format Instructions:**
+    *   The output MUST be a single, valid JSON object.
+    *   Do NOT include any explanatory text, markdown formatting (like ```json ... ```), or comments before or after the JSON object.
+    *   Ensure all requested fields are present as keys in the JSON.
+    *   For fields representing lists (e.g., 'Reported_Strengths'), provide the information as a JSON array of strings.
+    *   For the "Type" field, use EXACTLY one of the predefined competitor types.
+
+    Now, begin your research for '{competitor_name}' and generate the complete JSON object.
+    """
 
     model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
 
@@ -140,10 +162,7 @@ If specific information for a field cannot be found after diligent research, use
         # Configure default request args if none provided
         # Using standard Google AI SDK format for tool configuration
         search_tool = Tool.from_dict({
-            "google_search": {
-                "max_results": 10,  # Increase number of search results
-                "search_depth": "deep",  # Request deeper search
-            }
+            "google_search": {}  # Basic configuration without unsupported parameters
         })
         
         config = GenerationConfig(
