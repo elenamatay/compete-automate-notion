@@ -1,135 +1,152 @@
 {
-  "CompetitorID": "4451a94b-220e-4ded-afde-b3d255ce9b96",
+  "CompetitorID": "fe4b6aec-6d92-4c70-8857-fef9c0cf268e",
   "Competitor Name": "Woz",
-  "WebsiteURL": "https://www.withwoz.com",
-  "Debrief": "Woz is an AI platform that empowers non-technical entrepreneurs to build and scale real software businesses, primarily mobile apps, without coding, by leveraging a proprietary system of AI agents.",
+  "WebsiteURL": "https://woz.ai/",
+  "Debrief": "Woz is an AI-powered no-code platform that enables non-technical entrepreneurs to build, launch, and scale software businesses, starting with mobile applications, by leveraging AI agents.",
   "Type": "No-Code App Builder",
   "DateAdded": "2025-06-09",
   "LastUpdated": "2025-06-09",
-  "HQ_Location": "San Francisco, CA, United States",
-  "CompanySize_Employees": "5-6",
-  "YearFounded": 2024,
-  "CompanyStatus": "Active, Private, Venture Capital-Backed",
+  "HQ_Location": "San Francisco, CA, US",
+  "CompanySize_Employees": "6",
+  "YearFounded": "2024",
+  "CompanyStatus": "Active",
   "Research_Sources": [
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGa9i_ETsZ2TUvacwBCBAknMeWQN5ouH-UT9WjF61hBcCEBimBwyQRiRrmhOPj4Qp-iwCTBihNijrb047az93Gx8ieU9UCpv69SvTVbeYDhVTYMu4OGdl0ILtOU--WnNg7N7ic=",
-      "description": "Woz: AI platform enabling anyone to build and scale software businesses | Y Combinator - Provides core offering, target audience, no-code focus, AI agent use, founding year, team size, founders, investors, and differentiation from 'toy apps'."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFANJIlnTTq0SbdpYrtDSCvbWQ9hOej7Uqc69DZeTGsdIXhu66tpcBQFMXHH7rfRfCZw4sbSUlm3PcJi-9CChtLJQ18K0F0z6sSf-pklIlb2Khm1H9tBCGGsnxDMjUSqp0jix9oUyg=",
+      "description": "Agentic Podcast - core offering, founders, vision, comparison to Shopify, AI code generation, YC experience, fundraising."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHWR_2kjSehVGeS70YdA12rw_Cx3UywFB0yuyZPuGkDMGEiKkAWghsKVtC-qsD7g8ngX2NGMFDY35Bi6wcqGCUrjR-SCNOCRekU_3q_enRW2cZdRWwoFiFPAjQ0mJXfOc1yCz18AcIgS38y",
-      "description": "Woz 2025 Company Profile: Valuation, Funding & Investors | PitchBook - Provides HQ location, employee count, founding year, funding amount, and company description."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEhp-Sm0QlJ3kMqrpz2dH4W492SO6OKYxia17H7y1O1SqnqGsWPnXnHyYTuAO5mz7T6ZQvALAIrIltVeX3g6imhVD9tMBinGbDqXhKGF-P8RJL3QVBWinBD5BkKWiCnZanqFQpw",
+      "description": "Woz Y Combinator page - core offering, team size, founders, year founded, investors, HQ location, mobile app focus."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHyPtjtVG9_XlQp8HunpoKHBTucHmNxyIMBC7RCprmf6zkVFdH1LcJdgcWEaQeSHwvhcfhQ4SCgfHTjroxNICOKFgKuSDU61hZiT_46X1R5_d1grkPmDPkNTfNyivsK",
-      "description": "Woz - AI Agent Store - Provides core offering, use cases, AI agent system, no-code, and target audience."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEFHwObUEaKsCvkK4kGl9sWTf0mzmguExLM5agv_39_oU0QJRf-lSjXD1U6SaY7Z6j3oQ6K9sSQ0E2N7omjptZNVYpW2Zt53hpblrtWdnjjH176E3-qwUF5g4hodcv1RfLTg==",
+      "description": "AI Agent Reviews - core offering, key features, use cases, pricing (paid), reviews (none)."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHgKAT09KaptJxBopSzvhQPNk787WoUwgyXJahHRsYGY889jW0olTCQFfBuZVIP5FWO1VUryJ5Gjpgp0Zq9c-q8hFJ8RrOjJ71UJhSmENA-RA7iHanaAiul313MwOyKFwYHjoVc7g==",
-      "description": "The AI Platform That Could Launch 10,000 Startups | Woz - YouTube - Reinforces core offering, no-code, AI agent use, and 'Shopify for SaaS startups' analogy."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGleAjwNiJfRytlu9zdC3t_eYfq2vje_o0_ZWsIQpxqhhWf0QZXzt8Narf8RjlaZqRp18KCapgm_5Z6GT01MS5rjhqsLQDnzJZdEifKTHlIPcxSJrT94ozbzsyS1mW92xES3jfg3ZaLTmGclvKAiROzkIibC_3YTA==",
+      "description": "Fundz - seed funding amount, date, location, company description."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFt6MkJ2Ipmcntj97s8DtruAi-Wwum5saYZWSoUbwy3jVrsxFAT7MW-IwAuXma8nhNfh-ixcFbXgXrTG86m_e_JiFK-QLwu4mZOHzkd5nRomKussqw7OppOPUCKbGemX5PdAs9RdIJx_qjaNSCjBGgHX1VEC-5JZI7bs4fe05Mh0z6GYoEKRqC8U_rh-Psg",
-      "description": "WithWoz - 2025 Company Profile, Funding & Competitors - Tracxn - Provides total funding, founding year, investors, and company status."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHtMrnOCHaC9j3FClUQsrHJRJfWyi890jFd7xAkKPU1JDOpHo2wQx5Zf_67ZKHywxAR91jJSkVXGUquky_OIPg_OQXDgS1N440ZrvD_jRZy6sIp09BM5VjUc55F9idLtQ==",
+      "description": "AI Agent Store - core offering, AI agent system, use cases, target audience, autonomy level."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFx8_18peTTzWSCS4yiZUTjeR8n0msMolfSanz8-rb5GF-x5ZVYL8RiyZ-RAMPJ0KzC6mU8ZI8JyVcsV4tu2FiADOiITJdxVbfmqs8UhaYjgrQOJux3YTYpJS7wXWj176gtbg==",
-      "description": "Woz - AI Agent Reviews, Features, Use Cases & Alternatives (2025) - Provides core offering, key features, use cases, and notes on review contradictions."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFDcmlZgNW4T5yeMc1dM6uHrInjZZpXdyUncjZrkkbB1wKydRzCaE0j5XZN8TGkZ_tr5RMQQAohqOG1Afi9YrhCkTSInL9uDup-aVcsK6JyTnzHmBF0QHXLkE-8LwbLIR8Crm2TWhjsfO5Qg==",
+      "description": "PitchBook - HQ location, company description, funding details, investors, company size, year founded."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXG34B4idNZBKzLU0tEj381k0t3PaWEoogYGU7OsXfVapcM1Oqr6QwVY6DFZa_E9gsIGsjw4GEVvqAIgCvr6AfjvmA6Wq4uDDA-tUj-R0WR17HAHCfec20Bmux2k9oT4DWbm27jI",
-      "description": "Woz: AI platform enabling anyone to build and scale software businesses | Y Combinator - Duplicate of first YC link, but confirms details."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEjXkXDWinA28UgjXz6sCUBz2pXrVrdCNJuWqP1tpTVtayuqOr7guCPES8VtjGZMemlZ3bZGVpVHw4zjGbTaTN4bVODY9YpeBM02Klt44Xr-7UGNNeSc1ABPIVOnZ8Hia4rz0dzEiiRfA_HBucq-_LG9sseAs97Ok7-ebHMosJ9CMvmV5g0LfnLwsV9506B3Q==",
+      "description": "Tracxn - funding details, series A, investors, year founded, HQ."
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXF-vX_rzzTxKysgm8Q3zYbGVAmuYyJEkCm2FGBVYu5PqKfurojLmXrCQHg7Ddm28m_aMnxytm9u-UmTfOxdMW7EXI8_DKduhVFFKbUHZDo=",
-      "description": "Woz - Confirms 'From idea to mobile app in minutes. No coding required.'"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFYieq1QuxptZ00gL9uoG8y0CmIZ_fPddF2YqsDc_9LSKxBh9YNHJwh2-2ZsYw-IyYMSK9EnDXXj31ivraM7JhOcF6bmVSPun30WrxLpv7JxSgfYDIWzRftp1ibaQP3jxcMDp091jlMuO7C6RZ2tggE5uMkb_1xx14hc3Mn4fzdphLs2a4TneUz",
+      "description": "Stealth Startup Spy - YC W25 batch confirmation."
     }
   ],
-  "CoreOffering_Summary": "Woz is an AI-powered platform that enables non-technical entrepreneurs to build, launch, and scale production-ready software businesses, starting with mobile apps, without writing any code.",
+  "CoreOffering_Summary": "Woz is an AI platform that enables anyone to build and scale real software businesses without coding. It leverages a team of AI agents to help users build products, go to market, and grow a business on one platform, eliminating the need for a technical cofounder or in-house engineering team. It initially focuses on helping entrepreneurs build high-quality mobile apps and launch them directly to app stores. [1, 2, 5]",
   "Product_Categories": [
-    "AI-powered software development",
-    "No-code development",
-    "Business automation",
-    "Startup support",
-    "Software scaling",
-    "Mobile app development"
+    "Mobile App Development",
+    "Software Business Building",
+    "AI-powered No-Code Platform"
   ],
   "KeyFeatures_AI_Automation": [
+    "Team of AI agents for end-to-end operations",
     "AI-powered software development",
-    "Proprietary system of AI agents",
-    "Handles product development, payments, security, infrastructure, and scalability",
-    "Ongoing engineering support",
-    "Bug fixing and maintenance"
+    "Robust architecture and third-party integrations",
+    "Bug fixing and maintenance",
+    "Business tools and services",
+    "Scalable business infrastructure",
+    "Handles product development, payments, security, infrastructure, and scalability"
   ],
   "KeyFeatures_NoCode": [
-    "Enables building and scaling software businesses with no coding required",
-    "Transforms business ideas into operational software without coding"
+    "No coding required",
+    "Empowers non-technical entrepreneurs",
+    "Builds and scales software businesses without writing code"
   ],
-  "Automation_Scope": "Comprehensive, covering the entire lifecycle from idea to production-ready product, including ongoing operations, maintenance, and scaling of software businesses.",
-  "Underlying_Technology": "Proprietary system of AI agents, machine learning algorithms (implied by AI-powered platform).",
-  "Integration_Capabilities": "Robust architecture and third-party integrations.",
-  "Customization_Level": "Allows for customization to specific business needs, moving beyond generic 'toy apps' to battle-tested backend infrastructure.",
-  "TargetAudience_Primary": "Non-technical entrepreneurs, individuals seeking to transform business ideas into operational software without coding, startups looking to scale operations without extensive engineering resources, businesses desiring to automate product development and deployment processes.",
-  "TargetAudience_PersonasMatch_Seido": {
-    "The Consultant Turned Founder": "Yes, if they aim to build a software product to automate and scale their services.",
-    "The E-commerce Innovator": "Yes, if they need a custom mobile app or software solution for their online store.",
-    "The Visionary Entrepreneur": "Yes, explicitly targets this persona by enabling tech ideas without coding knowledge.",
-    "The Corporate Insider Turned Entrepreneur": "Yes, if they want to build a tailored software solution to address industry inefficiencies."
-  },
-  "ValueProposition_USP": "Empowers non-technical founders to build and scale real, production-ready software businesses (not just prototypes) by eliminating the need for a technical cofounder or in-house engineering team, handling all technical complexities.",
-  "Positioning_Statement": "Woz is an AI platform that enables anyone to build and scale real software businesses - no coding required. Think of Woz as the command center for your business, or Shopify for launching operational SaaS startups.",
-  "MarketSegment_Focus": "AI-enabled software startups, scaling existing software businesses, automating business operations, developing custom AI applications.",
-  "BusinessModel": "Platform subscription (implied, contact for pricing).",
-  "Pricing_Tiers_Summary": "Contact for pricing.",
+  "Automation_Scope": "End-to-end software business operations, from product development and launch to scaling and maintenance. [2, 5]",
+  "Underlying_Technology": "AI agents, likely leveraging Large Language Models (LLMs) and machine learning. [1, 2, 5]",
+  "Integration_Capabilities": "Robust architecture and third-party integrations. [3]",
+  "Customization_Level": "High, as it aims to build 'real software businesses' and customize solutions to specific business needs. [2]",
+  "TargetAudience_Primary": [
+    "Non-technical entrepreneurs",
+    "Individuals seeking to transform business ideas into operational software without coding",
+    "Startups looking to scale operations without extensive engineering resources",
+    "Businesses desiring to automate product development and deployment processes"
+  ],
+  "TargetAudience_PersonasMatch_Seido": [
+    "The Consultant Turned Founder: Yes, if they want to automate their services into a software product.",
+    "The E-commerce Innovator: Yes, if they want to build custom apps for their store or automate operations via software.",
+    "The Visionary Entrepreneur: Yes, directly targets this persona by enabling them to validate and build an MVP quickly without coding.",
+    "The Corporate Insider Turned Entrepreneur: Yes, if they want to build tailored software solutions."
+  ],
+  "ValueProposition_USP": "Enables anyone, regardless of technical ability, to build and scale real software businesses (starting with mobile apps) using AI agents, eliminating the need for a technical cofounder or in-house engineering team. It is engineered for business building, not just prototypes or 'toy apps'. [1, 2, 5]",
+  "Positioning_Statement": "Woz is an AI platform that empowers non-technical entrepreneurs to build and scale real software businesses \u2013 no technical cofounder or engineering team required. Think Shopify, but for launching operational SaaS startups. [1, 2, 4]",
+  "MarketSegment_Focus": "Software development, mobile app development, AI-powered business building, entrepreneurship.",
+  "BusinessModel": "Platform as a Service (PaaS), likely subscription or usage-based. [3]",
+  "Pricing_Tiers_Summary": "Paid. [3]",
   "Pricing_LowestPaidTier_USD": "N/A",
   "Pricing_KeyTier_USD": "N/A",
-  "FreeTrial_Offered": "Not explicitly mentioned.",
-  "Freemium_Offered": "Not explicitly mentioned.",
-  "MarketShare_Estimate": "N/A",
-  "CustomerBase_Size_Estimate": "N/A",
-  "Funding_Total_USD": "5.34M",
+  "FreeTrial_Offered": "N/A",
+  "Freemium_Offered": "N/A",
+  "MarketShare_Estimate": "Very Low (due to being a newly founded company).",
+  "CustomerBase_Size_Estimate": "Very Small (early customers, e.g., a personal trainer building a fitness app). [2]",
+  "Funding_Total_USD": "5,340,000",
   "Key_Investors": [
-    "Y Combinator",
+    "Y Combinator (YC)",
     "Untapped Ventures",
-    "MGV"
+    "MGV",
+    "Burst Capital",
+    "Unpopular Ventures"
   ],
   "Recent_News_KeyDevelopments": [
-    "Part of Y Combinator Winter 2025 batch.",
-    "Raised $5.34M in funding."
+    "Raised $5.34 million in total funding over two rounds, including a $4.84 million Series A round on March 28, 2025, and an earlier seed round on January 1, 2024. [4, 6, 7]",
+    "Confirmed participation in the Y Combinator Winter 2025 batch. [2, 8]",
+    "Featured on the 'Agentic' podcast (May 2025). [1]"
   ],
   "Reported_Strengths": [
-    "Enables non-technical founders to build and scale real software businesses.",
-    "Eliminates the need for a technical cofounder or in-house engineering team.",
-    "Handles complex technical backend (product, payments, security, infrastructure, scalability).",
-    "Provides ongoing engineering support and business tools.",
-    "Focuses on production-ready products, not just prototypes."
+    "Enables non-technical founders to build real, scalable software businesses. [1, 2, 5]",
+    "Utilizes AI agents for comprehensive, end-to-end operations including product development, payments, security, infrastructure, scalability, bug fixing, and maintenance. [1, 2, 3, 5]",
+    "Eliminates the need for a technical co-founder or in-house engineering team. [1, 2, 4, 5]",
+    "Strong initial focus on mobile app development. [2]",
+    "Backed by reputable investors like Y Combinator. [2]",
+    "Aims to provide ongoing engineering support and business tools. [3]"
   ],
-  "Reported_Weaknesses": "N/A",
+  "Reported_Weaknesses": [
+    "Very early stage, with a small team and limited reported customer base. [2]",
+    "No public reviews or ratings available yet. [3]",
+    "Specific pricing details are not publicly disclosed.",
+    "The ambitious claim of building 'real software businesses' without coding may face limitations for highly complex or niche applications."
+  ],
   "Marketing_Channels_Primary": [
-    "Y Combinator network",
-    "LinkedIn",
-    "YouTube",
-    "AI Agent directories"
+    "Y Combinator network and exposure",
+    "Podcasts (e.g., Agentic)",
+    "LinkedIn"
   ],
-  "Sales_Approach": "Direct sales, likely demo-based, as pricing is 'contact for pricing'.",
-  "Geographic_Presence": "Headquartered in San Francisco, CA, United States, with implied global reach through its online platform.",
-  "ReviewSites_Presence": "AI Agent Store (contradictory review information), G2 (mentioned in context of other products, not Woz itself).",
-  "Average_Rating_Overall": "N/A",
-  "Total_Reviews_Count": "N/A",
-  "Review_CommonThemes_Positive": "N/A",
-  "Review_CommonThemes_Negative": "N/A",
-  "Competitor_Type_Relative_To_Seido": "Direct Competitor",
-  "Relevance_To_NonTechnicalFounders": "Highly relevant. Woz's core value proposition is empowering non-technical founders to build and scale software businesses, directly aligning with Seido's mission.",
-  "AI_As_Technical_Cofounder_Analogy": "Yes, Woz explicitly uses this analogy, stating it eliminates the need for a technical cofounder or in-house engineering team.",
-  "Agent_Reusability_Platform_NetworkEffects": "Implied, but not explicitly stated. Woz utilizes a 'proprietary system of AI agents' to build products, but there is no mention of a marketplace or reusability for these agents by users.",
-  "EaseOfUse_For_SeidoPersonas": "High. The platform is designed for non-technical users, allowing them to 'simply explain your business idea as you would to a human developer, and Woz handles the rest'.",
+  "Sales_Approach": "Likely direct sales and onboarding for early customers, given the complexity and novelty of the offering.",
+  "Geographic_Presence": "Primarily based in San Francisco, CA, US, with a vision for global reach to 'millions of AI-enabled entrepreneurs'. [2, 4]",
+  "ReviewSites_Presence": "Listed on AI Agent review sites, but currently has no user reviews. [3, 5]",
+  "Average_Rating_Overall": "0.0",
+  "Total_Reviews_Count": "0",
+  "Review_CommonThemes_Positive": "N/A (no reviews available).",
+  "Review_CommonThemes_Negative": "N/A (no reviews available).",
+  "Competitor_Type_Relative_To_Seido": "Direct competitor.",
+  "Relevance_To_NonTechnicalFounders": "Highly relevant. Woz's core value proposition is directly aimed at empowering non-technical founders to build and scale software businesses. [1, 2, 3]",
+  "AI_As_Technical_Cofounder_Analogy": "Woz explicitly positions itself as eliminating the need for a technical cofounder, aligning very closely with Seido's 'AI as a Technical Cofounder' analogy. [1, 2, 5]",
+  "Agent_Reusability_Platform_NetworkEffects": "Woz utilizes a 'team of AI agents' and a 'proprietary system of AI agents' for its platform. While it implies a modular approach, it does not explicitly mention a marketplace for agent reusability or fostering network effects through agent sharing, which is a key differentiator for Seido. [2, 5]",
+  "EaseOfUse_For_SeidoPersonas": "High. Woz's entire premise is 'no coding required' and empowering 'non-technical entrepreneurs', directly catering to Seido's personas who seek to abstract technical complexities. [1, 2, 5]",
   "Seido_Differentiation_Points": [
-    "Multi-Agent System (MAS) Focus: While Woz uses AI agents to build software, Seido emphasizes the creation of an entire ecosystem of collaborating AI agents that represent the full value chain of the user's company, offering a broader system-level approach to business automation.",
-    "No-Code Orchestration: Both offer no-code, but Seido specifically highlights 'orchestration' of sophisticated agent workflows, implying a deeper level of user control over agent interactions.",
-    "Idea Validation First: Seido's MVP includes a free 'Automation Assessment' to validate and refine ideas before committing to building, a distinct pre-building value proposition not explicitly offered by Woz.",
-    "Agent Reusability & Marketplace: Seido explicitly aims to facilitate the reuse of pre-built and custom agents and foster network effects through a marketplace, a feature not mentioned by Woz.",
-    "AI as a Technical Cofounder: Both companies leverage this analogy, indicating a shared understanding of the target user's pain point."
+    "Multi-Agent System (MAS) Focus: While both use MAS, Seido emphasizes an 'entire ecosystem of collaborating AI agents' and a 'system-level approach' for the *full value chain* of the user's company, potentially offering broader business automation beyond just software product development.",
+    "No-Code Orchestration: Both offer no-code, but Seido highlights building and managing 'sophisticated agent workflows' for diverse business processes.",
+    "Idea Validation First: Seido offers a free 'Automation Assessment' and idea validation MVP as a distinct pre-product stage, which Woz does not appear to provide.",
+    "Agent Reusability & Marketplace: Seido explicitly focuses on facilitating the 'reuse of pre-built and custom agents' and fostering network effects through a marketplace, a feature not explicitly highlighted by Woz."
   ],
-  "Threat_Level_To_Seido": "High. Woz directly targets Seido's core personas (non-technical founders) and solves a very similar problem (empowering them to build AI-powered businesses). Their focus on building 'real software businesses' rather than just prototypes makes them a strong and direct competitor.",
-  "Opportunity_For_Seido": "Seido can differentiate by emphasizing its broader application of MAS beyond just software products to automate entire business value chains. The explicit 'Idea Validation First' and 'Automation Assessment' stages offer a unique entry point for users. Furthermore, Seido's focus on 'Agent Reusability & Marketplace' presents a clear advantage for fostering network effects and providing a richer ecosystem for users.",
-  "Notes_QualitativeInsights": "Woz is a well-funded (YC-backed) and direct competitor that strongly resonates with the 'AI as a Technical Cofounder' analogy. Their emphasis on building production-ready software businesses is a key competitive point. Seido must clearly articulate its unique value propositions, particularly its comprehensive MAS approach, pre-building validation, and agent marketplace, to stand out in this competitive landscape."
+  "Threat_Level_To_Seido": "High. Woz directly targets non-technical founders seeking to build AI-powered businesses without coding, which is Seido's core mission. Their focus on building 'software businesses' and 'mobile apps' represents a significant overlap with potential applications for Seido's platform and target customer base.",
+  "Opportunity_For_Seido": [
+    "Woz's current primary focus on mobile app development might leave a gap for broader business automation across various functions (e.g., marketing, HR, operations, supply chain) that Seido's comprehensive MAS can address.",
+    "Seido's 'Idea Validation First' approach provides a strong pre-product differentiator, attracting users who need to assess automation potential before committing to building.",
+    "Seido's explicit emphasis on an 'Agent Reusability & Marketplace' could attract users looking for more modularity, community-driven development, and a wider ecosystem of pre-built agents.",
+    "Seido's 'system-level approach' for automating the 'full value chain of the user's company' might offer a more holistic solution compared to Woz's current product-centric focus."
+  ],
+  "Notes_QualitativeInsights": "Woz is a very new, well-funded (seed round from YC) competitor with a strong value proposition directly aligned with Seido's target market. Their explicit use of AI agents and focus on non-technical founders makes them a significant player to watch. Their current focus on mobile apps could be a strategic entry point, but Seido's broader 'full value chain' automation and pre-build validation could offer a competitive edge."
 }

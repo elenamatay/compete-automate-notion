@@ -5,12 +5,16 @@ import google.genai as genai # type: ignore
 import sys, os
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timedelta
+from typing import Tuple
 import vertexai.generative_models as generative_models
 from vertexai.generative_models import Tool, GenerationConfig
+from google.genai.types import GoogleSearch, GenerateContentConfig
 from notion_client import AsyncClient, Client # type: ignore
 from notion_client.helpers import get_id # type: ignore
-from google.genai.types import GoogleSearch, GenerateContentConfig
+from notion_client.errors import APIResponseError
+
+
 
 # Define the new CSV Schema
 CSV_SCHEMA = [
@@ -672,3 +676,252 @@ async def setup_notion_database(
         print(f"Error creating Notion database: {str(e)}")
         print("Please check your Notion API token and permissions.")
         return None
+    
+
+# --- Competitor Research Update ---
+
+async def update_single_competitor_async(
+    json_file_path: str,
+    seido_context: str
+) -> Tuple[str, str] | None:
+    """
+    Reads existing competitor data, performs a new full research,
+    and uses an LLM to generate an updated JSON and a summary of changes.
+    """
+    try:
+        with open(json_file_path, 'r') as f:
+            old_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error reading or parsing existing JSON {json_file_path}: {e}")
+        return None
+
+    competitor_name = old_data.get("Competitor Name", "Unknown Competitor")
+    print(f"Performing full re-research for '{competitor_name}'...")
+
+    # Simplified prompt for a full re-research and comparison.
+    prompt = f"""**Role:** You are a Senior Market Research Analyst for 'Seido'.
+
+    **Objective:**
+    Perform a fresh, deep-dive research on '{competitor_name}'. Then, compare your new findings against the `PREVIOUS_RESEARCH_DATA` provided below to identify any changes.
+
+    **Methodology:**
+    1.  **Full Research:** Use the Google Search tool to find all current information about '{competitor_name}'.
+    2.  **Compare and Synthesize:** Compare your new findings with the `PREVIOUS_RESEARCH_DATA`.
+    3.  **Generate Two Outputs:** Produce a single JSON object with two keys: `updated_competitor_data` and `change_summary`.
+
+    **PREVIOUS_RESEARCH_DATA:**
+    ```json
+    {json.dumps(old_data, indent=2)}
+    ```
+
+    **Output Instructions:**
+    Your entire response MUST be a single, valid JSON object with the structure:
+    {{
+        "updated_competitor_data": {{
+            // A COMPLETE and UPDATED JSON object for the competitor based on your new research.
+            // It MUST contain ALL keys from the original schema.
+        }},
+        "change_summary": "A concise, one-paragraph summary of the most significant changes found when comparing your new research to the old data. If no significant changes were found, state that."
+    }}
+    """
+
+    # Create a simple, generic search tool configuration inside the function.
+    search_tool = Tool.from_dict({"google_search": {}})
+
+    request_args = {
+        "generation_config": GenerationConfig(temperature=0.2, top_p=1.0),
+        "tools": [search_tool]
+    }
+
+    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    max_retries = 2
+    for attempt in range(max_retries):
+        try:
+            response = await model.generate_content_async([prompt], **request_args)
+            response_text = "".join(part.text for part in response.candidates[0].content.parts).strip()
+
+            if response_text.startswith("```json"):
+                response_text = response_text[7:-3].strip()
+
+            parsed_response = json.loads(response_text)
+            updated_data = parsed_response.get("updated_competitor_data")
+            change_summary = parsed_response.get("change_summary")
+
+            if not updated_data or not change_summary:
+                raise ValueError("LLM response missing 'updated_competitor_data' or 'change_summary'.")
+
+            updated_data["LastUpdated"] = datetime.now().strftime("%Y-%m-%d")
+            with open(json_file_path, 'w') as f:
+                json.dump(updated_data, f, indent=2)
+
+            print(f"Successfully updated research for '{competitor_name}'.")
+            return (json_file_path, f"**{competitor_name}:** {change_summary}")
+
+        except (json.JSONDecodeError, ValueError, Exception) as e:
+            print(f"Attempt {attempt + 1} failed for '{competitor_name}': {e}")
+            if attempt == max_retries - 1:
+                print(f"Skipping update for '{competitor_name}' after multiple failures.")
+                return None
+            await asyncio.sleep(5)
+    return None
+
+
+async def generate_top_changes_summary_async(
+    all_changes: List[str],
+    seido_context: str
+) -> str:
+    """
+    Takes a list of individual competitor change summaries and synthesizes them
+    into a top-10 executive briefing for Seido's founders.
+    """
+    if not all_changes:
+        return "No significant competitor updates found in this run."
+
+    # Create a simple request_args without a search tool, as it's not needed.
+    request_args = {"generation_config": GenerationConfig(temperature=0.2, top_p=1.0)}
+
+    combined_changes_text = "\n\n".join(all_changes)
+    prompt = f"""**Role:** You are a Chief Strategy Officer reporting directly to the founders of 'Seido'.
+
+    **Your Company (Seido) Context:**
+    {seido_context}
+
+    **Task:**
+    You have received the following intelligence briefings on recent competitor activities. Your job is to synthesize this information into a high-level executive summary. Identify the **top 10 most strategically important changes** that the Seido founders must be aware of.
+
+    **Intelligence Briefings:**
+    ---
+    {combined_changes_text}
+    ---
+
+    **Instructions:**
+    - Analyze the updates through the lens of Seido's strategy.
+    - Prioritize changes that represent a direct threat or a significant opportunity.
+    - Format the output as a clean, markdown-formatted, numbered list.
+    - Begin with a single, impactful headline like "Top 10 Strategic Competitor Updates".
+    - Each list item should be concise and clearly state the competitor, the change, and the strategic implication for Seido (the 'so what?').
+    """
+    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    try:
+        response = await model.generate_content_async([prompt], **request_args)
+        return response.text
+    except Exception as e:
+        print(f"Error generating top changes summary: {e}")
+        return "Error: Could not generate the final summary."
+
+
+
+async def append_text_to_notion_page_async(
+    notion_client: AsyncClient,
+    page_id: str,
+    title: str,
+    content: str
+):
+    """Appends a title and a block of text to a Notion page."""
+    print(f"Appending summary to Notion page: {page_id}")
+    try:
+        # Notion's API has a 2000 character limit per block. We chunk the content.
+        content_chunks = [content[i:i + 2000] for i in range(0, len(content), 2000)]
+
+        blocks_to_append = [
+            {
+                "object": "block",
+                "type": "heading_2",
+                "heading_2": {
+                    "rich_text": [{"type": "text", "text": {"content": title}}]
+                }
+            }
+        ]
+        
+        for chunk in content_chunks:
+            blocks_to_append.append(
+                {
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{"type": "text", "text": {"content": chunk}}]
+                    }
+                }
+            )
+
+        await notion_client.blocks.children.append(
+            block_id=page_id,
+            children=blocks_to_append
+        )
+        print("Successfully appended summary to Notion page.")
+    except APIResponseError as e:
+        print(f"Error appending to Notion page: {e.body}")
+    except Exception as e:
+        print(f"An unexpected error occurred while appending to Notion: {e}")
+
+
+async def discover_new_competitors_async(
+    days_ago: int,
+    seido_context: str,
+    existing_competitors: List[str]
+) -> List[str]:
+    """
+    Scans for new potential competitors that have emerged recently.
+    """
+    print(f"\nSearching for new competitors...")
+
+    # Create a simple, generic search tool configuration inside the function.
+    search_tool = Tool.from_dict({"google_search": {}})
+
+    request_args = {
+        "generation_config": GenerationConfig(temperature=0.5, top_p=1.0),
+        "tools": [search_tool]
+    }
+
+    # The prompt still uses `days_ago` as a helpful guideline for the model.
+    prompt = f"""**Role:** You are a Venture Capital Scout specializing in the AI and no-code automation space. Your task is to identify emerging startups that could be potential competitors to a company called 'Seido'.
+
+    **Your Company (Seido) Context:**
+    {seido_context}
+
+    **Objective:**
+    Identify new companies, startups, or open-source projects that have been announced, funded, or gained significant traction recently (e.g., in the last {days_ago} days). These new entities must be relevant to Seido's mission.
+
+    **Search Focus Areas:**
+    - "AI agent platform for business"
+    - "no-code AI business builder"
+    - "multi-agent system no-code"
+    - "AI technical co-founder platform"
+    - "YC batch AI automation"
+    - "new AI startup funding"
+
+    **CRITICAL Instructions:**
+    1.  **Analyze Relevance:** A new company is relevant if it targets non-technical users, aims to automate business processes with AI agents, or offers a platform for building software without code.
+    2.  **Exclude Known Competitors:** Do NOT include any of the following known companies in your response: {', '.join(existing_competitors)}
+    3.  **Output Format:** Your response MUST be a single, valid JSON object containing a single key "new_competitors", which is a list of strings.
+    4.  **No Hallucinations:** If you cannot find any new, relevant competitors, return an empty list.
+
+    **Example Output:**
+    ```json
+    {{
+      "new_competitors": ["Agentify Inc.", "Automate.io AI"]
+    }}
+    ```
+    """
+
+    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    try:
+        response = await model.generate_content_async([prompt], **request_args)
+        response_text = "".join(part.text for part in response.candidates.content.parts).strip()
+
+        if response_text.startswith("```json"):
+            response_text = response_text[7:-3].strip()
+
+        parsed_response = json.loads(response_text)
+        new_competitors = parsed_response.get("new_competitors", [])
+
+        if not isinstance(new_competitors, list):
+            print("Warning: 'new_competitors' field was not a list. Returning empty list.")
+            return []
+            
+        print(f"Discovery complete. Found {len(new_competitors)} potential new competitors.")
+        return new_competitors
+
+    except (json.JSONDecodeError, Exception) as e:
+        print(f"An error occurred during new competitor discovery: {e}")
+        return []

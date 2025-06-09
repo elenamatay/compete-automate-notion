@@ -1,0 +1,338 @@
+{
+  "CompetitorID": "18915a80-6b26-461c-b3b2-021d5c74d7a6",
+  "Competitor Name": "Numerous.ai",
+  "WebsiteURL": "https://www.numerous.ai",
+  "Debrief": "Numerous.ai is an AI-powered spreadsheet tool that integrates ChatGPT into Google Sheets and Excel to automate tasks like content generation, data categorization, data cleaning, and formula creation for non-technical users. [1, 2, 3, 6, 8, 24]",
+  "Type": "Vertical AI Tool",
+  "DateAdded": "2025-06-09",
+  "LastUpdated": "2025-06-09",
+  "HQ_Location": "San Francisco, CA, United States [5, 13]",
+  "CompanySize_Employees": "4 [5]",
+  "YearFounded": "2023 [5, 13]",
+  "CompanyStatus": "Private, Venture Capital-Backed, Generating Revenue [5]",
+  "Research_Sources": [
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEU9tFl89raFEQRyjHB6FA1RDq6mqKhTTIv08DNABAgw8CBfkUco5MeevjsUFyrYqDlVhoNRnTUwLUiu7oxtT1sFPi01UMpVYUCZYGrZ3Dr2KScbECgny56SvYZPDJG0fAKMJGE=",
+      "description": "Numerous.ai - Use ChatGPT in spreadsheets - AppSumo: Overview, features, pricing tiers, founder info."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGTqfmxeNuI7agXvsNszrEZND1nQikiy8fAx9mCfDbmuB38ptPwcNe3SmQFzVu2Sc5gEk8t4c9Ru3BKxr9sO_md0Uzb2r4kkmv9BVZSJOLB57_tw4vOqLAxSq4iLQTn7Q_z",
+      "description": "Numerous.ai Review: Features, Pros, and Cons - 10Web: Integration, ease of use, target audience, key features, collaboration."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEiZTxmynFVSysruUerGO19Vt6cQsN5-xaS1wdcbifNa4Gf2jTE-BCag5X1EPqGC_uKmBceLjKcqUabATU0sH_x_2FjJDnBIVZ8yIymhUig",
+      "description": "Numerous.ai: Spreadsheet AI Tool: Core functions like =AI, =INFER, =WRITE, use cases."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHJnZ5rwSlNi1dupGaJY6fMXINkiuWPaGDaXmGtn9ybDtL3Kx1pOGdwzM3DHFy9_wjpyaQ7vcOFL4wGbuL_eyGD5ruzatn9-WQvAoiL9iXTeYZt5qI5xwHon5rB9cDytvlknSVXogHi1um95Q==",
+      "description": "Numerous.ai 2025 Company Profile: Valuation, Funding & Investors - PitchBook: Year founded, employees, HQ, funding status, investor."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHWl0BN4LFcnlT9nXy3WXmrwhZ8AIudzWHN8RlDdVyPh_01BAfloXmdegg4qBBniTjocxtjBH_8bGbmvogz3L3ggjjfljU7WCwaLwifToe6b2nRalY5f1tCrrKJIgHw-j296elfVfg==",
+      "description": "Our Honest Review of Numerous AI (2024) - The Neuron: Pros, cons, pricing, target demographic, ease of use."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHAy4YAitA4206WtDey3unvSuHeIUw6hAuOSHrfGsFeQqrjfo3P1ImVgK7Ykrm0bjJHSqE0eeVUApghihbyJxuXkiTd9omRtFtng6hDhiupLdUgFGKG6F_a62uszXQBQl_xqAC6GcC2qlxHoXLmWFbF1ktSaMSFi8A==",
+      "description": "How to Write a Business Description - Numerous.ai: Company description, target audience, use cases."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGTqfmxeNuI7agXvsNszrEZND1nQikiy8fAx9mCfDbmuB38ptPwcNe3SmQFzVu2Sc5gEk8t4c9Ru3BKxr9sO_md0Uzb2r4kkmv9BVZSJOLB57_tw4vOqLAxSq4iLQTn7Q_z",
+      "description": "Numerous.ai - 2025 Company Profile, Funding & Competitors - Tracxn: Year founded, founder, HQ, funding status, competitors."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFc_1naM4PQM24BqanyNAE67UcX4E4aemMllVVQM0YYp7ds3AoXggPV2wvg5cVmUh2WOSa0cHXXIVXWvzhtXk_X8gU0f1afhUxTtxgKtuG3pqVTUrAGPd7pKEwlFvBaVVdxI0qlg_s=",
+      "description": "numerous Alternatives in 2025 - Toolify.ai: Overview, core features, use cases, alternatives."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXE5lEXelg50mnLZGK2EvIfMpO7cD7-H1xBKisQMIwVaQbF89Q5m0oSpSca2diKFlPjmIfJbz99uhZdVzRxRU6-wm7Jsp12Rpl5vHcoCqx9kT6gnkzQGFbQAFoPqVt0S4--_q9LjhM5yGXdGmofsr3qhH5NF7PbnoP1bBbKiRBeV6kZNWHpj9SdLthc5wJb7kRPjBRxbpPRCQBADkg==",
+      "description": "Numerous.ai: ChatGPT for Sheets\u2122\ufe0f - Google Workspace Marketplace: Features, pricing (free with paid features)."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGvB5YWc19R-E6hUA130G5nwQ-rHtXYTEjc8GNHoSIAh9dGfnieSksBYk9ITw6WgFaMxlEOlF313dQrcrozj-phV7UYw7WbN1TkGhbVNAaNIlvNCKFdw2-3vP2l5QGb3J9mbcIP-4AJbj47klI29nYl3_AeUjkmQwFMgODAqvydZRiRucwUCC9y",
+      "description": "Numerous.ai - ChatGPT for Excel - Microsoft AppSource: Features, pricing ($10/month)."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXE7W2R9zQ_y2SqxunyW1NcMvzXWNT3XTwYpIHRTwPv1JscUnDApUAyzXLMUvwx5bAEvd8lM-5XDgo4N6FRbv0vC8vUXv1oSXxlk0NHWqlH2QChjbTZn1C4KYP_JqIxaKPBsTezdcFTo",
+      "description": "Numerous.ai - Info, Pricing & Guides - AI Tool Guru: Pricing, categories."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGhYOSyvWBJs6fbKH9SV4cKpj6YQZKaAwq2QaHLBDzSZinMzw_8A4Vqp8gt1ALeNkdjdzGLUnNaka4cDzEiWaD-RYyNcnU2BpmZ2vOijPm2jQkF0qaGzhWMBLVKNX8FwS9BpuWXKeIK2KoIj4U6Gqji",
+      "description": "Numerous.ai Reviews in 2025 - SourceForge: General description, features."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXF3CDHnsMCcpH2gWZGzRMXXiiIQVy474fMT3Mbr4cyPBcs4OVEpVL9WGmwTebxKkhEy-8Oofg4Vsow2sbGLHkCvsZarFzWG4XOy3RbixjVouZqeKq6B_4W0jOcp9gXkXSkJtnpaQRJ_aTpor9sV4F0AXSeyD2ciBDdo7rxl3Vw==",
+      "description": "Is Numerous.ai Worth the Hype? - Toolify.ai: Pricing, lifetime deal, pros, cons."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXERoIqegX9Om5G8hVBqT4HQJcQhDK6A0SXJeNcFnt5nzvFRgDnrMAByo070QA9vdy90K27GqXUxI5z0pi6EHKfuC2ArIkjhlCMcDVBSN_g6p2qZn5mV6ZunVX47Z5jHYRnYpN31Ctnd4Mq3HnA59P1zJv66",
+      "description": "10 Best Numerous.ai Alternatives & Competitors in 2025 - Software Suggest: Competitors."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHjI5Ola1YUBY8cRe2lWNuAWs_h9shVq1CCzmwjTsAiPv_TJc9ETaJ-lH8U5aGQk0FmeVWGk-uoRSd2XT4xPtJGiunUmAmSxQeUKKY-VOyoly7rFhZlJpemGaahc0T6R1nKHkhn-L1C2hcYSKhIFApUlyyap8KXjQy6bQ=",
+      "description": "Top Numerous.ai Alternatives and Competitors - SaaSworthy: Competitors."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHSejFymUvku2RlkZrF4yo3HSTTEKzEj_2oicVhktPKSo742xSwlQMhdutFgtAT2L445qveoPxUVCoMJPH4F0q2m5rMXNzQu4XCyYEwgMFyAUQKNFql_DutddM3WrQQvsoSH-49MxBO",
+      "description": "Numerous.ai - Features, Pricing, Alternatives etc., - June 2025: Description, key features, pricing plans, pros & cons."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFMYaj350Xe_fQctyzu-fj6SYTR94gf5UNaQLvllpv125_3wl9qNc87cxF6yirYhPnIGNqwa8PQSdkRXvW2AAGw0lwGsR92K17ObWI-20Dlg0QUvtiKnMvdGrUyYAUpa-1APFheenc0DRmoCG8RqY5qEI9qqoljwd0DQusomEzxzAGe-2otqEcFr6XnMLJnSuhZNnX020sJaJ8I4iXQYTkRESwNSl34uZ8s",
+      "description": "2025 Funding Rounds & List of Investors - Numerous.ai - Tracxn: Investor information."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFOSfqrxxSmOSiWc270d_E71BxnIXKkSjQ_cGhs93e_mlWamcjpx1CQYaMJvaghOIro1aNGsjkOHDLbg2UqoqVdL_fKNcHS9DCMAbam_ea4DPwoIVUKEC-zIrvmCdRsO46nS92-LaYmC7Z952nucqIidKugXg_dUohKoYF8JVL9pjU=",
+      "description": "Top Numerous.ai competitors - CB Insights: Competitors, company description."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXG7U8gViTd4mHriKIa2FaZTsQSJ9p_PM0YxU3syzhFPUUAEYGn38ueywWMevy5GTFpgtGvQhOdk075OueNcH-bGCzaPkpZ30K4CNC_T8eXJY6UBGboLJPF9pd4j9FrRa5FMRYdU",
+      "description": "Mito - Products, Competitors, Financials, Employees, Headquarters Locations - CB Insights: Numerous.ai company description, year founded, HQ."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHp3AeOpG4QX5r7-DLcHZ5AWWpBhSvQesSqWQ5qAdSENopjclwCHC_LbIfG3hAsN_K9K_wmQZR8HxE4V7yqEVa4aryFANxqdfZo1UQtZOw7mjPaFY7ap2Nq8OHfvD5kEK1CbuD6-cUHs2PJ1QtryYi-pr32",
+      "description": "Top 7 AI Tools for Data Analysis in 2025 - Numerous.ai: Description, use cases."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHsSoKsez1wAc7NFKYVN-MaRntE1xEoLP3YYAEl1qqzzZOCNcXIc00d8g6LERAUMcr2rHFDNrLhbdJKczNZX06xDv2Us7p8y2VrKAgRxivqU1eMCs9QkHEFMAWS118lIOudfV8Pn_csz9WstF7k",
+      "description": "Using AI in the Workplace (4 Real-Time Applications) - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXH-MxblqvQnkA-Ht1TGvq4vWNewAsyzPG-m_ATGO9YmhXPFxqLKYlaJH7GORWnu4Kr_NZENChJkXGhsX8bB7YT26j5JMLJ80Hg-xjoBl5Gx6jzfvPr8Y4xuNbQ752OurSYv2auK5m6RQJ_aTpqdYcFiuU93TzwNNTEUHbHZB4=",
+      "description": "Top 10 Numerous AI Alternatives & Competitors in 2025 - G2: Alternatives."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHEl9FMC4i4YcUZW0pAmT6vYfSW6-HpacMx_5yl_9JL6pt8A6AxlAGOj0e77Ne7sQbxjuufi467T-953scOgS1SXtu5FIQiVDwPvkupZCPN7cquADze13zRJCsiwDJxg0VD7TVcjqG5gw==",
+      "description": "10 Best Copy AI Alternatives - Numerous.ai: Mentions Numerous as an alternative."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFwpLvoCj0K3YMT9cTG1EQ_1Nx7-XnBqGxmi5KcnlSamojqcl3Px6SRXDu9Z_E6Jb3iAli2ygwN368CJdIXIZncJUFhCjwsOdTRkVOFbg1yhh0gMzj4-vgAOps3KDBr2XKV",
+      "description": "Numerous.ai - What is it? How does it work? | ListedAI: Description, features, pricing model, deployment."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGpm-N9UpTrvKfG30VnzgjzghBYbn2TnDdCOJdcFwT2R0vTcFbLmiSXxSJyzN3OBR27R2Mm4FYcTF2c6XbncF6sQlISPK_Y0_76TGR9dimO01KZIhl7PbouH9n3Srglm2c9zrldNUY2KZsHW3tewfvIhMy",
+      "description": "10 Free AI Tools for Data Analysis - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFF7de6ytIo-VQsLIxkvYpT-fob2wqImaO0ZOCkLn-fX4N3AsuOVdtayem0xCB3sAPlosu0PEKR6FHYA9poMFySRfzIcwbjVbXyd9Z9BkwzKKqU0o5d0bIqpj45sAoZUAWvi1G8WmAIF45FsBP_SSI=",
+      "description": "How Can AI Help My Business Scale (Top 5 Methods) - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEFrDYg9H6dN9c4yR2JynYodjGlEmYc0Bmx-RXJZzQMuBCpB5u9b0A647jjWo_pQGmCza9VssLK8L6vUyffS_celd-dWlAHaSpr_xYI77858kSDUu_2rKKzp86eSdep16hLzyWcMAK0jSlVIMZ7y7-PYgT1wA==",
+      "description": "19 Ways On How To Use Chat GPT for Business (At Scale) - Numerous.ai: Use cases, automation."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEMaGsJo6bhrcdYL8zp3VZXsxDzBeXKCcE16j7tCFVvcU-LpxZkAI-GyDNiI3Pvtc4vlTriI3QGcGXv8VmaYflTCmmDQrIMvk1UsUr5RarkfnaTNg4QoSVMrRmayvu651EdYVBT-ZjA",
+      "description": "10+ Top AI Tools for LinkedIn You Actually Need in 2025 - Reply.io: General AI tool context."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGF03iHtvJtHMwk-7yaYztlMFKsNYadN752W3dFwQVvYMlK2b5NSs6rcyysLqzrGnUAu_d3O1gVDJpjB3cJF158JUvPBM6DLyPnE4HOnAMFBlxsUw3cdcZL9oa1OyJukJrFgdu6eCM=",
+      "description": "19 Best AI Marketing Tools Of 2024 - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFHNKQvHelTZCXrOQ5Aql29CbdeTSrrhk-DnY0Pn41B-Qxfq55CIbmxQUCrxE7K0Xw2JZqhiRcF2wd6By0JoBt17lWQUlfRMmbNOZDqavLOlrUuTIzbYQxz8U08snUzAyCBFT9VuTpztnJBwFVggQ-g4gcV78t6rBPNqbxd",
+      "description": "How To Use AI-Powered Product Content Generation For Ecommerce - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFg-gIIl-JxRNz3l3jV_0LMKeu-CwpK-dIQMnoSDhyx09m4MUufdlTcfS-Ao64gWZQjeBpFz0yuKxZNV3XRtfIb2fZTfA0lKGIaNFNlrHVpLT-X_S5cvUq5FayfzPFctdBVcYk=",
+      "description": "How Do I Use AI For My Business (With 10 Examples) - Numerous.ai: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXF3ltA7kiVwNoBmsq2Ud6MW0FRFTgMEkuYbCNLc4aFUsLgAdHL5jHPU2eLSJYBYbsIunSBD680GX-x5achz8GIYTgKZCvFHMXemjPXjfJOOu1l54BHxt9LXtcSFWNo3H68yrMAo_aGXeetXsA==",
+      "description": "Numerous.ai Reviews 2025: Verified Ratings, Pros & Cons - AppSumo"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHzcRAAxo1DdjKqT46IuCnw-NTKn8Df8MAPf81ZtIyswTRmQgrH_xZTX0D7JJ3lG3mbEcnae8BCStPvO-0BU9jweZNnG24ZBJiP-Q0ZlT3gSWjRxbwuvHcUZTW3TgzPUVwst_87j3kYmaGKl12fhnCZGVA=",
+      "description": "5 Top Generative AI Content Creation Tools You Should Know About This Year: Use cases, target audience."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFBg3HV5rs6Gt9d9QGz166zshiItQ63qJiE1bjE1Z2f--XlWaSwcA_69zaY-yGVbwC-T_cIkWnpIOxmBRiCmjNQaZNTYC84Swy-nZ13dWwloYVBGWGa4z-ioo95bHom4b_oD6jccObmg8w=",
+      "description": "Most Cost-Effective AI Sentiment Analysis Tool - Numerous.ai: Use cases, sentiment analysis."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHDsDkcXRTLfb8CEBxeJmLjo3y5OyHvyL3gyJmF6HrKFcDt9-gkm2RtNRrQLX5Dke-jpStnj0AVT3LBLxKPffzDfVV-Rdv_qP86vVVoDFPaZYOQ5vRyUun_hlztDlWZKQnKvYiau7gr75rY",
+      "description": "Numerous.ai Spreadsheet Software: Pricing & More - Cledara"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFMFoVkjZlZRGo9XSqqACb2pkWJuqkuBmMDvNM8SLPcbxjwnLqqCMn88e1Z_Yy_MOR9xsDnu8skTYbiD_SsoIjQqXyTNp9Q_cfoPnjXG79TfBQ_02AOrE7h5vip-lQ8rzYelIHXWVhXlULv",
+      "description": "5 AI Data Classification Tools You Should Know in 2025 - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEIEhnqITFZ5pnIzgR1H0XfR-AaMIk1cJ-YAzuZkHFgFSesxSPCLRF75FA9hTa4ubKhEsTH9S3BoSDVn1R-QtM6Ka_YWpF8LEhV73Mobes1x98vkltiRR4HQwN4AsQXpwbEHoxIg9kO",
+      "description": "Numerous.ai - Features, Pricing, Alternatives etc., - June 2025"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHXMLXlrJXIL_pR28EbO8WaOXkI_Rk1RpqeK5y6GtX_onDjlTRR1dHALRzStqYDlq-qMyVnazUufVT7zoQo0Aq_TFE3dAcSjsX8wlGNsZBY8wvQxDMeU_8Zr9qSJ3CREjI3KnFTTfs=",
+      "description": "Top 5 AI Content Tagging Tools You Should Know About in 2025 - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXF9IW6i9OCg7JXiqgIn7shcmMg1iiqUJMS9t-_j-TUIoeofrHeDHSKsrL-YsEhrvVFFDnsf4cnSIoqboA8MILcUvoMjfSwTfwahkjvO6GS7r7vZre8I0kUxKbfoE5d6ClYBfWccCg==",
+      "description": "The Best 6 AI Rewriting Tool in 2025 - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGyhJbItJU3r-d0gCwDqyWcnp1O9Rgeukaoy1HUTrmbMPCR-kBec8Nzt3eyboFx0dd-MAiqA6PlE73bm8n08k0kraKL5J3K3UnXkg02BW4BstMcpVSB8iStRt8dpq_T6uzLvFB1mjSU",
+      "description": "Numerous.ai Reviews - 2025 - Slashdot"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXEgfLc2EywmNW5oVGNYkY0Ggo3C6b4V5F-dTBNEhwRhZJdrespCfvj6gyMdOwgaxyKOCxrKnPZCGrLuA0_D_r4OUzLPvRIfP1w0EOaAyCBEynmIm611bf29fI8z_RIRegRNe63C2Ak2cJZyww9hECHFXJQg",
+      "description": "Top 7 AI Tools for Data Analysis in 2025 - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXHBV7dscsXRddLig-rcOMPk7vixdrJZ97Ym5KkX6RBaFcpv_TKFmyOpl-2uCCLui2YfGX8l1NEkCb_mCzT6GebFT1UniR6grJymTYLluHvidjcUqzdJMpFVN-l_ujUiZU6QgiS2",
+      "description": "Top 10 Data Cleaning AI Tools in 2025 - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGMmw1TyGP3aLrhA4_HHRg_ubtJNWJQ-gxiKI_gyJ9C2SfkFSNXYYGjP_d_lQU9-QUQ9KRLcurPhpq9joQ5f2SLex66fMa9qS-MNsCfLMh2WCp6PbAivJKDkuZifRbO6imcjnzGHT4HQcbNBhl_EM052ijf",
+      "description": "11 Benefits of AI in the Workplace - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXGdtM7TTRP83uQ9P0l2DrzZ8FwxiihooQE-Kx-KZQxwvsVl37vV5MOQduOPTOY7M6hHrAJ1FlYwTiu7DPkB1ZOTI-wQKeVRecdbTCq8WpQAzYvrS6u0_2uFU1FOq6frhYl-GEtLNbZ0",
+      "description": "15 Google Sheets Hacks Will Save You Hours - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFEEf98wVcN5owGqlksCpO7YCV7mJU7BU6hOEg3cuA3zm0Xdfk7I0VJAgVCcGUNhdkc8uLuHO__vAuFFpncl35MgIQJTvCjHYjza1BTXqqsa1ftPdYhxZeGISwY8YExBX6oFYWzf1gbUmgj",
+      "description": "Top 10 Sheets AI Alternatives - Numerous.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbF9wXFoZEpl-GDpkWQXSXr6vwYsoYtW5AZpSIxx8ZjTpAMOw6B1YSdesoB6L-4AgA60nUjAN-BpcCFU36IBWUnOkRnpVXfh1-P-ixg1y6d6EpAr-x55E3d8f2lZLVRphZ10qhsaofgmFCE=",
+      "description": "What is Smartsheet? - Numerous.ai"
+    }
+  ],
+  "CoreOffering_Summary": "Numerous.ai provides an AI-powered add-on for Google Sheets and Microsoft Excel that allows users to leverage large language models (like ChatGPT) directly within their spreadsheets using simple functions to automate tasks such as writing content, extracting and categorizing data, generating and explaining formulas, performing sentiment analysis, and cleaning data. [1, 2, 3, 9, 10, 16, 24, 15]",
+  "Product_Categories": [
+    "Spreadsheets",
+    "Productivity",
+    "AI Tools",
+    "Business/Productivity Software",
+    "Automation/Workflow Software"
+  ],
+  "KeyFeatures_AI_Automation": [
+    "ChatGPT integration in Google Sheets and Excel [1, 8, 9, 10, 16, 24]",
+    "Prompt ChatGPT within spreadsheets using =AI() function [3, 9, 10, 16]",
+    "Train AI with examples using =INFER() for tasks like formatting, categorization, sentiment analysis [3, 9, 10]",
+    "Generate content using =WRITE() (marketing copy, SEO descriptions, customer replies) [3, 9, 10]",
+    "Generate spreadsheet formulas from plain English descriptions [1, 3, 9, 10]",
+    "Explain complex spreadsheet formulas [3, 9, 10]",
+    "Extract text, categorize data, clean data, classify information [1, 3, 8, 24, 15]",
+    "Perform sentiment analysis [3, 27, 29, 35]",
+    "Batch content creation (e.g., SEO blog posts, product descriptions, hashtags) [3, 6, 20, 21, 25, 27, 29, 30, 31, 33, 34]",
+    "AI-Driven Categorization (using machine learning) [1]",
+    "Bulk Data Processing (for large datasets) [1]",
+    "Real-Time Updates (for classifications) [1]",
+    "Automation & AI Rules (for classification) [1]",
+    "Cloud Collaboration (for data cleaning) [15]",
+    "Enrichment Options (for data cleaning) [15]",
+    "Pre-Built Templates (for data cleaning) [15]"
+  ],
+  "KeyFeatures_NoCode": [
+    "No coding required [6, 16]",
+    "Simple =AI() function and other intuitive formulas [2, 3, 9, 10]",
+    "No API keys required for users [2, 5, 8]",
+    "User-friendly interface [2, 5, 24]"
+  ],
+  "Automation_Scope": "Automates repetitive, rule-based tasks within spreadsheets, primarily focused on data manipulation, content generation, and analysis. It can handle tasks across thousands of rows. [1, 2, 3, 9, 10, 21, 25, 26, 27, 33]",
+  "Underlying_Technology": "Leverages large language models, specifically ChatGPT (GPT-3.5 and 4 mentioned as future/planned capabilities). [1, 2, 3, 9, 10, 24]",
+  "Integration_Capabilities": "Integrates seamlessly with Google Sheets and Microsoft Excel as an add-on/extension. [1, 2, 3, 5, 8, 9, 10, 16, 24]",
+  "Customization_Level": "Users can prompt the AI with specific instructions and train it with examples using the INFER function for hyper-specific tasks. [1, 3, 9, 10, 13]",
+  "TargetAudience_Primary": "Content creators, marketers, e-commerce businesses, analysts, students, researchers, and general Excel/Google Sheets users. [2, 6, 20, 21, 25, 29, 30, 31, 32, 33, 34]",
+  "TargetAudience_PersonasMatch_Seido": {
+    "The Consultant Turned Founder": "Yes, for automating data analysis, reporting, and content generation within spreadsheets for clients.",
+    "The E-commerce Innovator": "Yes, explicitly mentioned for product categorization, SEO descriptions, marketing copy, and customer support messages. [6, 21, 25, 27, 29, 30, 31, 34]",
+    "The Visionary Entrepreneur": "Yes, for quickly validating ideas and building MVPs that involve spreadsheet data manipulation or content generation.",
+    "The Corporate Insider Turned Entrepreneur": "Yes, for automating internal processes and data handling within a corporate context, especially if they rely heavily on spreadsheets."
+  },
+  "ValueProposition_USP": "Simplifies complex AI tasks within familiar spreadsheet environments (Google Sheets, Excel) for non-technical users, enabling batch processing and automation without needing API keys or extensive coding. [2, 5, 8, 16, 24]",
+  "Positioning_Statement": "Numerous.ai is an AI-powered spreadsheet tool that helps content marketers and eCommerce businesses complete tasks at scale. With Numerous AI, you can start writing SEO blog posts, generating hashtags, mass categorizing products with sentiment analysis and classification, and much more. The capabilities of Numerous are endless. It is versatile and can be used with Microsoft Excel and Google Sheets. [6]",
+  "MarketSegment_Focus": "Spreadsheet users, content marketing, e-commerce, data analysis, productivity. [6, 29, 30]",
+  "BusinessModel": "Freemium with paid subscription tiers based on token/request usage. [9, 10, 11, 16, 24]",
+  "Pricing_Tiers_Summary": "Free Plan (100 AI requests/month) [2], Starter Plan ($10/month for 2,000 AI requests/month) [2], Pro Plan ($30/month for 10,000 AI requests/month) [2]. Previously offered AppSumo Lifetime Deals (e.g., Tier 1 at $49 for 1,500 tokens/month). [1, 13] Average price paid by Cledara customers is $45/year. [27]",
+  "Pricing_LowestPaidTier_USD": "10 [2, 10]",
+  "Pricing_KeyTier_USD": "10 [2]",
+  "FreeTrial_Offered": "Yes, a free plan with limited requests. [2]",
+  "Freemium_Offered": "Yes [9, 16, 24]",
+  "MarketShare_Estimate": "N/A (Tracxn lists them as 117th among 243 active competitors in AI-powered basic automation, Cledara indicates 'Low' popularity among its customers). [13, 27]",
+  "CustomerBase_Size_Estimate": "Estimated thousands of professionals globally. [32]",
+  "Funding_Total_USD": "Undisclosed Seed Round [5, 13]",
+  "Key_Investors": [
+    "Soma Capital [5, 13]"
+  ],
+  "Recent_News_KeyDevelopments": "Seed funding round in May 2023. [5] Continuous development of features for spreadsheet AI, with recent emphasis on data classification and cleaning capabilities, and ongoing content marketing efforts. [1, 2, 3, 4, 6, 9, 10, 11, 12, 15, 16, 17, 18, 23]",
+  "Reported_Strengths": [
+    "Seamless AI integration with Google Sheets and Excel [2, 5, 16]",
+    "User-friendly interface, easy to use, accessible for non-technical users [2, 5, 16, 24]",
+    "No API keys required [2, 5, 8]",
+    "Cost-effective AI usage [2, 8]",
+    "Ability to automate repetitive tasks and handle large datasets [1, 9, 10, 21, 25, 26, 27, 33]",
+    "Versatile applications (content creation, data cleaning, categorization, formula generation) [2, 3, 8, 24]",
+    "Team collaboration support [2, 8, 9]",
+    "Provides templates and suggestions [5]",
+    "Responsive team [6]"
+  ],
+  "Reported_Weaknesses": [
+    "Limited monthly token allocation for certain license tiers [5]",
+    "Previous lifetime deal no longer available [5, 13]",
+    "Focus is primarily on spreadsheets, which might limit broader automation needs",
+    "Software can be glitchy and have errors [6]",
+    "Lacks ability to make accurate inferences [6]",
+    "No clear roadmap [6]"
+  ],
+  "Marketing_Channels_Primary": [
+    "Content marketing (blog posts, guides) [6, 20, 21, 23, 25, 26, 27, 29, 30, 31, 33, 34]",
+    "AppSumo (past deal) [1, 13]",
+    "Google Workspace Marketplace [9]",
+    "Microsoft AppSource [10]",
+    "Review sites [1, 2, 5, 8, 11, 12, 13, 14, 15, 22, 24, 27, 39]",
+    "Social media (LinkedIn, Twitter, YouTube mentioned for founders) [1, 5]"
+  ],
+  "Sales_Approach": "Freemium model, direct sales via website/app stores, self-service. [9, 10, 16, 24]",
+  "Geographic_Presence": "Global (software product), HQ in San Francisco, CA, United States. [5, 13, 32]",
+  "ReviewSites_Presence": [
+    "AppSumo [1]",
+    "10Web [2]",
+    "The Neuron [5]",
+    "Toolify.ai [8, 13]",
+    "Google Workspace Marketplace [9]",
+    "Microsoft AppSource [10]",
+    "AI Tool Guru [11]",
+    "SourceForge [12]",
+    "Software Suggest [14]",
+    "SaaSworthy [15]",
+    "Tracxn [13]",
+    "CB Insights [18, 19]",
+    "Cledara [27]",
+    "ListedAI [24]",
+    "G2 [22]",
+    "Slashdot [10]"
+  ],
+  "Average_Rating_Overall": "N/A",
+  "Total_Reviews_Count": "AppSumo: 11 reviews [1]",
+  "Review_CommonThemes_Positive": [
+    "Ease of use [2, 5, 13, 16]",
+    "Seamless integration with spreadsheets [2, 5, 16]",
+    "Ability to automate repetitive tasks [2, 5, 8, 13, 16]",
+    "No need for API keys [2, 5, 8]",
+    "Cost-effectiveness [2, 8]",
+    "Versatility for various tasks (content, data cleaning, categorization, formula generation) [2, 3, 8, 24]",
+    "Responsive team [6]"
+  ],
+  "Review_CommonThemes_Negative": [
+    "Limited monthly token allocation for certain license tiers [5]",
+    "Previous lifetime deal no longer available [5, 13]",
+    "Software can be glitchy and have errors [6]",
+    "Lacks ability to make accurate inferences [6]",
+    "No clear roadmap [6]"
+  ],
+  "Competitor_Type_Relative_To_Seido": "Numerous.ai is a 'Vertical AI Tool' focused on enhancing productivity within spreadsheets. Seido, in contrast, is a platform for building and scaling entire AI-powered businesses using multi-agent systems, offering a system-level approach to automation beyond single-tool capabilities.",
+  "Relevance_To_NonTechnicalFounders": "Highly relevant. Numerous.ai explicitly targets non-technical users by abstracting AI complexities and integrating into familiar tools like Excel/Google Sheets, aligning well with Seido's goal of empowering non-technical founders. [2, 5, 6, 16, 31, 32]",
+  "AI_As_Technical_Cofounder_Analogy": "Numerous.ai acts as an 'AI assistant' or 'AI-powered toolbox' within spreadsheets, helping users with specific tasks. [1, 20] It does not position itself as a 'technical cofounder' for an entire business, which is Seido's core analogy, but rather a powerful tool for a specific domain (spreadsheets).",
+  "Agent_Reusability_Platform_NetworkEffects": "Numerous.ai does not appear to have a concept of reusable agents or a marketplace. Its 'agents' are more akin to functions within the spreadsheet environment, focusing on individual user productivity rather than a collaborative ecosystem of AI agents.",
+  "EaseOfUse_For_SeidoPersonas": "Very high. Numerous.ai is designed for non-technical users and integrates into familiar spreadsheet environments, making it highly intuitive for Seido's personas (Consultant, E-commerce Innovator, Visionary Entrepreneur, Corporate Insider) who likely use spreadsheets extensively. [2, 5, 16, 24]",
+  "Seido_Differentiation_Points": [
+    "Multi-Agent System (MAS) Focus: Seido enables an entire ecosystem of collaborating AI agents for a system-level approach to business automation, whereas Numerous.ai is a single-tool, single-task (spreadsheet-focused) automation.",
+    "No-Code Orchestration: While Numerous.ai is no-code for spreadsheet tasks, Seido offers no-code orchestration for complex, multi-agent workflows across an entire business value chain.",
+    "Idea Validation First: Seido offers a free 'Automation Assessment' and idea validation before commitment, which Numerous.ai does not provide.",
+    "Agent Reusability & Marketplace: Seido facilitates agent reuse and a marketplace, fostering network effects, a feature absent in Numerous.ai.",
+    "AI as a Technical Cofounder: Seido positions AI as a technical cofounder for the entire business, handling the complex technical backend. Numerous.ai is a powerful AI tool for a specific domain (spreadsheets), not a comprehensive cofounder."
+  ],
+  "Threat_Level_To_Seido": "Low",
+  "Opportunity_For_Seido": "Numerous.ai validates the market for easy-to-use AI tools for non-technical users and highlights the demand for automating specific business functions. Seido can position itself as the next logical step for users who outgrow single-tool automation and need a comprehensive platform to automate their entire business, integrating various functions beyond just spreadsheets. Seido can emphasize its system-level MAS approach and the ability to connect disparate automated tasks into a cohesive, scalable business.",
+  "Notes_QualitativeInsights": "Numerous.ai is a strong example of a 'vertical AI tool' that successfully brings AI capabilities to a familiar interface (spreadsheets) for a broad, non-technical audience. Its simplicity and focus on practical, repetitive tasks make it highly valuable within its niche. However, its limited scope (primarily spreadsheet-bound) means it does not address the broader challenges of building and scaling an entire AI-powered business, which is Seido's core value proposition. It serves as a productivity enhancer for specific tasks rather than a foundational platform for a new business."
+}
