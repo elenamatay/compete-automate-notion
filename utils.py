@@ -17,7 +17,7 @@ CSV_SCHEMA = [
     # I. Basic Competitor Information
     "CompetitorID", "Competitor Name", "WebsiteURL", "Debrief", "Type", 
     "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees", 
-    "YearFounded", "CompanyStatus", "Source_Data", "Research_Sources",
+    "YearFounded", "CompanyStatus", "Research_Sources",
     # II. Offering & Technology
     "CoreOffering_Summary", "Product_Categories", "KeyFeatures_AI_Automation", "KeyFeatures_NoCode",
     "Automation_Scope", "Underlying_Technology", "Integration_Capabilities", "Customization_Level",
@@ -42,14 +42,18 @@ CSV_SCHEMA = [
     "Opportunity_For_Seido", "Notes_QualitativeInsights"
 ]
 
-# Define valid competitor types
-COMPETITOR_TYPES = [
-    "Legacy Business Automator",
-    "No-Code App Builder",
-    "AI Agent Framework",
-    "Vertical AI Tool",
-    "Enterprise iPaaS"
-]
+# Define valid competitor types with detailed descriptions
+COMPETITOR_TYPE_DEFINITIONS = {
+    "Legacy Business Automator": "Takes existing businesses and automates their internal workflows. Often targets enterprise clients with RPA (Robotic Process Automation) tools (e.g., Rocketable, UiPath).",
+    "No-Code App Builder": "Enables users to build and launch complete software applications (typically web or mobile apps) without writing any code (e.g., Builder.ai, Lovable, Woz).",
+    "AI Agent Framework": "Provides libraries or frameworks for developers to build custom AI agent systems. Requires coding expertise (e.g., CrewAI, LangGraph).",
+    "Vertical AI Tool": "Excels at a specific, narrow set of tasks or a single business function, but often operates in isolation from other systems (e.g., Adept for data tasks, Botpress for chatbots).",
+    "Enterprise iPaaS": "Focuses on integrating various existing applications and systems for large organizations, often managed by IT teams. Can include workflow automation features (e.g., Zapier, Workday, Lindy.ai)."
+}
+
+# Derive the list of types from the dictionary keys for validation
+COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
+
 
 # Add the root directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -76,6 +80,9 @@ async def research_competitor_to_json(
     competitor_id = str(uuid.uuid4())
     current_date = datetime.now().strftime("%Y-%m-%d")
 
+    # Format the definitions for inclusion in the prompt
+    definitions_text = "\n".join(f"- **{name}:** {desc}" for name, desc in COMPETITOR_TYPE_DEFINITIONS.items())
+
     prompt = f"""**Role:** You are an expert Market Research Analyst specializing in the tech industry.
 
 **Objective:** Conduct thorough research on the company '{competitor_name}' and provide detailed information for each of the requested fields.
@@ -84,11 +91,26 @@ async def research_competitor_to_json(
 * **Topic Domain:** {topic_domain}
 * **Research Goal:** {research_goal}
 
-**Competitor Type Classification:**
-First, classify the competitor into ONE of these categories:
-{json.dumps(COMPETITOR_TYPES, indent=2)}
+**IMPORTANT: Research Methodology**
+1. Use the provided Google Search tool to find up-to-date information about the company.
+2. Search for multiple aspects of the company including:
+   - Official website and company information
+   - Recent news and developments
+   - Product reviews and user feedback
+   - Pricing information
+   - Company size and funding details
+3. For each piece of information you find, include its source URL in the "Research_Sources" field.
+4. If you can't find specific information after thorough searching, use "N/A" for that field.
 
-**Task:**
+**CRITICAL STEP 1: Competitor Type Classification**
+Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, its main target audience (e.g., developers, business users, enterprise IT), and the level of technical skill required to use its product.
+
+Then, using the definitions below, select the SINGLE most accurate category. Your response for the "Type" field in the final JSON MUST be one of the exact category names provided.
+
+**Category Definitions:**
+{definitions_text}
+
+**CRITICAL STEP 2: JSON Output Generation**
 For the competitor '{competitor_name}', gather information for all the fields listed below.
 Present your findings STRICTLY as a single, valid JSON object.
 The keys in the JSON object MUST EXACTLY match the field names provided in the 'Fields to Research' list.
@@ -110,15 +132,18 @@ If specific information for a field cannot be found after diligent research, use
 * For fields representing lists (e.g., 'Reported_Strengths'), provide the information as a JSON array of strings.
 * For the "Type" field, use EXACTLY one of the predefined competitor types.
 * For the "Debrief" field, provide a single, concise sentence summarizing the company's core offering and value proposition.
-* For other fields, provide a string or number where appropriate.
 """
 
     model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
 
     if request_args is None:
         # Configure default request args if none provided
+        # Using standard Google AI SDK format for tool configuration
         search_tool = Tool.from_dict({
-            "Google Search": {}
+            "google_search": {
+                "max_results": 10,  # Increase number of search results
+                "search_depth": "deep",  # Request deeper search
+            }
         })
         
         config = GenerationConfig(
@@ -137,10 +162,26 @@ If specific information for a field cannot be found after diligent research, use
     for attempt in range(max_retries):
         try:
             print(f"Attempt {attempt + 1} to research {competitor_name}...")
+            
+            # Add debug logging for search tool usage
+            print(f"\n[DEBUG] Using search tool configuration: {request_args.get('tools', [])}")
+            
             response_data = await model.generate_content_async(
                 [prompt],
                 **request_args
             )
+            
+            # Debug logging for response
+            if hasattr(response_data, 'candidates') and response_data.candidates:
+                candidate = response_data.candidates[0]
+                if hasattr(candidate, 'content') and hasattr(candidate.content, 'parts'):
+                    for part in candidate.content.parts:
+                        if hasattr(part, 'function_call'):
+                            print(f"\n[DEBUG] Search tool was used:")
+                            print(f"Function call: {part.function_call}")
+                        if hasattr(part, 'function_response'):
+                            print(f"\n[DEBUG] Search tool response:")
+                            print(f"Function response: {part.function_response}")
             
             # --- START of Change ---
             # Correctly handle multipart responses by concatenating text parts
