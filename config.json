@@ -1,0 +1,49 @@
+{
+  "initial_research": {
+    "output_folder": "competitor_research_json",
+    "company_context": [
+      "InnovAdmin is an AI-powered PropTech startup focused on property management firms (50-500 communities).",
+      "Core Value Proposition: 'Profit-Focused AI' that optimizes profitability at a granular level through predictive analytics (payment defaults, budget optimization, identifying profitable communities).",
+      "Our target: Management firm owners as our primary buyer, providing owner-centric dashboards for business visibility and strategic decision-making.",
+      "Key differentiators:",
+      "  1) Proactive AI for profitability optimization (not just operational efficiency)",
+      "  2) Focus on scaling client portfolios without linearly increasing staff",
+      "  3) Direct ROI metrics and business intelligence for owners",
+      "  4) Specialized solutions for property management firms vs. individual landlords",
+      "We compete in the 'AI-Powered PropTech Platform' category and aim to help owners tackle soaring fixed costs while driving measurable business growth."
+    ],
+    "csv_schema": [
+      "Competitor Name", "WebsiteURL", "Debrief", "Type",
+      "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees",
+      "YearFounded", "CompanyStatus", "Research_Sources",
+      "CoreOffering_Summary", "KeyFeatures_FinancialManagement",
+      "KeyFeatures_OwnerCommunication", "KeyFeatures_IncidentManagement",
+      "KeyFeatures_AI_Specific", "AI_Value_Proposition",
+      "Underlying_Technology", "Integration_Capabilities", "Mobile_App_Presence",
+      "TargetAudience_Primary", "MarketSegment_Focus", "ValueProposition_USP",
+      "Positioning_Statement", "BusinessModel", "PricingModel_Basis",
+      "Pricing_Tiers_Summary", "Pricing_EntryLevel_EUR", "FreeTrial_Offered",
+      "Freemium_Offered", "MarketShare_Estimate", "CustomerBase_Size_Estimate",
+      "Funding_Total_EUR", "Key_Investors", "Recent_News_KeyDevelopments",
+      "Reported_Strengths", "Reported_Weaknesses", "Marketing_Channels_Primary",
+      "Sales_Approach", "Geographic_Presence", "ReviewSites_Presence",
+      "Average_Rating_Overall", "Total_Reviews_Count",
+      "Review_CommonThemes_Positive", "Review_CommonThemes_Negative",
+      "Review_CommonThemes_AI_Opinions", "Competitor_Type_Relative_To_Innovadmin",
+      "Automation_Depth", "Focus_On_Business_Owner_ROI",
+      "Innovadmin_Differentiation_Points", "Threat_Level_To_Innovadmin",
+      "Opportunity_For_Innovadmin", "Notes_QualitativeInsights"
+    ],
+    "competitor_type_definitions": {
+      "Traditional Management ERP": "Desktop or legacy cloud software. Functionally comprehensive but often complex, with an outdated UX and little to no smart automation. (e.g., Gesfincas, IESA).",
+      "Modern PropTech Platform": "A cloud-native SaaS solution. Focuses on user experience (UX), mobility, and connectivity, but with rule-based automations, not AI. (e.g., Tucomunida).",
+      "AI-Powered PropTech Platform": "A SaaS solution that already incorporates and actively promotes AI-based functionalities to automate tasks (e.g., invoice categorization, AI-assisted writing). They are our most direct competitors in terms of vision.",
+      "Niche Solution or Specific Module": "A tool that solves a single problem very effectively (meetings, communication, accounting) but is not a comprehensive, all-in-one solution.",
+      "Ancillary Services Platform": "Companies that offer outsourced services (accounting, default management) using their own internal technology. They compete for the manager's budget, not by selling software."
+    },
+    "notion_database_name": "Compete Analysis DB"
+  },
+  "updates": {
+    "discovery_lookback_days": 30
+  }
+}

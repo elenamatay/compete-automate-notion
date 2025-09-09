@@ -46,7 +46,7 @@
     "Startups looking to scale operations without extensive engineering resources",
     "Businesses desiring to automate product development and deployment processes"
   ],
-  "TargetAudience_PersonasMatch_Seido": "Assumed to match well if 'Seido' also targets non-technical founders for software creation and business automation.",
+  "TargetAudience_PersonasMatch_InnovAdmin": "Assumed to match well if 'InnovAdmin' also targets non-technical founders for software creation and business automation.",
   "ValueProposition_USP": "Eliminates the need for a technical co-founder or in-house engineering team, empowering anyone, regardless of technical ability, to build and scale real software businesses.",
   "Positioning_Statement": "Your AI Technical Cofounder. Think Shopify, but for launching operational SaaS startups. The command center for your business.",
   "MarketSegment_Focus": [
@@ -98,13 +98,13 @@
   "Total_Reviews_Count": 0,
   "Review_CommonThemes_Positive": "N/A",
   "Review_CommonThemes_Negative": "N/A",
-  "Competitor_Type_Relative_To_Seido": "Direct competitor if 'Seido' also targets non-technical founders for software creation, offering a comprehensive 'AI technical co-founder' approach that goes beyond typical no-code tools.",
+  "Competitor_Type_Relative_To_InnovAdmin": "Direct competitor if 'InnovAdmin' also targets non-technical founders for software creation, offering a comprehensive 'AI technical co-founder' approach that goes beyond typical no-code tools.",
   "Relevance_To_NonTechnicalFounders": "Highly relevant, as its core value proposition is to empower non-technical founders to build and scale software businesses without technical expertise.",
   "AI_As_Technical_Cofounder_Analogy": "Explicitly uses the analogy 'Your AI Technical Cofounder'.",
   "Agent_Reusability_Platform_NetworkEffects": "Utilizes a proprietary system of AI agents, implying reusability within their platform for various business needs. Network effects could emerge from the success and proliferation of businesses built on their platform.",
-  "EaseOfUse_For_SeidoPersonas": "Designed for 'anyone, regardless of technical ability', suggesting a high degree of ease of use for non-technical personas.",
-  "Seido_Differentiation_Points": "N/A (Information about 'Seido' is not provided in the context.)",
-  "Threat_Level_To_Seido": "High, if 'Seido' also targets non-technical founders for software creation, as Woz offers a compelling solution that aims to eliminate the need for a technical co-founder.",
-  "Opportunity_For_Seido": "Potential for partnership or learning from Woz's comprehensive AI agent-based approach, especially if 'Seido' focuses on a different niche or level of automation within the AI/ML automation solutions domain.",
+  "EaseOfUse_For_InnovAdminPersonas": "Designed for 'anyone, regardless of technical ability', suggesting a high degree of ease of use for non-technical personas.",
+  "InnovAdmin_Differentiation_Points": "N/A (Information about 'InnovAdmin' is not provided in the context.)",
+  "Threat_Level_To_InnovAdmin": "High, if 'InnovAdmin' also targets non-technical founders for software creation, as Woz offers a compelling solution that aims to eliminate the need for a technical co-founder.",
+  "Opportunity_For_InnovAdmin": "Potential for partnership or learning from Woz's comprehensive AI agent-based approach, especially if 'InnovAdmin' focuses on a different niche or level of automation within the AI/ML automation solutions domain.",
   "Notes_QualitativeInsights": "There are multiple companies with 'Woz AI' or similar names. This research focuses specifically on 'Woz' (also known as 'WithWoz'), the Y Combinator-backed AI platform designed for non-technical entrepreneurs to build and scale software businesses. It is a very new company with limited public reviews and transparent pricing information."
 }

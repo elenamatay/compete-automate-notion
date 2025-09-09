@@ -1,10 +1,11 @@
 import asyncio
 import os
+import json
 from dotenv import load_dotenv
 from datetime import datetime
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv('.env')
 
 # Import utility functions and constants
 from utils import (
@@ -12,8 +13,7 @@ from utils import (
     generate_top_changes_summary_async,
     populate_notion_db_from_folder,
     append_text_to_notion_page_async,
-    discover_new_competitors_async,
-    SEIDO_CONTEXT_SUMMARY
+    discover_new_competitors_async
 )
 from notion_client import AsyncClient
 from vertexai.generative_models import GenerationConfig
@@ -22,9 +22,37 @@ from vertexai.generative_models import GenerationConfig
 NOTION_API_TOKEN = os.getenv("NOTION_API_TOKEN")
 NOTION_DATABASE_ID = os.getenv("NOTION_DATABASE_ID")
 NOTION_SUMMARY_PAGE_ID = os.getenv("NOTION_PARENT_PAGE_ID")
+COMPANY_CONTEXT = os.getenv("COMPANY_CONTEXT", "")
+if not COMPANY_CONTEXT:
+    try:
+        with open(os.path.join(os.path.dirname(__file__), 'config.json'), 'r') as f:
+            cfg = json.load(f)
+            context = cfg.get('initial_research', {}).get('company_context', '')
+            if isinstance(context, list):
+                COMPANY_CONTEXT = '\n'.join(context)
+            else:
+                COMPANY_CONTEXT = context.strip()
+    except Exception:
+        COMPANY_CONTEXT = ""
 
-OUTPUT_FOLDER = "competitor_research_json"
-DISCOVERY_LOOKBACK_DAYS = 30
+OUTPUT_FOLDER = os.getenv("OUTPUT_FOLDER", "")
+DISCOVERY_LOOKBACK_DAYS = int(os.getenv("DISCOVERY_LOOKBACK_DAYS", "0") or 0)
+
+# Fallback to config.json for non-sensitive defaults
+try:
+    with open(os.path.join(os.path.dirname(__file__), 'config.json'), 'r') as f:
+        cfg = json.load(f)
+        initial = cfg.get('initial_research', {})
+        updates = cfg.get('updates', {})
+        if not OUTPUT_FOLDER:
+            OUTPUT_FOLDER = initial.get('output_folder', 'competitor_research_json')
+        if not DISCOVERY_LOOKBACK_DAYS:
+            DISCOVERY_LOOKBACK_DAYS = int(updates.get('discovery_lookback_days', 30))
+except Exception:
+    if not OUTPUT_FOLDER:
+        OUTPUT_FOLDER = 'competitor_research_json'
+    if not DISCOVERY_LOOKBACK_DAYS:
+        DISCOVERY_LOOKBACK_DAYS = 30
 
 async def main_update():
     """
@@ -35,6 +63,10 @@ async def main_update():
     if not all([NOTION_API_TOKEN, NOTION_DATABASE_ID, NOTION_SUMMARY_PAGE_ID]):
         print("Error: Missing critical environment variables.")
         print("Please ensure NOTION_API_TOKEN, NOTION_DATABASE_ID, and NOTION_SUMMARY_PAGE_ID are set in your .env file.")
+        return
+
+    if not COMPANY_CONTEXT:
+        print("Error: COMPANY_CONTEXT is not set in environment. Please add it to your .env file.")
         return
 
     if not os.path.exists(OUTPUT_FOLDER):
@@ -56,14 +88,14 @@ async def main_update():
         update_tasks.append(
             update_single_competitor_async(
                 json_file_path=json_file,
-                seido_context=SEIDO_CONTEXT_SUMMARY
+                company_context=COMPANY_CONTEXT
             )
         )
 
     discovery_task = asyncio.create_task(
         discover_new_competitors_async(
             days_ago=DISCOVERY_LOOKBACK_DAYS,
-            seido_context=SEIDO_CONTEXT_SUMMARY,
+            company_context=COMPANY_CONTEXT,
             existing_competitors=existing_competitor_names
         )
     )
@@ -82,7 +114,7 @@ async def main_update():
         print("\nGenerating final executive summary of top changes...")
         top_changes_summary = await generate_top_changes_summary_async(
             all_changes=change_summaries,
-            seido_context=SEIDO_CONTEXT_SUMMARY
+            company_context=COMPANY_CONTEXT
         )
 
     print("\n--- EXECUTIVE SUMMARY ---")
@@ -95,8 +127,7 @@ async def main_update():
         await populate_notion_db_from_folder(
             output_folder=OUTPUT_FOLDER,
             database_id=NOTION_DATABASE_ID,
-            notion_token=NOTION_API_TOKEN,
-            title_field_name="Competitor Name"
+            notion_token=NOTION_API_TOKEN
         )
     else:
         print("No successful updates, skipping Notion database population.")

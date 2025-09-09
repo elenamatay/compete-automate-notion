@@ -1,0 +1,6 @@
+# Notion API Configuration
+# Copy this to a file named .env in your project directory
+
+NOTION_API_TOKEN=secret_your_integration_token_here
+NOTION_PARENT_PAGE_ID=your_page_id_here
+NOTION_DATABASE_ID=your_database_id_here  # Optional - will be created automatically if not provided 

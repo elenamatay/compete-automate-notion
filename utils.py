@@ -5,79 +5,102 @@ import google.genai as genai # type: ignore
 import sys, os
 import json
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Tuple
 import vertexai.generative_models as generative_models
 from vertexai.generative_models import Tool, GenerationConfig
-from google.genai.types import GoogleSearch, GenerateContentConfig
 from notion_client import AsyncClient, Client # type: ignore
-from notion_client.helpers import get_id # type: ignore
 from notion_client.errors import APIResponseError
 
 
 
-# Define the new CSV Schema
+# Define the new CSV Schema for Innovadmin (can be overridden by config.json)
 CSV_SCHEMA = [
     # I. Basic Competitor Information
-    "CompetitorID", "Competitor Name", "WebsiteURL", "Debrief", "Type", 
-    "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees", 
+    "Competitor Name", "WebsiteURL", "Debrief", "Type",
+    "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees",
     "YearFounded", "CompanyStatus", "Research_Sources",
-    # II. Offering & Technology
-    "CoreOffering_Summary", "Product_Categories", "KeyFeatures_AI_Automation", "KeyFeatures_NoCode",
-    "Automation_Scope", "Underlying_Technology", "Integration_Capabilities", "Customization_Level",
+
+    # II. Offering & Technology (PropTech + AI Focus)
+    "CoreOffering_Summary",
+    "KeyFeatures_FinancialManagement",
+    "KeyFeatures_OwnerCommunication",
+    "KeyFeatures_IncidentManagement",
+    "KeyFeatures_AI_Specific",       
+    "AI_Value_Proposition",          
+    "Underlying_Technology",
+    "Integration_Capabilities",
+    "Mobile_App_Presence",
+
     # III. Target Market & Positioning
-    "TargetAudience_Primary", "TargetAudience_PersonasMatch_Seido", "ValueProposition_USP",
-    "Positioning_Statement", "MarketSegment_Focus",
+    "TargetAudience_Primary",         
+    "MarketSegment_Focus",
+    "ValueProposition_USP",
+    "Positioning_Statement",
+
     # IV. Business Model & Pricing
-    "BusinessModel", "Pricing_Tiers_Summary", "Pricing_LowestPaidTier_USD",
-    "Pricing_KeyTier_USD", "FreeTrial_Offered", "Freemium_Offered",
+    "BusinessModel",
+    "PricingModel_Basis",
+    "Pricing_Tiers_Summary",
+    "Pricing_EntryLevel_EUR",
+    "FreeTrial_Offered",
+    "Freemium_Offered",
+
     # V. Market Performance & Strategy
-    "MarketShare_Estimate", "CustomerBase_Size_Estimate", "Funding_Total_USD", "Key_Investors",
+    "MarketShare_Estimate", "CustomerBase_Size_Estimate",
+    "Funding_Total_EUR", "Key_Investors",
     "Recent_News_KeyDevelopments", "Reported_Strengths", "Reported_Weaknesses",
+
     # VI. Marketing & Sales Channels
     "Marketing_Channels_Primary", "Sales_Approach", "Geographic_Presence",
+
     # VII. Customer Perception (from Reviews)
     "ReviewSites_Presence", "Average_Rating_Overall", "Total_Reviews_Count",
-    "Review_CommonThemes_Positive", "Review_CommonThemes_Negative",
-    # VIII. Seido-Specific Competitive Assessment
-    "Competitor_Type_Relative_To_Seido", "Relevance_To_NonTechnicalFounders",
-    "AI_As_Technical_Cofounder_Analogy", "Agent_Reusability_Platform_NetworkEffects",
-    "EaseOfUse_For_SeidoPersonas", "Seido_Differentiation_Points", "Threat_Level_To_Seido",
-    "Opportunity_For_Seido", "Notes_QualitativeInsights"
+    "Review_CommonThemes_Positive",
+    "Review_CommonThemes_Negative",
+    "Review_CommonThemes_AI_Opinions",      
+
+    # VIII. Innovadmin-Specific Competitive Assessment
+    "Competitor_Type_Relative_To_Innovadmin",
+    "Automation_Depth",
+    "Focus_On_Business_Owner_ROI",      
+    "Innovadmin_Differentiation_Points",
+    "Threat_Level_To_Innovadmin",
+    "Opportunity_For_Innovadmin",
+    "Notes_QualitativeInsights"
 ]
 
-# Define valid competitor types with detailed descriptions
+# Define valid competitor types with detailed descriptions (can be overridden by config.json)
 COMPETITOR_TYPE_DEFINITIONS = {
-    "Legacy Business Automator": "Takes existing businesses and automates their internal workflows. Often targets enterprise clients with RPA (Robotic Process Automation) tools (e.g., Rocketable, UiPath).",
-    "No-Code App Builder": "Enables users to build and launch complete software applications (typically web or mobile apps) without writing any code (e.g., Builder.ai, Lovable, Woz).",
-    "AI Agent Framework": "Provides libraries or frameworks for developers to build custom AI agent systems. Requires coding expertise (e.g., CrewAI, LangGraph).",
-    "Vertical AI Tool": "Excels at a specific, narrow set of tasks or a single business function, but often operates in isolation from other systems (e.g., Adept for data tasks, Botpress for chatbots).",
-    "Enterprise iPaaS": "Focuses on integrating various existing applications and systems for large organizations, often managed by IT teams. Can include workflow automation features (e.g., Zapier, Workday, Lindy.ai)."
+    "Traditional Management ERP": "Desktop or legacy cloud software. Functionally comprehensive but often complex, with an outdated UX and little to no smart automation. (e.g., Gesfincas, IESA).",
+    "Modern PropTech Platform": "A cloud-native SaaS solution. Focuses on user experience (UX), mobility, and connectivity, but with rule-based automations, not AI. (e.g., Tucomunida).",
+    "AI-Powered PropTech Platform": "A SaaS solution that already incorporates and actively promotes AI-based functionalities to automate tasks (e.g., invoice categorization, AI-assisted writing). They are our most direct competitors in terms of vision.",
+    "Niche Solution or Specific Module": "A tool that solves a single problem very effectively (meetings, communication, accounting) but is not a comprehensive, all-in-one solution.",
+    "Ancillary Services Platform": "Companies that offer outsourced services (accounting, default management) using their own internal technology. They compete for the manager's budget, not by selling software."
 }
 
 # Derive the list of types from the dictionary keys for validation
 COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
 
-# Add this constant near the top of your utils.py file
-SEIDO_CONTEXT_SUMMARY = """
-**About Our Company: Seido**
-
-*   **Mission:** To empower anyone to build and scale AI-powered businesses.
-*   **Value Proposition:** We provide a comprehensive, no-code platform that empowers anyone with domain expertise to create, launch, and scale fully or near-fully automated businesses using AI-powered multi-agent systems (MAS). Our platform abstracts the complexities of AI and automation, enabling users to focus on their core business ideas.
-*   **Core Problem We Solve:** We help non-technical founders overcome technical complexity, high costs, risk of failure, and tool fragmentation when trying to operationalize AI automation.
-*   **Target Personas (Seido Personas):**
-    *   **The Consultant Turned Founder:** A professional services expert (marketing, HR) looking to scale their services by automating manual processes.
-    *   **The E-commerce Innovator:** A small online store owner needing to automate inventory, customer support, and scaling operations.
-    *   **The Visionary Entrepreneur:** A serial entrepreneur with a tech idea but limited coding knowledge, needing to validate and build an MVP quickly.
-    *   **The Corporate Insider Turned Entrepreneur:** A manager from a large corporation who sees industry inefficiencies and wants to build a tailored solution without corporate bureaucracy.
-*   **Key Differentiators & Approach:**
-    *   **Multi-Agent System (MAS) Focus:** We enable the creation of an entire ecosystem of collaborating AI agents, not just single-task automation. This is a system-level approach.
-    *   **No-Code Orchestration:** Users can build and manage sophisticated agent workflows without writing code.
-    *   **Idea Validation First:** Our MVP includes a free "Automation Assessment" to show users the automation potential of their idea *before* they commit to building.
-    *   **Agent Reusability & Marketplace:** We facilitate the reuse of pre-built and custom agents, fostering network effects.
-    *   **AI as a Technical Cofounder:** This is our core analogy. We handle the complex technical backend, allowing the founder to be the visionary.
-*   **Current Status:** We are launching an MVP. Stage 1 is a free idea assessment (including an idea validation and refinement tool and an automation assessment). Stage 2 is a paid early access subscription for building the full Multi-Agent System that represents the full value chain of the user's company.
-"""
+# Attempt to override schema and type definitions from config.json (initial_research section)
+try:
+    repo_root = os.path.abspath(os.path.dirname(__file__))
+    config_path = os.path.join(repo_root, 'config.json')
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as _f:
+            _cfg = json.load(_f)
+        initial_research_cfg = _cfg.get('initial_research', {})
+        # csv_schema override
+        if isinstance(initial_research_cfg.get('csv_schema'), list) and initial_research_cfg['csv_schema']:
+            CSV_SCHEMA = initial_research_cfg['csv_schema']
+        # competitor_type_definitions override
+        if isinstance(initial_research_cfg.get('competitor_type_definitions'), dict) and initial_research_cfg['competitor_type_definitions']:
+            COMPETITOR_TYPE_DEFINITIONS = initial_research_cfg['competitor_type_definitions']
+        # Recompute dependent constants
+        COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
+except Exception as _e:
+    # Non-fatal: if config.json is malformed, continue with built-ins
+    print(f"Warning: could not load initial_research config from config.json: {_e}")
 
 
 # Add the root directory to the Python path
@@ -88,10 +111,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 async def research_competitor_to_json(
     competitor_name: str, 
-    topic_domain: str, 
-    research_goal: str, 
     output_folder: str,
-    seido_context: str,
+    company_context: str,
     request_args: Dict[str, Any] = None
 ) -> str | None:
     """
@@ -108,59 +129,58 @@ async def research_competitor_to_json(
 
     # Format the definitions for inclusion in the prompt
     definitions_text = "\n".join(f"- **{name}:** {desc}" for name, desc in COMPETITOR_TYPE_DEFINITIONS.items())
+    prompt = f"""**Role:** You are a Senior Market Research Analyst and expert detective working for a startup called 'Innovadmin'. You are skilled at using web searches to uncover hard-to-find details about PropTech companies.
 
-    prompt = f"""**Role:** You are a Senior Market Research Analyst and expert detective working for a startup called 'Seido'. You are skilled at using Google Search to uncover hard-to-find details about tech companies.
-
-    **Your Company (Seido) Context:**
-    {SEIDO_CONTEXT_SUMMARY}
+    **Your Company's Context:**
+    {company_context}
 
     **Primary Objective:**
-    Conduct a deep-dive analysis of the competitor '{competitor_name}'. Your goal is to fill out EVERY field in the requested JSON schema with accurate, well-researched information. You must also provide a critical competitive assessment from Seido's perspective using the context provided above.
+    Conduct a deep-dive analysis of the competitor '{competitor_name}'. Your goal is to fill out EVERY field in the requested JSON schema with accurate, well-researched information. You must also provide a critical competitive assessment from Innovadmin's strategic perspective.
 
     **IMPORTANT: Research Methodology & Instructions**
 
-    1.  **Be a Detective, Not Just a Reporter:** Your primary directive is to avoid using "N/A". Do not give up easily. If information like pricing, funding, or employee count isn't on the homepage, your job is to find it. Use advanced search queries. Look in press releases, news articles, blog posts, funding announcements (on sites like Crunchbase or PitchBook), and customer review sites. If you cannot find an exact number, provide a well-reasoned estimate (e.g., "Estimated 11-50 employees based on LinkedIn data") and cite the source of your reasoning. **Use "N/A" ONLY as a final last resort after exhaustive searching for non-critical fields.**
+    1.  **Be a Detective, Not Just a Reporter:** Your primary directive is to avoid using "N/A". If information like pricing, funding, or specific features isn't obvious, your job is to find it. Use advanced search queries. Look in press releases, news articles, customer review sites (like Capterra), and funding announcements. If an exact number is unavailable, provide a well-reasoned estimate (e.g., "Estimated 11-50 employees based on LinkedIn data") and cite your reasoning.
 
-    2.  **Use the Search Tool Extensively:** You must use the provided Google Search tool to find up-to-date information. Search for multiple aspects of the company including its official website, recent news, product reviews, pricing information, and funding details.
+    2.  **Use the Search Tool Extensively:** You must use the provided search tool to find up-to-date information on the competitor's website, recent news, product reviews, pricing, and AI features.
 
-    3.  **Analyze from Seido's Perspective:** For all Seido-specific fields (Section VIII in the schema), you MUST use the 'Your Company (Seido) Context' provided above to formulate your answers. This is a critical part of the task.
-        *   `EaseOfUse_For_SeidoPersonas`: Specifically consider our personas (Consultant, E-commerce owner, etc.). Is the competitor's product intuitive for them?
-        *   `Seido_Differentiation_Points`: Based on our differentiators (Multi-Agent System focus, no-code orchestration, idea validation), what makes Seido different? Be specific.
-        *   `Threat_Level_To_Seido`: How directly do they compete for our target customers? (High, Medium, Low). Justify your answer.
-        *   `Opportunity_For_Seido`: What gaps does this competitor leave in the market that Seido can exploit?
+    3.  **Analyze from Innovadmin's Perspective:** For all Innovadmin-specific fields (Section VIII in the schema), you MUST use the 'Your Company's Context' provided above. This is the most critical part of the task.
+        *   `Focus_On_Business_Owner_ROI`: Does their marketing, messaging, and product focus on delivering tangible ROI to the *owner* of the firm, or is it more about operational features for the day-to-day user?
+        *   `Automation_Depth`: Analyze the depth of their automation. Is it basic (automating simple, reactive tasks) or deep (automating complex, multi-step processes)? How does it compare to our proactive AI approach?
+        *   `Innovadmin_Differentiation_Points`: Based on our differentiators (Proactive AI, focus on scalability and business intelligence for owners), what makes Innovadmin strategically different? Be specific.
+        *   `Threat_Level_To_Innovadmin`: How directly do they compete for our Ideal Customer Profile—owners of mid-to-large firms who value ROI? (High, Medium, Low). Justify your answer.
+        *   `Opportunity_For_Innovadmin`: What strategic gaps in product, marketing, or target audience does this competitor leave that Innovadmin can exploit?
 
     **CRITICAL STEP 1: Competitor Type Classification**
-    Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, its main target audience (e.g., developers, business users, enterprise IT), and the level of technical skill required to use its product. Then, using the definitions below, select the SINGLE most accurate category. Your response for the "Type" field in the final JSON MUST be one of the exact category names provided.
+    Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, target audience (firm owners vs. managers), and how it uses technology (especially AI). Using the definitions below, select the SINGLE most accurate category.
 
     **Category Definitions:**
     {definitions_text}
 
     **CRITICAL STEP 2: JSON Output Generation**
-    For the competitor '{competitor_name}', gather information for all the fields listed below. Present your findings STRICTLY as a single, valid JSON object. The keys in the JSON object MUST EXACTLY match the field names provided in the 'Fields to Research' list.
+    For the competitor '{competitor_name}', gather information for all the fields listed below. Present your findings STRICTLY as a single, valid JSON object. The keys MUST EXACTLY match the field names provided.
 
-    *   **Source Citation:** For every piece of data you find, you MUST add the source URL to the `Research_Sources` field. Create a comprehensive list. The more sources, the better. Use this exact structure for the array:
-        ```json
+    *   **Source Citation:** For every piece of data, you MUST add the source URL to the `Research_Sources` field. Create a comprehensive list.
+        ```
         [
             {{"url": "https://source-url.com", "description": "Brief description of what was found at this source"}}
         ]
         ```
-    *   **Completeness:** Do not omit any fields. If, after your exhaustive detective work, you still cannot find information for a field, use "N/A" as the value.
-    *   **Debrief Field:** For the "Debrief" field, provide a single, concise sentence summarizing the company's core offering and value proposition.
+    *   **Completeness:** Do not omit any fields. If, after exhaustive work, you cannot find information for a field, use "N/A".
+    *   **Debrief Field:** Provide a single, concise sentence summarizing the company's core offering from the perspective of a potential customer.
 
     **Fields to Research (JSON Keys):**
     {json.dumps(CSV_SCHEMA, indent=2)}
 
     **Final Output Format Instructions:**
     *   The output MUST be a single, valid JSON object.
-    *   Do NOT include any explanatory text, markdown formatting (like ```json ... ```), or comments before or after the JSON object.
-    *   Ensure all requested fields are present as keys in the JSON.
-    *   For fields representing lists (e.g., 'Reported_Strengths'), provide the information as a JSON array of strings.
+    *   Do NOT include any explanatory text or markdown formatting before or after the JSON object.
+    *   Ensure all keys from the schema are present.
     *   For the "Type" field, use EXACTLY one of the predefined competitor types.
 
     Now, begin your research for '{competitor_name}' and generate the complete JSON object.
     """
 
-    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    model = generative_models.GenerativeModel("gemini-2.5-flash")
 
     if request_args is None:
         # Configure default request args if none provided
@@ -186,30 +206,13 @@ async def research_competitor_to_json(
         try:
             print(f"Attempt {attempt + 1} to research {competitor_name}...")
             
-            # Add debug logging for search tool usage
-            print(f"\n[DEBUG] Using search tool configuration: {request_args.get('tools', [])}")
-            
             response_data = await model.generate_content_async(
                 [prompt],
                 **request_args
             )
             
-            # Debug logging for response
-            if hasattr(response_data, 'candidates') and response_data.candidates:
-                candidate = response_data.candidates[0]
-                if hasattr(candidate, 'content') and hasattr(candidate.content, 'parts'):
-                    for part in candidate.content.parts:
-                        if hasattr(part, 'function_call'):
-                            print(f"\n[DEBUG] Search tool was used:")
-                            print(f"Function call: {part.function_call}")
-                        if hasattr(part, 'function_response'):
-                            print(f"\n[DEBUG] Search tool response:")
-                            print(f"Function response: {part.function_response}")
-            
-            # --- START of Change ---
             # Correctly handle multipart responses by concatenating text parts
             response_text = "".join(part.text for part in response_data.candidates[0].content.parts).strip()
-            # --- END of Change ---
             
             if response_text.startswith("```json"):
                 response_text = response_text[7:]
@@ -276,9 +279,8 @@ async def research_competitor_to_json(
 
 async def research_competitors_async(
     competitors_list: List[str],
-    topic_domain: str,
-    research_goal: str,
     output_folder_path: str,
+    company_context: str,
     request_args: Dict[str, Any] = None
 ) -> List[str]:
     """
@@ -293,10 +295,9 @@ async def research_competitors_async(
         tasks.append(
             research_competitor_to_json(
                 competitor_name,
-                topic_domain,
-                research_goal,
                 output_folder_path,
-                request_args
+                company_context=company_context,
+                request_args=request_args
             )
         )
     
@@ -307,10 +308,13 @@ async def research_competitors_async(
 
 # --- Notion Database Population ---
 
-def map_data_to_notion_properties(competitor_data: Dict[str, Any], title_field_name: str = "Competitor Name") -> Dict[str, Any]:
+# Single source of truth for the Notion database Title property
+TITLE_FIELD_NAME = "Competitor Name"
+
+def map_data_to_notion_properties(competitor_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Maps the competitor data (from JSON) to Notion's property format using global CSV_SCHEMA.
-    The title_field_name MUST match the name of the "Title" property in your Notion DB.
+    The Title property name is fixed by TITLE_FIELD_NAME.
     """
     properties = {}
     for field in CSV_SCHEMA:
@@ -320,7 +324,7 @@ def map_data_to_notion_properties(competitor_data: Dict[str, Any], title_field_n
             value = str(value)
         
         if value is None or value == "N/A":
-            if field == title_field_name:
+            if field == TITLE_FIELD_NAME:
                  properties[field] = {"title": [{"text": {"content": "Untitled Competitor"}}]}
             elif field == "WebsiteURL":
                 properties[field] = {"url": None}
@@ -336,7 +340,7 @@ def map_data_to_notion_properties(competitor_data: Dict[str, Any], title_field_n
                 properties[field] = {"rich_text": [{"text": {"content": ""}}]}
             continue
 
-        if field == title_field_name:
+        if field == TITLE_FIELD_NAME:
             properties[field] = {"title": [{"text": {"content": str(value)}}]}
         elif field == "WebsiteURL" or (isinstance(value, str) and (value.startswith("http://") or value.startswith("https://"))):
             properties[field] = {"url": str(value) if value else None}
@@ -430,8 +434,7 @@ def map_data_to_notion_properties(competitor_data: Dict[str, Any], title_field_n
 async def add_json_to_notion_db(
     notion_async_client: AsyncClient,
     database_id: str,
-    competitor_json_path: str,
-    title_field_name: str = "Competitor Name"
+    competitor_json_path: str
 ) -> bool:
     """
     Reads a competitor's JSON data and adds/updates it as a page in the Notion database.
@@ -443,14 +446,14 @@ async def add_json_to_notion_db(
         print(f"Error reading/parsing JSON file {competitor_json_path}: {e}")
         return False
 
-    competitor_name_for_log = competitor_data.get(title_field_name, os.path.basename(competitor_json_path).replace('.json',''))
+    competitor_name_for_log = competitor_data.get(TITLE_FIELD_NAME, os.path.basename(competitor_json_path).replace('.json',''))
     
     try:
-        notion_properties = map_data_to_notion_properties(competitor_data, title_field_name)
+        notion_properties = map_data_to_notion_properties(competitor_data)
         
         api_query_filter = None
-        if competitor_data.get(title_field_name): # Check if title field has a value to filter on
-             api_query_filter = {"property": title_field_name, "title": {"equals": competitor_data.get(title_field_name)}}
+        if competitor_data.get(TITLE_FIELD_NAME): # Check if title field has a value to filter on
+             api_query_filter = {"property": TITLE_FIELD_NAME, "title": {"equals": competitor_data.get(TITLE_FIELD_NAME)}}
         
         existing_page_id = None
         if api_query_filter:
@@ -484,8 +487,7 @@ async def add_json_to_notion_db(
 async def populate_notion_db_from_folder(
     output_folder: str,
     database_id: str,
-    notion_token: str,
-    title_field_name: str = "Competitor Name"
+    notion_token: str
 ) -> None:
     """
     Populates Notion database from all JSON files in the output_folder.
@@ -512,7 +514,7 @@ async def populate_notion_db_from_folder(
 
     for json_file_name in json_files:
         json_file_path = os.path.join(output_folder, json_file_name)
-        tasks.append(add_json_to_notion_db(notion_client, database_id, json_file_path, title_field_name))
+        tasks.append(add_json_to_notion_db(notion_client, database_id, json_file_path))
     
     results = await asyncio.gather(*tasks, return_exceptions=True) 
     
@@ -530,8 +532,7 @@ async def populate_notion_db_from_folder(
 async def create_notion_db_from_schema(
     notion_sync_client: Client, 
     parent_page_id: str,
-    db_title: str,
-    title_property_name: str = "Competitor Name" 
+    db_title: str
 ) -> str | None:
     """
     Creates a new Notion database under parent_page_id using global CSV_SCHEMA.
@@ -539,8 +540,8 @@ async def create_notion_db_from_schema(
     """
     properties: Dict[str, Any] = {}
 
-    if title_property_name not in CSV_SCHEMA:
-        print(f"Error: Title property '{title_property_name}' not in CSV_SCHEMA.")
+    if TITLE_FIELD_NAME not in CSV_SCHEMA:
+        print(f"Error: Title property '{TITLE_FIELD_NAME}' not in CSV_SCHEMA.")
         return None
     if not parent_page_id:
         print("Error: Parent Page ID is required to create a Notion Database.")
@@ -557,7 +558,7 @@ async def create_notion_db_from_schema(
         
         # First create the database with all properties
         for field_name in CSV_SCHEMA:
-            if field_name == title_property_name:
+            if field_name == TITLE_FIELD_NAME:
                 properties[field_name] = {"title": {}}
             elif field_name == "WebsiteURL":
                 properties[field_name] = {"url": {}}
@@ -653,14 +654,10 @@ async def setup_notion_database(
     try:
         sync_notion_client = Client(auth=notion_token)
         
-        # Competitor Name is the designated title property in our CSV_SCHEMA
-        title_property_name_in_schema = "Competitor Name"
-        
         new_db_id = await create_notion_db_from_schema(
             notion_sync_client=sync_notion_client,
             parent_page_id=parent_page_id,
-            db_title=database_name,
-            title_property_name=title_property_name_in_schema
+            db_title=database_name
         )
         
         if new_db_id:
@@ -681,8 +678,7 @@ async def setup_notion_database(
 # --- Competitor Research Update ---
 
 async def update_single_competitor_async(
-    json_file_path: str,
-    seido_context: str
+    json_file_path: str
 ) -> Tuple[str, str] | None:
     """
     Reads existing competitor data, performs a new full research,
@@ -699,7 +695,7 @@ async def update_single_competitor_async(
     print(f"Performing full re-research for '{competitor_name}'...")
 
     # Simplified prompt for a full re-research and comparison.
-    prompt = f"""**Role:** You are a Senior Market Research Analyst for 'Seido'.
+    prompt = f"""**Role:** You are a Senior Market Research Analyst for 'InnovAdmin'.
 
     **Objective:**
     Perform a fresh, deep-dive research on '{competitor_name}'. Then, compare your new findings against the `PREVIOUS_RESEARCH_DATA` provided below to identify any changes.
@@ -733,7 +729,7 @@ async def update_single_competitor_async(
         "tools": [search_tool]
     }
 
-    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    model = generative_models.GenerativeModel("gemini-2.5-flash")
     max_retries = 2
     for attempt in range(max_retries):
         try:
@@ -768,11 +764,11 @@ async def update_single_competitor_async(
 
 async def generate_top_changes_summary_async(
     all_changes: List[str],
-    seido_context: str
+    company_context: str
 ) -> str:
     """
     Takes a list of individual competitor change summaries and synthesizes them
-    into a top-10 executive briefing for Seido's founders.
+    into a top-10 executive briefing for InnovAdmin's founders.
     """
     if not all_changes:
         return "No significant competitor updates found in this run."
@@ -781,13 +777,13 @@ async def generate_top_changes_summary_async(
     request_args = {"generation_config": GenerationConfig(temperature=0.2, top_p=1.0)}
 
     combined_changes_text = "\n\n".join(all_changes)
-    prompt = f"""**Role:** You are a Chief Strategy Officer reporting directly to the founders of 'Seido'.
+    prompt = f"""**Role:** You are a Chief Strategy Officer reporting directly to the founders of 'InnovAdmin'.
 
-    **Your Company (Seido) Context:**
-    {seido_context}
+    **Your Company's Context:**
+    {company_context}
 
     **Task:**
-    You have received the following intelligence briefings on recent competitor activities. Your job is to synthesize this information into a high-level executive summary. Identify the **top 10 most strategically important changes** that the Seido founders must be aware of.
+    You have received the following intelligence briefings on recent competitor activities. Your job is to synthesize this information into a high-level executive summary. Identify the **top 10 most strategically important changes** that the InnovAdmin founders must be aware of.
 
     **Intelligence Briefings:**
     ---
@@ -795,13 +791,13 @@ async def generate_top_changes_summary_async(
     ---
 
     **Instructions:**
-    - Analyze the updates through the lens of Seido's strategy.
+    - Analyze the updates through the lens of InnovAdmin's strategy.
     - Prioritize changes that represent a direct threat or a significant opportunity.
     - Format the output as a clean, markdown-formatted, numbered list.
     - Begin with a single, impactful headline like "Top 10 Strategic Competitor Updates".
-    - Each list item should be concise and clearly state the competitor, the change, and the strategic implication for Seido (the 'so what?').
+    - Each list item should be concise and clearly state the competitor, the change, and the strategic implication for InnovAdmin (the 'so what?').
     """
-    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    model = generative_models.GenerativeModel("gemini-2.5-flash")
     try:
         response = await model.generate_content_async([prompt], **request_args)
         return response.text
@@ -857,8 +853,8 @@ async def append_text_to_notion_page_async(
 
 async def discover_new_competitors_async(
     days_ago: int,
-    seido_context: str,
-    existing_competitors: List[str]
+    existing_competitors: List[str],
+    company_context: str
 ) -> List[str]:
     """
     Scans for new potential competitors that have emerged recently.
@@ -874,37 +870,37 @@ async def discover_new_competitors_async(
     }
 
     # The prompt still uses `days_ago` as a helpful guideline for the model.
-    prompt = f"""**Role:** You are a Venture Capital Scout specializing in the AI and no-code automation space. Your task is to identify emerging startups that could be potential competitors to a company called 'Seido'.
+    prompt = f"""**Role:** You are a Market Intelligence Analyst specializing in the **PropTech sector**. Your task is to identify emerging startups that could be potential competitors to a company called 'Innovadmin'.
 
-    **Your Company (Seido) Context:**
-    {seido_context}
+    **Your Company's Context:**
+    {company_context}
 
     **Objective:**
-    Identify new companies, startups, or open-source projects that have been announced, funded, or gained significant traction recently (e.g., in the last {days_ago} days). These new entities must be relevant to Seido's mission.
+    Identify new companies, startups, or open-source projects in the property management technology space that have been announced, funded, or gained traction recently (e.g., in the last {days_ago} days). These new entities must be relevant to Innovadmin's mission.
 
-    **Search Focus Areas:**
-    - "AI agent platform for business"
-    - "no-code AI business builder"
-    - "multi-agent system no-code"
-    - "AI technical co-founder platform"
-    - "YC batch AI automation"
-    - "new AI startup funding"
+    **Search Focus Areas (PropTech Specific):**
+    - "AI for property management"
+    - "proptech startup funding Spain"
+    - "nuevo software administradores de fincas"
+    - "automatización para gestión de comunidades"
+    - "AI-powered property management platform"
+    - "proptech accelerator batch"
 
     **CRITICAL Instructions:**
-    1.  **Analyze Relevance:** A new company is relevant if it targets non-technical users, aims to automate business processes with AI agents, or offers a platform for building software without code.
+    1.  **Analyze Relevance:** A new company is relevant if it targets **property management firms**, aims to **automate administrative or financial tasks** (especially with AI), and speaks to the **business owner's challenges** (profitability, scalability, efficiency).
     2.  **Exclude Known Competitors:** Do NOT include any of the following known companies in your response: {', '.join(existing_competitors)}
-    3.  **Output Format:** Your response MUST be a single, valid JSON object containing a single key "new_competitors", which is a list of strings.
-    4.  **No Hallucinations:** If you cannot find any new, relevant competitors, return an empty list.
+    3.  **Output Format:** Your response MUST be a single, valid JSON object containing a single key "new_competitors", which is a list of strings (company names).
+    4.  **No Hallucinations:** If you cannot find any new, relevant competitors after a thorough search, return an empty list.
 
     **Example Output:**
-    ```json
+    ```
     {{
-      "new_competitors": ["Agentify Inc.", "Automate.io AI"]
+      "new_competitors": ["PropManagify AI", "FincaTech Solutions"]
     }}
     ```
     """
 
-    model = generative_models.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    model = generative_models.GenerativeModel("gemini-2.5-flash")
     try:
         response = await model.generate_content_async([prompt], **request_args)
         response_text = "".join(part.text for part in response.candidates.content.parts).strip()
