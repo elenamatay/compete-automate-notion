@@ -1,16 +1,17 @@
 import asyncio
 from typing import List, Dict, Any
 import google.auth # type: ignore
-import google.genai as genai # type: ignore
 import sys, os
 import json
 import uuid
 from datetime import datetime
 from typing import Tuple
+import vertexai
 import vertexai.generative_models as generative_models
 from vertexai.generative_models import Tool, GenerationConfig
 from notion_client import AsyncClient, Client # type: ignore
 from notion_client.errors import APIResponseError
+from tenacity import retry, wait_random_exponential
 
 
 
@@ -109,6 +110,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # --- LLM Based Competitor Research ---
 
+@retry(wait=wait_random_exponential(multiplier=1, max=120))
 async def research_competitor_to_json(
     competitor_name: str, 
     output_folder: str,
@@ -120,6 +122,9 @@ async def research_competitor_to_json(
     matching the global CSV_SCHEMA. Saves the JSON to a file.
     Returns the file path if successful, None otherwise.
     """
+    # Initialize Vertex AI for this async call (following article pattern)
+    vertexai.init(project=os.getenv("GOOGLE_CLOUD_PROJECT"), location="us-central1")
+    
     output_file_path = os.path.join(output_folder, f"{competitor_name.replace(' ', '_').replace('/', '_')}.json")
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
 
@@ -204,7 +209,7 @@ async def research_competitor_to_json(
 
     for attempt in range(max_retries):
         try:
-            print(f"Attempt {attempt + 1} to research {competitor_name}...")
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Attempt {attempt + 1} to research {competitor_name}...")
             
             response_data = await model.generate_content_async(
                 [prompt],
@@ -251,7 +256,7 @@ async def research_competitor_to_json(
                 with open(output_file_path, "w") as f:
                     json.dump(json_data, f, indent=2)
                 
-                print(f"Successfully researched and saved data for {competitor_name} to {output_file_path}")
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] Successfully researched and saved data for {competitor_name} to {output_file_path}")
                 return output_file_path
                 
             except json.JSONDecodeError as json_err:
@@ -291,7 +296,7 @@ async def research_competitors_async(
     os.makedirs(output_folder_path, exist_ok=True)
 
     for competitor_name in competitors_list:
-        print(f"Queueing research for: {competitor_name}")
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Queueing research for: {competitor_name}")
         tasks.append(
             research_competitor_to_json(
                 competitor_name,

@@ -21,6 +21,7 @@ python-dateutil
 # Async
 anyio
 nest-asyncio # For running asyncio in Jupyter
+tenacity>=8.0.0 # For retry logic in async calls
 
 # Other existing dependencies (retained unless known to be problematic or explicitly removed)
 annotated-types
