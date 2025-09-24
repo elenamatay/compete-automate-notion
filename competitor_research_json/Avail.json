@@ -1,125 +1,201 @@
 {
   "Competitor Name": "Avail",
   "WebsiteURL": "https://www.avail.co/",
-  "Debrief": "Avail is a cloud-based property management platform designed primarily for independent and DIY landlords, offering tools for listing, tenant screening, rent collection, lease management, and maintenance tracking.",
+  "Debrief": "Avail is a cloud-based property management platform designed for independent landlords and small rental businesses, offering tools for listing, tenant screening, lease management, online rent collection, and maintenance tracking. [1, 2, 4, 5, 16, 25]",
   "Type": "Modern PropTech Platform",
-  "DateAdded": "2025-09-09",
-  "LastUpdated": "2025-09-09",
-  "HQ_Location": "Santa Clara, CA, USA (as part of Realtor.com)",
-  "CompanySize_Employees": "36-50",
-  "YearFounded": "2012 (as Rentalutions)",
-  "CompanyStatus": "Acquired/Merged (by Realtor.com in 2020)",
+  "DateAdded": "2025-09-24",
+  "LastUpdated": "2025-09-24",
+  "HQ_Location": "Chicago, IL, United States",
+  "CompanySize_Employees": "36",
+  "YearFounded": "2012",
+  "CompanyStatus": "Acquired by Realtor.com (Move, Inc.) in December 2020.",
   "Research_Sources": [
     {
-      "url": "https://www.theclose.com/avail-review/",
-      "description": "Avail review, pricing, features, pros & cons, target audience."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHn9jEE0IZVfaQVPDR5s-fKU7NioYpKEKqc0A2y14MB8JHZP1fojXtWZj6MsGEHzmYJZc6wupygGrZy_ebNtyA4NDlVAV61oRBZHqlo3SbG",
+      "description": "Avail Landlord Software: Online Property Management Tools - Overview of features, target audience (DIY landlords), rent collection, maintenance, leases, reviews."
     },
     {
-      "url": "https://pitchbook.com/profiles/company/105740-96",
-      "description": "Avail (Business/Productivity Software) company profile, year founded, status, employees, funding."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhq_ztpUD3AnPR1G6OIUx-YgyVslf91FNbm87J_eLaTrXVayEF2rV07yTCXJ21mJ553-TEFoN8DbRSZgilwbjWlvCL1g2g7w5HHI04fD9YEQmrXJt3ulsvyh3wfoCV6WctoUgrPz6tJDmnh4KWDq_ns1Y8rvcmqmc=",
+      "description": "Avail | 2024 Pricing, Pros, Cons, Overview - Software Connect - Pricing, target market, features, free vs paid."
     },
     {
-      "url": "https://www.softwareconnect.com/property-management/avail/",
-      "description": "Avail pricing, features, product overview, target audience."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEb9isKocUO4jXroBNMBxkUk2ZpFPafWjO-P420WaNfKxTdU3whsjoT_UIhxGduAbh_fGmBQzcYJEORSXhZ_vxJuGg2g7w5HHI04fD9YEQmrXJt3ulsvyh3wfoCV6WctoUgrPz6tJDmnh4KWDq_ns1Y8rvcmqmc=",
+      "description": "Avail - 2025 Company Profile, Team, Funding & Competitors - Tracxn - Founded year, location, acquired status, funding, employee count, website."
     },
     {
-      "url": "https://techfinitive.com/companies/avail/",
-      "description": "About Avail, HQ, employee count, revenue estimate, ownership, funding milestones, stats (landlords/tenants served)."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiAWGz23FEC0W_GqnzE3xjNtBrwHzK9OjM_-tHSGf9kwrDjpTFaDuyZ-PbmG5Dz60_zFBu1R81ZGCzpOHZhfi2VbFvRkCtGPyYygclS99J4GirtpDboQawSMvRUBHbBbx41di1x0NdgOlgFhzOeWPqRpPikhu3v4U3SCbXfr7GJZaR7Tk_j8jzeN6tmw8lAEfU5C64UK-yhrX0w44ectfDTGwasH2wDVOvZaIBxpaZ7k4=",
+      "description": "Avail Property Management Software: The #1 Tool for Landlords - TechRepublic - Features, pricing, target audience, benefits."
     },
     {
-      "url": "https://www.tracxn.com/d/companies/avail-property-management/__401",
-      "description": "Avail (property management) company profile, funding, investors, year founded, HQ, employee count."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEdE2F-sJ0_2GphkPPyJa8qnxQWotb8IkkHj77uxX-KpRXJ2rTXTvNcWmQjdFYQODo9l3erznDesYOKR3_258b17C9zW0-Gdj0Stl_aOUyfJ3vtMfRWTmHpHMCjWjdnrrBS6F5HvK09sln2A57K5KZtfvvn0HZ_g==",
+      "description": "Avail - 2025 Pricing, Pros, Cons, Overview - Software Finder - Pricing plans, features, target audience, cloud-based."
     },
     {
-      "url": "https://canvasbusinessmodel.com/what-is-avail-company/",
-      "description": "Avail founding story, history, acquisition by Realtor.com."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgtcAC9i6yJ6AY0ePS-cCVisTwU2d4XSbKgvvmz335i4mMxK4rG5-gEM28TDvSyToiGjNXQ_-FhfBdwqnfKuDLAQgm4tq-yL_fdLiV9GLULHR_830ipTQf1D2WaDRhPA==",
+      "description": "Avail - Pricing, Features, and Details in 2025 - Software Suggest - Key features, pricing, free trial."
     },
     {
-      "url": "https://www.softwaresuggest.com/us/avail",
-      "description": "Avail key features, pricing, free trial."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEb9isKocUO4jXroBNMBxkUk2ZpFPafWjO-P420WaNfKxTdU3whsjoT_UIhxGduAbh_fGmBQzcYJEORSXhZ_vxJuGg2g7w5HHI04fD9YEQmrXJt3ulsvyh3wfoCV6WctoUgrPz6tJDmnh4KWDq_ns1Y8rvcmqmc=",
+      "description": "Avail - 2025 Company Profile, Team, Funding & Competitors - Tracxn (Property Management Avail) - Funding details, investors, acquisition."
     },
     {
-      "url": "https://www.avail.co/reviews",
-      "description": "Avail customer reviews, legitimacy, uptime."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEzro64Lrb9fH5NjxM4usHygEMOlKkEWYqRwaRPYgYyRAgqJimWvFQQReeGcP1RJx1QaEh_UkpGFTHR_dxhgZRlMk2bQcLDEU4avPdf01-0WtLWGNz8LDjbQaxjbX7THnI1pmNT_GpJcAk_5e3dP5MFRp72OS_5r6eSKrdjxHhA8s=",
+      "description": "What is Brief History of Avail Company? \u2013 CanvasBusinessModel.com - Founding story, rebranding, acquisition by Realtor.com, focus on independent landlords."
     },
     {
-      "url": "https://www.avail.co/property-management-software-features",
-      "description": "Avail property management software features."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXtQ5UdRYGblyELthXPUxzciy__6WMNGDF5vj_gZktfluX_5V4BJB9pGETj6uH4GHs7sBaMhFhbaYRqEJhbhxRgjNRX6JoqKzvmqiK2IkMBVNPLMvz5evsWtABttudzYl5vK7FoDaGQSf_MRDRESvGxQJ6kGKnm6ZWGQXkH-ly0w==",
+      "description": "Avail Property Management Software Review - Landlord Gurus - Overview, features (listing syndication, market analysis), free version."
     },
     {
-      "url": "https://www.avail.co/pricing",
-      "description": "Avail pricing plans and features."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFU8BiB5HpPlJ1mzT7Nb4KFU6NgIEczfCp1lZbbXyfXKBe8OSeT5vYqkGSr8477rJdNWoA0krjSPAL2pSh1cX26YoTER9MHPKPnGzoKVvtpkVPuDND-JQq5otSubUu5P_bR1T5hvvtdZIE=",
+      "description": "Avail (Business/Productivity Software) 2025 Company Profile - PitchBook - Year founded, status, employees, acquisition date, HQ."
     },
     {
-      "url": "https://www.g2.com/products/avail-by-realtor-com/reviews",
-      "description": "G2 reviews for Avail, by Realtor.com, pricing, features, common themes."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw7B5rKNUpidUpjoZbSZlVQDv9JyxIZfpsAUEhnHPTAK5KUaDzCmT7tV08KKGE-eX0YafEDDIeMyjk86KjB0_a0x-Fi3ly7Mlsmwyswvk1ff2W1ikp8kyexhK8De5KIjD31xCQke3txEht4As1SFUwSaeZ2v01eLdJzg2mYD20",
+      "description": "How Does Avail Company Work? - Canvas Business Model - Revenue streams, target audience (DIY landlords), acquisition by Move, Inc."
     },
     {
-      "url": "https://www.avail.co/help/does-avail-have-a-mobile-app",
-      "description": "Information on Avail mobile app presence."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHN5M0zZ1ooOvdE3-tji_XJfxqqCoULaxbqavEbZMyqL8MmDhEA9Jf9vLZWW4bguIu1Pbl2bW9O-k4caK2mhUBYtsIHnXWU4f1bNdZyYf43tQQzczF08A==",
+      "description": "Contact Avail | Avail Landlord Software - Contact information (phone, email, address)."
     },
     {
-      "url": "https://www.techrepublic.com/article/avail-property-management-software-review/",
-      "description": "Avail property management software review, features, pricing, target audience."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOcrbj-2oMjO7K0-hVTv_2RVwiZCLYJKvvMJYCjKZl8MCVUf4m0zVJap4MZ2RFA2vGHComVaytWH6iE23Gxw9VbHiGDNC0ecGOU9cyAE8-q5yJkIuLkpwcgoMA",
+      "description": "Free Landlord Software: Rentals Management Tool | Avail - Realtor.com - Overview, features (applications, screening, rent collection), target audience."
     },
     {
-      "url": "https://toolsforhumans.ai/software/avail",
-      "description": "Avail review, features, pricing, pros and cons."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl4Prt-VCf15SsFIX437dFhkKSBfl3hqWCRiQ97sI9TYpwNVH6si8p7ABRr_8B6cfvqpDKLIBfFxSclPnXgOE9el-LEpR_qbMuHOab_2Ag1PB-u12qFA==",
+      "description": "Pricing Plans & Features - Avail - Detailed pricing for Unlimited and Unlimited Plus, payment fees, application fees."
     },
     {
-      "url": "https://www.hooquest.com/reviews/avail",
-      "description": "Avail reviews and pricing, target customer, comparison."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcSJd1XBnjok-q8qjkUDD2LhsA49WZIV9-a9XY6SsPY_L255R2jV9BPBA3XnyoDfufPU_3PTc6WrePUAYuh7s--1T7AS0BA-8R2pp7VvGCVWAGIRRm5Lx6M4Qj8U77enM5shRI-dkknQM-L5B34LGmb7Q=",
+      "description": "Avail, by Realtor.com Reviews 2025: Details, Pricing, & Features | G2 - Reviews, pros/cons, pricing, features, post-acquisition sentiment."
     },
     {
-      "url": "https://www.inc.com/profile/avail",
-      "description": "Inc. 5000 list mention, company size, funding."
+      "url": "https://vertexaisearch.cloud.google.google.com/grounding-api-redirect/AUZIYQEu2hA75Ij3j6AdK9iftS8G_Oe9fa1bYbB7rMQxsSBKwHNzYwr2H_4UxvOhEG74Ts-hlLKz63yL50a5rhN60l9LF0TxAYGA1lzVTZ3tz1hvATeGK46n0kJDDMRB",
+      "description": "Avail Customer Reviews - Testimonials, common themes (ease of use, automation, rent collection, customer service)."
     },
     {
-      "url": "https://www.craft.co/avail/locations",
-      "description": "Avail corporate headquarters and office locations."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGn3mdq_Nt1rQdvET29XKW81Jrh1UI2qzh6Ml_uUQ4jbMuewnasB1nVAOyd6kZTyXF4s5PhGGkwAoAUldEFRBm24bIBJi-jYkidIQDVfmSqqgv4yXzjvZzvU6bvu34=",
+      "description": "Avail Review: Pricing, Features, Pros & Cons (2025) - The Close - Comprehensive review, strengths, weaknesses, pricing, target audience, accounting, rent analysis."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwVdykc9FOH9yzQqaSyvv_uiFd4yQba44XL5Lxic3-yQA0Ac4WKTEEMDdj8CdHgppcuNPE0jr5tJ2Rk0iX-TV7KPSNFdPuOiAi_X8P9-gDKpE46ndBC6BDTDNHnRvk33X4D4007su47b0=",
+      "description": "Avail | Reviews and Pricing | 2024 - Hooquest - Target customer (landlords with fewer than 10 properties), free plan comparison, acquisition."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHua2iIaNLHP4q2NjN7F11xohyp2zp5GUKQ6g1ubf0FOmbOFVYoxd8J6FWkYx3kUZsrBq8nzsS_4m1yo7Ue1vWw3FyrzdOyV7-KCovpTg5H_HSXKKs1u8XBzxmA8hoFxAJB",
+      "description": "Rental Property Management Software Features - Avail - Features for finding/screening, daily operations, long-term growth, online rent collection, accounting, listings, communication."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6YMUS5_lrjGpP7SEYTWlQSPz90MIb7l7XPHIZtO3hkkpeKHsZ4HD3SuIVGiR5EgekcW8tPimVAA4Udv5105CH03b0SCSyI1Zb9diQq8NDonSN0_X15F9eUMQlQI1ZR1GwTq6_SVLMw-jm3GFIvSEw0g-UMnx9jlBmabzAsmGg1Ow=",
+      "description": "Avail Property Management Software Review - Key features, pricing plans, target audience (1-50 units)."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHD7reBW1BY6ho9Bp5Mxq-abA-8k3dpaNYsQFsmobc5BfihS7daFFVSRPfAdYINO80Qwa4wLWNoLG7W_wWYznIpRYHAbeKWKBSpFzeeU0fkMGY06UG8YrAaYb3U0wg93k1V",
+      "description": "Avail Corporate Headquarters, Office Locations and Addresses - Craft.co - HQ location."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkyGLXvNURHI0kVcyB-03RaoQQGw0HkEafyExzTNpqItVFBp_4fcXQNhm9FCJ0BCm_--GgdTmEoYilDnE3DstQjvoM3cG1pRvwg_9_L5u1H8Xaaut-f-p7zsr3WhiKdvdxI7tb",
+      "description": "Avail Property Management Software Review - DoorLoop - Features, mobile app, pricing."
     }
   ],
-  "CoreOffering_Summary": "Avail provides an online platform for independent landlords to manage all aspects of their rental properties, including advertising vacancies, screening tenants, creating and signing leases, collecting rent, tracking maintenance, and managing finances.",
-  "KeyFeatures_FinancialManagement": "Online rent collection (ACH, credit/debit card), auto-assessed late fees, specialized deposit and fee collection, auto-generated payment receipts, property accounting, expense tracking, 1099-K tax information, FastPay for next-day deposits (paid plan).",
-  "KeyFeatures_OwnerCommunication": "In-app messaging for tenants and landlords, tenant portal, landlord portal, automated reminders and notifications.",
-  "KeyFeatures_IncidentManagement": "Online maintenance requests, tracking repairs with in-app messaging and photos, automatic records.",
-  "KeyFeatures_AI_Specific": "N/A (No explicit AI-based functionalities like predictive analytics or AI-assisted writing for property management were found.)",
+  "CoreOffering_Summary": "Avail provides an all-in-one, cloud-based property management solution for independent landlords, enabling them to manage rental properties from listing and tenant screening to lease signing, online rent collection, maintenance tracking, and financial accounting. [1, 2, 4, 5, 9, 16, 20, 24, 25]",
+  "KeyFeatures_FinancialManagement": [
+    "Online rent collection (bank transfers, credit/debit cards) [1, 4, 6, 16, 20, 21, 24, 25, 26]",
+    "Automated late fees and rent reminders [1, 6, 16, 24]",
+    "Expense tracking and property accounting dashboard [1, 4, 6, 9, 16, 20, 24]",
+    "1099-K tax information [1]",
+    "Rent price analysis [3, 9, 24]"
+  ],
+  "KeyFeatures_OwnerCommunication": [
+    "In-app messaging with tenants [20, 24]",
+    "Tenant portal [2, 6, 16, 21, 24]",
+    "Landlord portal [6]",
+    "Customer service via phone and email [1, 26, 27, 30, 33]"
+  ],
+  "KeyFeatures_IncidentManagement": [
+    "Maintenance tracking: Tenants can submit requests with photos, landlords can track status and add vendor contacts [1, 2, 4, 5, 6, 9, 16, 21, 24, 26]"
+  ],
+  "KeyFeatures_AI_Specific": "None explicitly mentioned for property management. AI mentions in search results refer to a different company named Avail (blockchain/Web3).",
   "AI_Value_Proposition": "N/A",
-  "Underlying_Technology": "Cloud-native SaaS platform.",
-  "Integration_Capabilities": "Syndicated listings to 22+ popular rental sites including Zillow, Trulia, Hotpads, Zumper, Padmapper, Walkscore, Realtor.com, Apartments.com, ApartmentList, and social platforms like Nextdoor.com. TransUnion for credit and background checks.",
-  "Mobile_App_Presence": "Web-optimized for mobile devices; no dedicated standalone mobile app currently offered, but development is planned for the future.",
-  "TargetAudience_Primary": "Independent landlords, DIY landlords, and small rental businesses, typically managing a few properties (e.g., under 10-15 units).",
-  "MarketSegment_Focus": "Small to medium-sized rental property portfolios.",
-  "ValueProposition_USP": "An all-in-one, easy-to-use platform that simplifies property management for independent landlords, offering a robust free plan and comprehensive tools to streamline the rental process from listing to lease to rent collection.",
-  "Positioning_Statement": "Avail positions itself as the leading, end-to-end property management solution for DIY landlords, helping them save time and money while providing professional-grade tools and resources.",
-  "BusinessModel": "Freemium SaaS model.",
-  "PricingModel_Basis": "Free for basic features with unlimited units; paid plan priced per unit per month.",
-  "Pricing_Tiers_Summary": "Unlimited Plan: $0/month (includes syndicated listings, background screening, state-specific leases, online rent collection, maintenance tracking, property accounting, online tenant portal). Unlimited Plus Plan: $9/unit/month (includes all Unlimited features plus FastPay rent payments, waived ACH fees, customizable applications and leases, ability to clone leases, and property websites).",
-  "Pricing_EntryLevel_EUR": "0",
-  "FreeTrial_Offered": "Yes (the 'Unlimited' plan serves as a perpetual free trial for core features).",
-  "Freemium_Offered": "Yes",
-  "MarketShare_Estimate": "N/A (Serves over 611.8k landlords and 1.46M tenants as of April 2023).",
-  "CustomerBase_Size_Estimate": "Approximately 611,800 landlords and 1,460,000 tenants (as of April 2023).",
-  "Funding_Total_EUR": "8.924M",
-  "Key_Investors": "Cultivation Capital, M25 Group, Sandalphon Capital, MetaProp NYC.",
-  "Recent_News_KeyDevelopments": "Acquired by Realtor.com in December 2020, integrating its services into a larger real estate network. Continues to focus on enhancing its platform for DIY landlords.",
-  "Reported_Strengths": "User-friendly interface, comprehensive features for DIY landlords, robust online rent collection, extensive listing syndication, state-specific legal forms, responsive customer support, and a valuable free tier.",
-  "Reported_Weaknesses": "May not be robust enough for landlords with very large portfolios, premium features are paywalled, some users report occasional payment processing issues, limited advanced accounting capabilities, no dedicated mobile app, and some reviews indicate a decline in service quality or value post-acquisition by Realtor.com.",
-  "Marketing_Channels_Primary": "Content marketing (guides, articles, videos), social media (Facebook, Instagram, LinkedIn, YouTube, Twitter), online advertising, partnerships (e.g., Realtor.com), and review sites.",
-  "Sales_Approach": "Primarily self-service through its freemium model, with an emphasis on online resources and customer support for user onboarding and retention.",
-  "Geographic_Presence": "United States.",
-  "ReviewSites_Presence": "G2, Capterra, SoftwareSuggest, The Close, TrustPilot, Software Advice.",
-  "Average_Rating_Overall": "4.5/5 (Estimated based on general sentiment across multiple review platforms).",
-  "Total_Reviews_Count": "Hundreds+ (across various platforms like G2, Capterra, TrustPilot).",
-  "Review_CommonThemes_Positive": "Ease of use, all-in-one solution for landlords, efficient online rent collection, helpful tenant screening, automated tasks, good customer support, and the value of the free plan.",
-  "Review_CommonThemes_AI_Opinions": "N/A (No specific AI features or related opinions found in reviews for the property management platform).",
-  "Review_CommonThemes_Negative": "Not suitable for large-scale property management, some features are locked behind paid plans, occasional payment processing delays, perceived price increases over time, and lack of a dedicated mobile app.",
+  "Underlying_Technology": "Cloud-based SaaS solution. [5, 16]",
+  "Integration_Capabilities": "Integrates with major listing sites (e.g., Zumper, Realtor.com, Apartments.com, Zillow, Trulia) [2, 4, 9, 16, 24]. Uses Plaid and Stripe for secure payments. [25]",
+  "Mobile_App_Presence": "Yes, mobile-friendly web interface and dedicated mobile app available. [1, 2, 21]",
+  "TargetAudience_Primary": "Independent landlords and small rental businesses (DIY landlords) managing anywhere from one to 50 units. [1, 2, 4, 5, 8, 9, 16, 17, 24, 25, 34]",
+  "MarketSegment_Focus": "Small-scale or independent landlords, not large property management firms. [2, 16, 24, 34]",
+  "ValueProposition_USP": "An all-in-one platform that simplifies property management for DIY landlords, offering a comprehensive free plan and user-friendly tools for listing, screening, leasing, and rent collection. [1, 2, 4, 9, 16, 24, 34]",
+  "Positioning_Statement": "Avail positions itself as the #1 tool for landlords, providing an end-to-end platform to help landlords scale from beginner to professional with tools, support, and education. [4, 25]",
+  "BusinessModel": "Freemium model, offering a free plan with core features and a paid 'Unlimited Plus' plan for advanced functionalities. Revenue is generated through subscriptions, transaction fees, and tenant screening report fees. [2, 5, 6, 17, 24, 26, 34]",
+  "PricingModel_Basis": "Per unit per month for the paid plan, or free for unlimited units with basic features. [2, 5, 6, 16, 21, 26, 34]",
+  "Pricing_Tiers_Summary": "1. **Unlimited (Free)**: Includes unlimited units, syndicated listings, background screening, state-specific leases, online rent collection, maintenance tracking, property accounting, and online tenant portal. Tenants pay $2.50 per bank transfer. [2, 4, 5, 6, 16, 24, 26, 34] 2. **Unlimited Plus (Paid)**: Costs $7-$9/unit/month (pricing varies across sources). Includes all Unlimited features plus next-day rent payments, waived ACH fees, custom applications and leases, property websites, and faster customer support. [2, 4, 5, 6, 16, 21, 24, 26]",
+  "Pricing_EntryLevel_EUR": "Free plan: $0 USD. Paid plan: $7-$9 USD/unit/month. (Note: Pricing is in USD, not EUR).",
+  "FreeTrial_Offered": "Yes, the 'Unlimited' plan serves as a comprehensive free offering. [2, 5, 6, 24, 26]",
+  "Freemium_Offered": "Yes. [2, 5, 6, 24, 26]",
+  "MarketShare_Estimate": "N/A",
+  "CustomerBase_Size_Estimate": "Over 400,000 landlords. [4]",
+  "Funding_Total_EUR": "Approximately $9.67M USD (prior to acquisition by Realtor.com). [3]",
+  "Key_Investors": "Cultivation Capital, MetaProp NYC. [3]",
+  "Recent_News_KeyDevelopments": [
+    "Acquired by Realtor.com (Move, Inc.) in December 2020. [3, 8, 13, 17, 34]",
+    "Continued focus on enhancing features for DIY landlords. [8]"
+  ],
+  "Reported_Strengths": [
+    "Easy to use, user-friendly interface. [1, 5, 24, 27, 30]",
+    "Comprehensive features for DIY landlords (all-in-one solution). [1, 4, 9, 24, 27, 30]",
+    "Robust free plan. [9, 24, 34]",
+    "Online rent collection is a standout feature. [24, 30]",
+    "State-specific lease agreements. [1, 4, 5, 6, 24, 27]",
+    "Good customer support. [1, 27, 30]",
+    "Listing syndication to multiple sites. [4, 9, 16, 24]"
+  ],
+  "Reported_Weaknesses": [
+    "Premium features are locked behind the paid plan. [2, 24, 26]",
+    "Fees for background checks vary by state and can be an extra cost. [2, 26]",
+    "May not be robust enough for landlords with extensive portfolios or large property management firms. [16, 24, 34]",
+    "Reported price increases since Realtor.com acquisition. [27]",
+    "Some users perceive a decline in service post-acquisition. [27]"
+  ],
+  "Marketing_Channels_Primary": [
+    "Online presence (website, blog) [35]",
+    "Content marketing (educational content for landlords) [1]",
+    "Partnerships (e.g., Realtor.com network) [24, 25]",
+    "Review sites (Capterra, G2, Software Advice, GetApp, TrustPilot) [1, 27, 30]",
+    "Social media (X, Facebook) [3]"
+  ],
+  "Sales_Approach": "Primarily self-service/online sign-up, with customer support available for assistance. [1, 33]",
+  "Geographic_Presence": "Primarily United States, offering state-specific leases and catering to US landlords. [1, 4, 27]",
+  "ReviewSites_Presence": "Yes (Capterra, G2, Software Advice, GetApp, TrustPilot). [1, 27, 30]",
+  "Average_Rating_Overall": "Generally positive, with specific ratings varying by platform. Reviews highlight ease of use and comprehensive features for small landlords. [27, 30]",
+  "Total_Reviews_Count": "N/A (No single aggregate number found across platforms).",
+  "Review_CommonThemes_Positive": [
+    "Easy to use and user-friendly interface. [1, 5, 24, 27, 30]",
+    "All-in-one solution for DIY landlords. [1, 4, 9, 24, 27, 30]",
+    "Efficient online rent collection. [24, 30]",
+    "Availability of state-specific lease agreements. [1, 4, 5, 6, 24, 27]",
+    "Helpful customer support. [1, 27, 30]"
+  ],
+  "Review_CommonThemes_Negative": [
+    "Premium features require a paid subscription. [2, 24, 26]",
+    "Additional fees for tenant screening reports. [2, 26]",
+    "Not robust enough for larger portfolios or property management firms. [16, 24, 34]",
+    "Concerns about price increases and perceived decline in support post-acquisition. [27]"
+  ],
+  "Review_CommonThemes_AI_Opinions": "N/A (No AI features for property management identified, therefore no AI-specific opinions in reviews).",
   "Competitor_Type_Relative_To_Innovadmin": "Modern PropTech Platform",
-  "Automation_Depth": "Avail offers rule-based automation for routine tasks such as rent reminders, late fee application, and listing syndication. Its automation is focused on operational efficiency and simplifying manual processes for individual landlords, rather than deep, proactive AI-driven optimization or complex multi-step process automation.",
-  "Focus_On_Business_Owner_ROI": "Avail's marketing and product focus are primarily on simplifying property management for individual landlords, emphasizing time savings, ease of use, and compliance. It does not explicitly target property management firm owners with messaging around granular profitability optimization, predictive analytics for business growth, or strategic ROI for multi-community portfolios, which is Innovadmin's core value proposition.",
-  "Innovadmin_Differentiation_Points": "Innovadmin differentiates itself from Avail through its 'Profit-Focused AI' that provides predictive analytics for payment defaults, budget optimization, and identifying profitable communities, directly targeting the ROI of property management firm owners (50-500 communities). Unlike Avail's operational focus for DIY landlords, Innovadmin offers deep automation for scaling client portfolios without linearly increasing staff, owner-centric dashboards for business visibility, and direct ROI metrics, addressing a higher-tier market segment with advanced strategic intelligence.",
-  "Threat_Level_To_Innovadmin": "Low",
-  "Opportunity_For_Innovadmin": "Avail's strong position in the DIY landlord and small portfolio segment leaves a significant market gap for Innovadmin. Innovadmin can capitalize on the unmet needs of larger property management firms (50-500 communities) that require sophisticated, AI-driven profitability optimization, strategic business intelligence, and solutions for scaling operations beyond basic task automation. Avail's lack of advanced AI and focus on individual landlords means it does not compete for Innovadmin's Ideal Customer Profile.",
-  "Notes_QualitativeInsights": "Avail is a well-established and highly regarded platform within its niche of independent and DIY landlords. Its acquisition by Realtor.com provides significant brand recognition and market reach. While comprehensive for its target audience, its feature set and strategic focus are fundamentally different from Innovadmin's, which targets larger property management firms with advanced AI for profitability and strategic growth. This clear market segmentation minimizes direct competitive overlap.",
-  "CompetitorID": "7e05447b-1010-472e-9b91-b1875b4c4776"
+  "Automation_Depth": "Avail offers basic to moderate rule-based automation, primarily for reactive tasks such as rent reminders, late fees, listing syndication, and maintenance request management. It lacks deep, proactive AI-driven automation for profitability optimization or predictive analytics. [1, 4, 6, 20, 24, 30]",
+  "Focus_On_Business_Owner_ROI": "Avail's messaging focuses on simplifying property management for individual landlords and improving operational efficiency and basic financial tracking for their own properties. While it mentions 'optimizing for long-term growth' and 'calculating ROI' [20, 24], the emphasis is on the individual landlord's operational ease rather than granular, predictive profitability optimization for a property management firm owner with multiple communities. [1, 2, 4, 25]",
+  "Innovadmin_Differentiation_Points": [
+    "**Proactive AI for profitability optimization**: Innovadmin's 'Profit-Focused AI' with predictive analytics (payment defaults, budget optimization) is a core differentiator, as Avail lacks explicit AI features for property management.",
+    "**Focus on scaling client portfolios**: Innovadmin targets property management firms seeking to scale client portfolios without linearly increasing staff, whereas Avail is designed for individual landlords managing their own properties.",
+    "**Direct ROI metrics and business intelligence for owners**: Innovadmin provides owner-centric dashboards for strategic decision-making and measurable ROI. Avail offers basic accounting and rent analysis, but not the deep business intelligence for management firm owners.",
+    "**Specialized solutions for property management firms**: Innovadmin targets mid-to-large property management firms (50-500 communities), a distinct market from Avail's focus on independent landlords (1-50 units)."
+  ],
+  "Threat_Level_To_Innovadmin": "Low. Avail's primary target audience (independent landlords managing 1-50 units) is fundamentally different from Innovadmin's Ideal Customer Profile (property management firms managing 50-500 communities). Avail does not offer the AI-powered profitability optimization that is Innovadmin's core value proposition.",
+  "Opportunity_For_Innovadmin": [
+    "**Target Market Gap**: Avail's clear focus on individual landlords leaves a significant market gap for Innovadmin to target larger property management firms that require sophisticated, AI-driven solutions for profitability and scalability.",
+    "**AI & Predictive Analytics**: Avail's absence of AI-powered predictive analytics for profitability creates an opportunity for Innovadmin to highlight its 'Profit-Focused AI' as a key differentiator for management firm owners.",
+    "**Business Intelligence**: Innovadmin can emphasize its owner-centric dashboards and strategic decision-making tools, which provide a deeper level of business intelligence than the operational and basic financial tracking offered by Avail."
+  ],
+  "Notes_QualitativeInsights": "It is critical to distinguish between 'Avail' the property management software (acquired by Realtor.com) and 'Avail' the Web3/blockchain project, as they are distinct entities. The property management Avail excels in user-friendliness and comprehensive features for its niche of DIY landlords but does not offer advanced AI or cater to the needs of larger property management firms.",
+  "CompetitorID": "751c5c1f-19aa-4a82-a86a-a36f383ccfa6"
 }

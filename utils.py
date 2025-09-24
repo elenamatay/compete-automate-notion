@@ -134,7 +134,7 @@ async def research_competitor_to_json(
 
     # Format the definitions for inclusion in the prompt
     definitions_text = "\n".join(f"- **{name}:** {desc}" for name, desc in COMPETITOR_TYPE_DEFINITIONS.items())
-    prompt = f"""**Role:** You are a Senior Market Research Analyst and expert detective working for a startup called 'Innovadmin'. You are skilled at using web searches to uncover hard-to-find details about PropTech companies.
+    prompt = f"""**Role:** You are a Senior Market Research Analyst and expert detective working for a startup. You are skilled at using web searches to uncover hard-to-find details about competitor companies.
 
     **Your Company's Context:**
     {company_context}
