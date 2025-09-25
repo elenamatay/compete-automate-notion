@@ -161,9 +161,19 @@ gcloud --version
 ## Step 6: Clone the repo
 
 1. **Open the IDE and its terminal** again 
-2. (If not done) **Create a new folder for your code projects**: `mkdir Code`
-3. **Move into the new folder**: `cd Code`
-4. Once in the new folder, **clone the repo**: `git clone https://github.com/elenamatay/compete-automate-notion.git`. You'll see the repo being copied automatically, and since now you'll be able to open and interact with the repo files -your local version of it- in the left bar.
+2. (If not done) **Create a new folder for your code projects**: 
+   ```bash
+   mkdir Code
+   ```
+3. **Move into the new folder**:
+   ```bash
+   cd Code
+   ```
+4. Once in the new folder, **clone the repo**: 
+   ```bash
+   git clone https://github.com/elenamatay/compete-automate-notion.git
+   ```
+   You'll see the repo being copied automatically, and since now you'll be able to open and interact with the repo files -your local version of it- in the left bar.
 
 ---
 
