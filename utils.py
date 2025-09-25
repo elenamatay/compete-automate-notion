@@ -15,71 +15,6 @@ from tenacity import retry, wait_random_exponential
 
 
 
-# Define the new CSV Schema for Innovadmin (can be overridden by config.json)
-CSV_SCHEMA = [
-    # I. Basic Competitor Information
-    "Competitor Name", "WebsiteURL", "Debrief", "Type",
-    "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees",
-    "YearFounded", "CompanyStatus", "Research_Sources",
-
-    # II. Offering & Technology (PropTech + AI Focus)
-    "CoreOffering_Summary",
-    "KeyFeatures_FinancialManagement",
-    "KeyFeatures_OwnerCommunication",
-    "KeyFeatures_IncidentManagement",
-    "KeyFeatures_AI_Specific",       
-    "AI_Value_Proposition",          
-    "Underlying_Technology",
-    "Integration_Capabilities",
-    "Mobile_App_Presence",
-
-    # III. Target Market & Positioning
-    "TargetAudience_Primary",         
-    "MarketSegment_Focus",
-    "ValueProposition_USP",
-    "Positioning_Statement",
-
-    # IV. Business Model & Pricing
-    "BusinessModel",
-    "PricingModel_Basis",
-    "Pricing_Tiers_Summary",
-    "Pricing_EntryLevel_EUR",
-    "FreeTrial_Offered",
-    "Freemium_Offered",
-
-    # V. Market Performance & Strategy
-    "MarketShare_Estimate", "CustomerBase_Size_Estimate",
-    "Funding_Total_EUR", "Key_Investors",
-    "Recent_News_KeyDevelopments", "Reported_Strengths", "Reported_Weaknesses",
-
-    # VI. Marketing & Sales Channels
-    "Marketing_Channels_Primary", "Sales_Approach", "Geographic_Presence",
-
-    # VII. Customer Perception (from Reviews)
-    "ReviewSites_Presence", "Average_Rating_Overall", "Total_Reviews_Count",
-    "Review_CommonThemes_Positive",
-    "Review_CommonThemes_Negative",
-    "Review_CommonThemes_AI_Opinions",      
-
-    # VIII. Innovadmin-Specific Competitive Assessment
-    "Competitor_Type_Relative_To_Innovadmin",
-    "Automation_Depth",
-    "Focus_On_Business_Owner_ROI",      
-    "Innovadmin_Differentiation_Points",
-    "Threat_Level_To_Innovadmin",
-    "Opportunity_For_Innovadmin",
-    "Notes_QualitativeInsights"
-]
-
-# Define valid competitor types with detailed descriptions (can be overridden by config.json)
-COMPETITOR_TYPE_DEFINITIONS = {
-    "Traditional Management ERP": "Desktop or legacy cloud software. Functionally comprehensive but often complex, with an outdated UX and little to no smart automation. (e.g., Gesfincas, IESA).",
-    "Modern PropTech Platform": "A cloud-native SaaS solution. Focuses on user experience (UX), mobility, and connectivity, but with rule-based automations, not AI. (e.g., Tucomunida).",
-    "AI-Powered PropTech Platform": "A SaaS solution that already incorporates and actively promotes AI-based functionalities to automate tasks (e.g., invoice categorization, AI-assisted writing). They are our most direct competitors in terms of vision.",
-    "Niche Solution or Specific Module": "A tool that solves a single problem very effectively (meetings, communication, accounting) but is not a comprehensive, all-in-one solution.",
-    "Ancillary Services Platform": "Companies that offer outsourced services (accounting, default management) using their own internal technology. They compete for the manager's budget, not by selling software."
-}
-
 # Derive the list of types from the dictionary keys for validation
 COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
 
@@ -140,7 +75,7 @@ async def research_competitor_to_json(
     {company_context}
 
     **Primary Objective:**
-    Conduct a deep-dive analysis of the competitor '{competitor_name}'. Your goal is to fill out EVERY field in the requested JSON schema with accurate, well-researched information. You must also provide a critical competitive assessment from Innovadmin's strategic perspective.
+    Conduct a deep-dive analysis of the competitor '{competitor_name}'. Your goal is to fill out EVERY field in the requested JSON schema with accurate, well-researched information. You must also provide a critical competitive assessment from your company's strategic perspective.
 
     **IMPORTANT: Research Methodology & Instructions**
 
@@ -148,12 +83,12 @@ async def research_competitor_to_json(
 
     2.  **Use the Search Tool Extensively:** You must use the provided search tool to find up-to-date information on the competitor's website, recent news, product reviews, pricing, and AI features.
 
-    3.  **Analyze from Innovadmin's Perspective:** For all Innovadmin-specific fields (Section VIII in the schema), you MUST use the 'Your Company's Context' provided above. This is the most critical part of the task.
-        *   `Focus_On_Business_Owner_ROI`: Does their marketing, messaging, and product focus on delivering tangible ROI to the *owner* of the firm, or is it more about operational features for the day-to-day user?
-        *   `Automation_Depth`: Analyze the depth of their automation. Is it basic (automating simple, reactive tasks) or deep (automating complex, multi-step processes)? How does it compare to our proactive AI approach?
-        *   `Innovadmin_Differentiation_Points`: Based on our differentiators (Proactive AI, focus on scalability and business intelligence for owners), what makes Innovadmin strategically different? Be specific.
-        *   `Threat_Level_To_Innovadmin`: How directly do they compete for our Ideal Customer Profile—owners of mid-to-large firms who value ROI? (High, Medium, Low). Justify your answer.
-        *   `Opportunity_For_Innovadmin`: What strategic gaps in product, marketing, or target audience does this competitor leave that Innovadmin can exploit?
+    3.  **Analyze from Your Company's Perspective:** For all company-specific fields (Section VIII in the schema), you MUST use the 'Your Company's Context' provided above. This is the most critical part of the task.
+        *   `Focus_On_Business_Owner_ROI`: Does their marketing, messaging, and product focus on delivering tangible ROI to the business owner, or is it more about operational features for the day-to-day user?
+        *   `Automation_Depth`: Analyze the depth of their automation. Is it basic (automating simple, reactive tasks) or deep (automating complex, multi-step processes)? How does it compare to your company's approach?
+        *   `Company_Differentiation_Points`: Based on your company's differentiators mentioned in the context, what makes your company strategically different from this competitor? Be specific.
+        *   `Threat_Level_To_Company`: How directly do they compete for your company's target customer profile? (High, Medium, Low). Justify your answer based on the company context.
+        *   `Opportunity_For_Company`: What strategic gaps in product, marketing, or target audience does this competitor leave that your company can exploit?
 
     **CRITICAL STEP 1: Competitor Type Classification**
     Before generating the JSON, you must first classify the competitor. Analyze '{competitor_name}' based on its primary product, target audience (firm owners vs. managers), and how it uses technology (especially AI). Using the definitions below, select the SINGLE most accurate category.
@@ -774,7 +709,7 @@ async def generate_top_changes_summary_async(
 ) -> str:
     """
     Takes a list of individual competitor change summaries and synthesizes them
-    into a top-10 executive briefing for InnovAdmin's founders.
+    into a top-10 executive briefing for the company's founders.
     """
     if not all_changes:
         return "No significant competitor updates found in this run."
@@ -783,13 +718,13 @@ async def generate_top_changes_summary_async(
     request_args = {"generation_config": GenerationConfig(temperature=0.2, top_p=1.0)}
 
     combined_changes_text = "\n\n".join(all_changes)
-    prompt = f"""**Role:** You are a Chief Strategy Officer reporting directly to the founders of 'InnovAdmin'.
+    prompt = f"""**Role:** You are a Chief Strategy Officer reporting directly to your company's founders.
 
     **Your Company's Context:**
     {company_context}
 
     **Task:**
-    You have received the following intelligence briefings on recent competitor activities. Your job is to synthesize this information into a high-level executive summary. Identify the **top 10 most strategically important changes** that the InnovAdmin founders must be aware of.
+    You have received the following intelligence briefings on recent competitor activities. Your job is to synthesize this information into a high-level executive summary. Identify the **top 10 most strategically important changes** that your company's founders must be aware of.
 
     **Intelligence Briefings:**
     ---
@@ -797,11 +732,11 @@ async def generate_top_changes_summary_async(
     ---
 
     **Instructions:**
-    - Analyze the updates through the lens of InnovAdmin's strategy.
+    - Analyze the updates through the lens of your company's strategy.
     - Prioritize changes that represent a direct threat or a significant opportunity.
     - Format the output as a clean, markdown-formatted, numbered list.
-    - Begin with a single, impactful headline like "Top 10 Strategic Competitor Updates".
-    - Each list item should be concise and clearly state the competitor, the change, and the strategic implication for InnovAdmin (the 'so what?').
+    - Do NOT include a headline - start directly with the numbered list.
+    - Each list item should be concise and clearly state the competitor, the change, and the strategic implication for your company (the 'so what?').
     """
     model = generative_models.GenerativeModel("gemini-2.5-flash")
     try:
@@ -822,29 +757,88 @@ async def append_text_to_notion_page_async(
     """Appends a title and a block of text to a Notion page."""
     print(f"Appending summary to Notion page: {page_id}")
     try:
-        # Notion's API has a 2000 character limit per block. We chunk the content.
-        content_chunks = [content[i:i + 2000] for i in range(0, len(content), 2000)]
+        # Add minimal spacing between numbered items and convert **text** to bold
+        import re
+        
+        # First, convert **text** to bold formatting for Notion
+        def parse_bold_text(text):
+            """Parse text with **bold** markdown into Notion rich_text format"""
+            parts = []
+            # Split by **text** patterns while preserving the delimiters
+            bold_pattern = r'(\*\*.*?\*\*)'
+            segments = re.split(bold_pattern, text)
+            
+            for segment in segments:
+                if segment.startswith('**') and segment.endswith('**'):
+                    # Bold text (remove the **)
+                    bold_text = segment[2:-2]
+                    if bold_text:
+                        parts.append({"type": "text", "text": {"content": bold_text}, "annotations": {"bold": True}})
+                elif segment:
+                    # Regular text
+                    parts.append({"type": "text", "text": {"content": segment}})
+            return parts
+        
+        # Split content by numbered items (1., 2., etc.) and add minimal spacing
+        numbered_pattern = r'(\d+\.\s)'
+        parts = re.split(numbered_pattern, content)
+        
+        if len(parts) > 1:
+            # Reconstruct with single line spacing between items
+            spaced_content = parts[0]  # Any content before first number
+            for i in range(1, len(parts), 2):
+                if i + 1 < len(parts):
+                    spaced_content += parts[i] + parts[i + 1] + "\n"
+            content = spaced_content.rstrip()
+        
+        # Parse content into rich text with bold formatting
+        rich_text_parts = parse_bold_text(content)
 
         blocks_to_append = [
             {
                 "object": "block",
+                "type": "heading_1",
+                "heading_1": {
+                    "rich_text": [{"type": "text", "text": {"content": title}}]
+                }
+            },
+            {
+                "object": "block",
                 "type": "heading_2",
                 "heading_2": {
-                    "rich_text": [{"type": "text", "text": {"content": title}}]
+                    "rich_text": [{"type": "text", "text": {"content": "Top 10 Strategic Competitor Updates"}}]
                 }
             }
         ]
         
-        for chunk in content_chunks:
-            blocks_to_append.append(
-                {
+        # Create a single paragraph block with rich text formatting
+        if rich_text_parts:
+            # Split rich text parts into chunks to respect Notion's limits
+            current_chunk = []
+            current_length = 0
+            
+            for part in rich_text_parts:
+                part_length = len(part["text"]["content"])
+                if current_length + part_length > 2000 and current_chunk:
+                    # Add current chunk as a paragraph
+                    blocks_to_append.append({
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {"rich_text": current_chunk}
+                    })
+                    current_chunk = [part]
+                    current_length = part_length
+                else:
+                    current_chunk.append(part)
+                    current_length += part_length
+            
+            # Add remaining chunk
+            if current_chunk:
+                blocks_to_append.append({
                     "object": "block",
                     "type": "paragraph",
-                    "paragraph": {
-                        "rich_text": [{"type": "text", "text": {"content": chunk}}]
-                    }
-                }
-            )
+                    "paragraph": {"rich_text": current_chunk}
+                })
 
         await notion_client.blocks.children.append(
             block_id=page_id,
@@ -904,24 +898,24 @@ async def discover_new_competitors_async(
     }
 
     # The prompt still uses `days_ago` as a helpful guideline for the model.
-    prompt = f"""**Role:** You are a Market Intelligence Analyst specializing in the **PropTech sector**. Your task is to identify emerging startups that could be potential competitors to a company called 'Innovadmin'.
+    prompt = f"""**Role:** You are a Market Intelligence Analyst. Your task is to identify emerging startups that could be potential competitors to your company.
 
     **Your Company's Context:**
     {company_context}
 
     **Objective:**
-    Identify new companies, startups, or open-source projects in the property management technology space that have been announced, funded, or gained traction recently (e.g., in the last {days_ago} days). These new entities must be relevant to Innovadmin's mission.
+    Identify new companies, startups, or open-source projects that have been announced, funded, or gained traction recently (e.g., in the last {days_ago} days). These new entities must be relevant to your company's mission and target market.
 
-    **Search Focus Areas (PropTech Specific):**
-    - "AI for property management"
-    - "proptech startup funding Spain"
-    - "nuevo software administradores de fincas"
-    - "automatización para gestión de comunidades"
-    - "AI-powered property management platform"
-    - "proptech accelerator batch"
+    **Search Focus Areas:**
+    Based on your company's context, search for relevant terms related to:
+    - Your company's industry and technology stack
+    - Competitors targeting similar customer segments
+    - New funding announcements in your space
+    - Emerging solutions addressing similar problems
+    - Industry-specific accelerator programs and batches
 
     **CRITICAL Instructions:**
-    1.  **Analyze Relevance:** A new company is relevant if it targets **property management firms**, aims to **automate administrative or financial tasks** (especially with AI), and speaks to the **business owner's challenges** (profitability, scalability, efficiency).
+    1.  **Analyze Relevance:** A new company is relevant if it targets your company's customer base, aims to solve similar problems (especially with similar technology approaches), and addresses the same business challenges mentioned in your company context.
     2.  **Exclude Known Competitors:** Do NOT include any of the following known companies in your response: {', '.join(existing_competitors)}
     3.  **Output Format:** Your response MUST be a single, valid JSON object containing a single key "new_competitors", which is a list of strings (company names).
     4.  **No Hallucinations:** If you cannot find any new, relevant competitors after a thorough search, return an empty list.

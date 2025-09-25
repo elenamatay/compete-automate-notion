@@ -1,266 +1,358 @@
 {
   "Competitor Name": "Avail",
   "WebsiteURL": "https://www.avail.co/",
-  "Debrief": "Avail is a cloud-based property management platform designed for independent landlords and small rental businesses, offering tools for listing, tenant screening, lease management, online rent collection, and maintenance tracking. It is part of the Realtor.com network. The platform aims to simplify common landlord tasks and provide a user-friendly interface for managing rental properties. [1, 2, 5, 6, 8, 14, 15]",
+  "Debrief": "Avail is a cloud-based property management platform designed for independent landlords and small rental businesses, offering tools for listing, tenant screening, lease management, online rent collection, and maintenance tracking. It is part of the Realtor.com network. The platform aims to simplify common landlord tasks and provide a user-friendly interface for managing rental properties. [1, 2, 4, 8, 16, 22]",
   "Type": "Modern PropTech Platform",
   "DateAdded": "2025-09-24",
   "LastUpdated": "2025-09-25",
-  "HQ_Location": "Austin, Texas (current operational HQ), with corporate HQ post-acquisition by Realtor.com previously in Santa Clara, California, and originally founded in Chicago, IL. [3, 9, 19, 26]",
-  "CompanySize_Employees": "36 total employees (as of 2025, per PitchBook). [3]",
-  "YearFounded": "2012 [3, 13]",
-  "CompanyStatus": "Acquired by Realtor.com (Move, Inc.) in December 2020. [5, 19]",
+  "HQ_Location": "Originally founded in Chicago, IL. Corporate HQ post-acquisition by Realtor.com is in Santa Clara, California. Tracxn (2025-09-06) lists Chicago, United States, and Lexington, Kentucky as a registered address for the main Avail entity. A separate entity, 'Avail Property Management, Inc.', founded in 2021, is based in Denver, CO. [3, 10, 23]",
+  "CompanySize_Employees": "36 total employees (as of 2025, per PitchBook, as cited in previous research). Other estimates vary; a 2022 article mentioned 28-29 employees. Tracxn (2025-09-06) lists 5 employees for the main Avail entity as of Dec 2021, which is likely outdated. [3, 17, 18, 23]",
+  "YearFounded": "2012 [3]",
+  "CompanyStatus": "Acquired by Realtor.com (Move, Inc.) in December 2020. [3, 23, 24]",
   "Research_Sources": [
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET2mONWgww4QmZzvsDNVeYMa1_hQG-ZUOgHJgF__vo94WYrAodQ0tZTErnIeSP9G6lK8LYCe8SsLiuJnVLOXxphT0XuE8k7w1G_ug5yNtJQui0QBoOWNNywzyb5S0=",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1rhvLnulNIszlQASmkKDomKevmjy2QXsyQxZnj63L0PhJR9qUOvJ_N120baCuEPmUoHyxl3YMj3vlyvX_pQBdj-hS_npOrjABgYh8UxiyFpENx4SysQ66Xo8Hfuyt",
       "description": "Avail Review: Pricing, Features, Pros & Cons (2025) - The Close"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiRRD3xBTdOA3GA-S9ANSx4zdf3As-dPO2b_As8EgHnSPOBLwRvH8dZYZOj7tMHpgngU31vzZl_SJZDUvrcOmL5ujK8E_sFk4p-s2gAO5RN2aoT4SgPEcY3HAb_QmPe6pqn76BDwE=",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqWi7FR4tGcB3HwksD8UUdoPovva8ONQa2y_DMgTQJ4xMBUXkQ89u5E7WnN-dt8IU-o2fcRrSCyCBe2iSLXVCS2lZnt2N8JeiFkcKbx7YoyMhogs_VIOrkLhWv8piFjWrr5FsVr2GNt",
       "description": "Avail Review 2025 - Features, Pricing & Deals - ToolsForHumans.ai"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq7nMglVSOqpZ1vZusA1pLX84fa-5dJV9uEZhRqElL4Tks8hVf9AC8ydqQ9CUX0HYcykD6YL0dVnXvjfLcYMHmYe7XVL5wylHi6kLVXZk6q2M_DXwhSK5b8CPFwb9ALqcFs7KZUXSDlPE=",
-      "description": "Avail (Business/Productivity Software) 2025 Company Profile - PitchBook"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8UHDTKRftN53pvKoTir39AV7y0a4MY9dXIPCR29jNA8aIHMaNjb1vVuF-TBwNn60ezhMRdhF5aO0g6sY5qXeZFUgPutLJZrDmEkCncL-W7gi64HGrTWmFhftwiW7U0mFrP6Js6bUxO7Ot",
-      "description": "AVAIL Technology Solutions 2025 Company Profile: Valuation, Investors, Acquisition"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOZlbO2we1QrZl4tKv_IoCm6hLbjTIPvH4A8SBq-bAwY2txYwbrczNf3RF5JwZ2M9WImuXg44-h6uqdP5ZeHWc2tH-RTNd3RQ3QdCODia84KR4HdWlIkj2Xx9agp3TsTTVo5PQzw==",
-      "description": "Rental Property Software for DIY Landlords - UPDATED! Avail Review & Demo 2025"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMa-224JrN-jKwMAqu0yZw8-G9yf3iuQJbyn3jEx-K40mCKqzaf2p0ecMuxknYTbOG76gq-s8OjTEKdzzJTaCCf8IEABMSvvaS5GNoUFwgs81Y17T2ph3QHTwmGzZYXRx6K-nNvg==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3rZaGk_Vkdpmt4sf8x5kJv4A1yjmg5OXzazZHbs_uMMB6NJSgvhX8NUqZF3OF0iMyxCl5ewLgu0DEdveuRarOUi_M3zfbblmPKOjOE3pMvUMvzUE-HnmgJnu81OCEBya1eqrvVrI=",
       "description": "Avail Landlord Software Review (2025) : Truth You Won't Hear Elsewhere! - YouTube"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCaAAx23Dfq4CbeB542FEtu6gqb4pC33M4waONzcyUhrwOYjWE5VLgE9Rwbu1ZCd-6Hf5HVGbabpcXLkkmkJ63UbLI6GHzbtvH3AnTrabLW7sy4EKbPGinKvolew1KdwAcJOdzO2szQ95uadU-cAgMWiwZt3snN1INKdJGVcdUEnGsSbtm-k1CtgapdA==",
-      "description": "Avail - 2025 Company Profile, Funding & Competitors - Tracxn"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnv7JjWnlPvIbkKXTFkn70NJC2B4pc3m96fMu9_jZ3kGA8z8sp1ZS4QkeTXVYaCWtDQD R3SNx-nuA4KEaSWt0pCFLFchDADV3xKTECk6k_LhQ3ciSdkaunpgk0Dxe4B114lf-SsXKtGAiHlCJCxYnjDBDT7iNTzXQJ3dZWj5VzieIkTRbJX50sPDVdXRk=",
+      "description": "Avail - 2025 Company Profile, Team, Funding & Competitors - Tracxn"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFav5wbJW9KoGiZm1pG32HOuLVvJ0MPIoCVq22BWoaennn_n7QsijWgbDqoQbaqo-r6I8MVHm7GQCADAHF-7GUndFWJJjrhDIITX7vG9mmO",
-      "description": "Avail Landlord Software: Online Property Management Tools"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu_sxqBqZnAgs9vf1uWaHktKtdYtg0pGiyNIiA5arb9BwgLmZRiRTxqa1tLoISdCBQWRtJRSbFZyiValh4tNcDC6K8EwS5DPobGl06mZLpEd94JuYCnx1X7Dvu5ECn-ugdbNYJQczx7iJsQ51GQe1KxTQWNjfcFJBmLq3OTrRm",
+      "description": "Avail, by Realtor.com alternatives 2025 | OMR Reviews"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGajrl0TmTTzYzTZMSbyd8RVkZMfMcaKOYGrX4qZA8_a5cSK4mTsNfWhIu3TUK2LUjVmCnpyT5LnbtGuggjimCnZ7dpYhjK6XN0enfvOcB6cwHuR0auvX_QYPFIoof_n8HGSD2ywVPNiUpPn_rRxgEVkdAM53gSMYIc1iCgJkBogY21SQ==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbZBh_R0atI6JbSwnnnfL_ssH-fsxwZhnJL8sFD5dtRMlnV7jC727G0jIZGO4wBcKfGFCFXRRVZixBv_-mYryAQ94wJLNX5ShhXVQ-IjvMpCxU2Keab8FGqfl1l_3A4lzwDrmTGZU=",
+      "description": "Rental Property Software for DIY Landlords - UPDATED! Avail Review & Demo 2025"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8CWXTx08O5FnK8MB2tfz2Bb5ScpPvG5BLWdg9Np6eTCtb_J-oHyEuydXQ0dpyR8mJ7rsH2FyOUldFEM3AnjQoOKV3KvQC9QIOyFQYQji9cD0qGvDu2mLUl3fVqjbPR4a3tZE9O5c7cAE=",
+      "description": "RentRedi vs. Avail: Comparison of Pricing & Features [2025] - Stessa"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjec-fGGy_DNtMrg-lY5cxrT4Dj6Uq1N5iHcK0z7B5AHTe3tdJVVP6ZPsJG0WgtIqXclW3mNaLhqwR3xUN2WPc5ikQEgSoGUiDFvYuwvoBP3AGEMaBOWqQr2hXL7G6jRbjUu1AINxJqS-zwEtMyYoICU1zPJfi84r4llDRMw4P3aZ8xg4LcmcFEb6prGEFYHtgZrVDQE-",
+      "description": "12 Best Free Property Management Software For 2025 | Avail"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELSv-M6opTrXUnE2_Q3SlfhPcMZSay-oNPao-lR0iOKRy7rqJWlXvDTw3QquTBsVHXuDc4N-yj4sQ9JPsU4SOwplmegKrTOp_kIEFV7khtFeo7ylerHPJlRIi6bVXyF0LEmF5Ofagxl-jms7o0Kx0GSxtPPSKqwEWQ-69kz-_o-hn4oaA=",
       "description": "Your Complete Guide to BPCON 2025 (and Where to Find Avail)"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOzDq0C_Qm0WLSjIh5OXHphxEwiMtxUqtps1QDPRI831b_BxxzTFdrwSvjGPUM08wiI5lbQS24kwYbWggr8sECtSdmAoarCUiNqNdqWwl2Hu2Ki7_-NpwrQBroN9PEQOmrEUGD4MZnK49aJl4X3RTPhTh-Z5Q8dVlWioJPUAYly_zetH23Sp9khqHPXw==",
-      "description": "Avail - 2025 Company Profile, Funding & Competitors - Tracxn"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcsrTOGGehSgBGI7EmkI-r2NMZ9cDj2gMru4sw8xImpTEOLjRL6v7z-b3FQhXLVVwxSbDZWoWEoYKdp1NSIYgPiPF174WvJnyJf2E-w35Z5BD1xOS2H7ilrB3Y2g==",
+      "description": "Free Landlord Software: Rentals Management Tool | Avail - Realtor.com"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj1Q7yqGT42fRkcDR_W0lKC5tP95LUlWXQpo4vBPtJeA3OKaCwb528PZK_Z37TxDD4_w28BRVJeR8evTbLgG5lga3Gu8h4gU9aLQ1qanWYsZABd3PjGEKlY6UzhLJsVE1Q1WQbc9vKtm3tkBu04VnNQ==",
-      "description": "avail - 2025 Company Profile, Team, Funding & Competitors - Tracxn"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ5l4KPru_FDaLv8CYtKvHX6c0UIxLwKQ98SdJXTk8PCaqb06yZckNPYQ21Qkss9so-oz1f0Kqgodj9ret3TH3f0pMA4evKzcvlPTYcrqfmA==",
+      "description": "Avail Landlord Software: Online Property Management Tools"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0rYWp8YASs8cjcDKPXkYqT2r6us5tXtS73-N-B259zZ7tFKVtYyUKmyNVfdJKFt4cpJBjp-J2Y5OOuS0CdJzTx3QpEW5i2UQ4PcU2Zsp4mAzr9pieXdgb2gpV3bZHquHe-lp71g3j",
-      "description": "Avail Technologies: Revenue, Competitors, Alternatives - Growjo"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhr5it_nul8wahUL4arBbjkLkBksYv4NU7rN8QDMT64wy-vgx8eSqgF8WyOvQQbgKL_IbTwMCYhJJ1uygyqsDNfX6e_s67VgiA6Ndu5GB7SjduXn3-adxvboP_-I4tUzV62XXrqng=",
+      "description": "How to Use Avail: Detailed Platform Walkthrough for DIY Landlords - YouTube"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdGxkC8eh1XSRO7qrthPe9fQ93vxeGM3EU39fGgMs_xSYi4wCIPeUCFwGMuvQfdePhk77ZOiX36uTnFXjDY-1zJIMtV0VS-pMbcZgF-mRSkwDXfmN48CgwDWlx",
-      "description": "Avail Customer Reviews"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMlcayxYuhlOMJnO6SQ_Ya5Ore4ruVyYr29A3GI6wyzGBLOX3M84o69gKCtSxCAXiNEkSkTjUo9UXMucR-u7a9_NQYq2jgVq1R51jqoZ3a4EyrZYv1_smc59rLXHP8L93B56EX3PWwTBblz1-4wLQJt-tOhSVwrwTqYuW6QVw7QhUHBQjB2A-9o1SvE0HZsXPRhwdYuA==",
-      "description": "13 Best Property Management Technology Tools for 2025 (Expert-Tested) - Arvy Realty"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESQq1MOWc-DjG6jmuUNsq1D6dcZQkZdAU6nfH4kt6mxudfoM7-7vL6ZZljj4Ge07crKVmDQBHNdknYRBGbfeSRNB1uggGupSwPjmdhelHChqeMuDKs3dDBqcIS28g1NBvU",
-      "description": "Rental Property Management Software Features - Avail"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk8oSYWgYZYtpxUbxIFVab7m-pHEq2TeI3gOFN2rC7MOsc5uEFX7FBp4WQwFbwDWM2YS8muQCQKKxGGq8rd9QvHaFJUXF3QclHr2kSoZWTLxtgBjhW_mskyhhYT-Uwb5TWyxETbZ2yaHvMIqS9shY=",
-      "description": "Avail Price Prediction 2025-2030 to 2040-2050 | How high will AVAIL go?"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYW38o4JteyJIRcjXBNDqV4xpcKq64Hsc_aOQ5vGMjeeXDvyIWlMDDfkKtGFfoBjBA31wXzxn3zw_0-Y5ePLU9a2JYgVUM-uo8_6ty6CZTFd7sqUACC0aPXidDYYHvxhFkPZVAVL7sI4_RT6biqe_r1OIri6kuCdBSmNezCGWLYut2YvyjV-D5wLd2gr4eOoUP9D5JTkpgKkxSrvPoKfnp",
-      "description": "DIY landlord platform Avail raises $4.2 million in Series A round - HousingWire"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFI2o_sukuXk2xCsK44eiUSb_murxbTwXec1B562o68MrFAkXwVbF0VjWk9M6hk77N5zOk5FUPhMvA92g3fn8PLSOtNbTICytph2IwAYRaYpS8dfShUQq_tCC-bmx3CU7pEhUt6rQ-tAhhPzkGozrnp5Kj5yAtEczT_l4C1WA82qoEtLLkjf_SXmza-rpiCcXmq",
-      "description": "Avail Raises $43M Funding to Expand Data Availability - Crypto News"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8ycrkFBxEffiTv3AQZPYowucEdCIgmC68JJkq-WCu4yooY1xjfX_lh0QRj4AsIc-g6I0SP21pT6DX2L-oLwy7xQKFC0yM2I7yEKZ0n0nbm66i9IJ_z2uqw_ku7lhHU5ZEvumpBS-2Qn-LhQlnOQqPwclh-CC4CDo4oSjodzmDifDODosDeECxSRMHeGqJDvc=",
-      "description": "Realtor.com acquires DIY landlord platform Avail - HousingWire"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6_GxSlZvIsUo89j1d0SU3il3tnIpUxIVBy44vGPaf2hRJa2Bg_kSNs42SCiivvWjARE9Mepv1Of8xCIj32hHOSLQZvYQmge5MFjYE5mVu302sSwNghe_I24jCQlNis_gtKuKHAYordj1yoi581DGD",
-      "description": "BPCON2025 - Easy Street Capital"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFM0Ajlz9t-MCeC3xTJ7BSIdmYp45l0p66clbImmmItCuC9wPnq7f896E_UoGPnXIGTufY_y64t18SJ8GA-vHk11mtpAIuN2FmPGIew7X0jaW5cGSOa3Zb6VjW9CAmfUyscabFRWWdgBqeMcfT6D6ukpEaAsywKN5Gt",
-      "description": "BPCON 2025 Las Vegas | Rental Scale-Up by PriceLabs"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBLET_FcROQ8Peq_6LDJ_5BxCSDo_3N-KR-WDbgmFRQmuLcBFoo-VDpPHM5uShydDZALW3y0zBPL25tLEqsdyww4VmBDFaduIkCslGbuMnGqHryjY_FF2m6ARf333GtQFkLqA2Gr8u4O8F_ZnDA9gkYPYpv-QYtbmSSI10fmf2LlYVEINbyvTFuwb6xAA=",
-      "description": "Avail price increase : r/realestateinvesting - Reddit"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoLoUcTPglnBtJ2HdSZFtLrxWHKLCfA1seXtyxPtbZZp4Pb1PTra8y_JCe9pN-qkrdcnsLmn40Ho2FaZhVe8Jf0FbC7J2Hw4WkKCDTmOOXA2-8hMQaxfhFhmRPT8NEvaMJGEfS6wZo7WIR3SR5FuuTWAcWCJY37aDWDuGsOBEa1GA6UQ==",
-      "description": "AI in Property Management: Here's What to Expect in 2025 - HAR.com"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1-bBUUAo7dXNkRaJkDY7EcwtqRepHKrl-Qe24ZlejDLNla12FhpP6qSDvJWh5mRgKx3pdyjdDaGQrKbUbQWlcoBibsINGxLQVxsPg_SsybcFE9QRap4D4fG7nvslW1AdRdT1kzlBVKUqcXl7UPkU2HBD-flP86RjZuK1ZqLZ2rhSIA8z9Ag==",
-      "description": "2025 BiggerPockets Conference (BPCON2025)"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbxTjHUPxWU7pTRvjeeLFfnv-HuUn5FF-e_zYDHNgr6qKeSel18-5ZPzWxgWp93zQsDxPoA5-INW-H1XZbk7Bg9IyHEsxOQ7hrb4_p-VY735Ii4Kjy6b4ZnG9XIeHTEhxIgpv9gNSIKhU1Od-UyA==",
-      "description": "BPCON 2025 Las Vegas"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYF9QkXwFDhrmLIoHX0LbaJtz3v0Cuy2EabVMTdV2ipi96EInhh1vrQ54wNpYsmGy4xbV0XCdRz14pUtNJyiBR78PvjpdVYhI_YEiFbH5IA1XKmIhHRA==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtKgoNZ5HCPBpr3NwBdfnP6pkQ-9YR1DgnLHz2mQVrxFGcR9UI3D5YhK-F5N0HAybcWn-DNwy8CvhQ9rcr_1_ggCBtM8GxegYVHFevVR03me0Yo9dZyBw=",
       "description": "Pricing Plans & Features - Avail"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhi39906rl7YL835i789-vvkylbNl9pfZDl3bB0GrX0zYTAS9HOhY9SHsCiKFPpV4TidnV3ZPfGRjpn0comh3kBij8lMBAw78kZ4KOA0bU6kAuiguGCon_QWHGuCJwtC1kkQIncuvCVHeZ00WyN1PXxhNbW1w=",
-      "description": "Income tax calculator \u2014 Budget 2025 | PwC Ireland"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQFiK5zD7DtSE9qGUVw474DxAYIR0M7t5-N34dE50P3qS1ITDdoFEtkEwAtL3KyyU-3m9BPeHUDfIEiVqBRQwwT7gArFK3XMLTiMiDqEbiYUvpj6PF58Vbf8GKK8Wj2MI_zJ_uxcheapkDKbFxLqETJWHxJGhBip-AHQ3G5Z2H_rOnYto-PhzPM9dkqOBYXc-pBmOlaG0=",
+      "description": "13 Best Property Management Technology Tools for 2025 (Expert-Tested) - Arvy Realty"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSHzhZTII-B4bY98AKtZzryKBRFEPXMlnO6H07BpDvE96vcLstmOwvmK-LnyOV4t26Tf6diB5J24rnDufCnVX6nycvtXX_v4seIyMvLOxg6yZbmzlhG0lxqwZIITi5vw==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyNpWG1LeWVn26L-RTWziUZAbSXdm5SvTzixjkkyobkkswZrAlGyMhnilUpY4QTaPeOydk6QFuVc2NHkGkE7cgFtxtjMizAxWMHtXO0UYBFuHKY4BQE1zMAH-2E4xNJgJ9QMhi0fk=",
+      "description": "Avail Reviews, Pricing, Features, & Alternatives - YouTube"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMVueAOaHff0di9K7YkxEuxG8aHbodo2cv9e6wUezdQyU5Op3o8bkcBm6-TPA9AIz2LZWJVqdXM0CeE2kztAmfjjAd0YUgPTup3MzGgkFgN_uN546wXmzls5ZEFP-zos9i5w==",
+      "description": "Rental Property Management Software Features - Avail"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRiq7PqnEjD0mmC-gp291TvDlzfVLKSl_65Y684XqMSd9SaJH8HLr00lx-FlZvc39FKQIhMF6Wh5qVTeJH_e36FGG4N8BhzWdoEsXoy8Xvn_53b4r07C3ukvYFc5u5HZZSJ4Vfn_Q440E5FFWmowBMiYcvb9TSRRxsXFG6t5snjXcJk_3VTQEhifrmRI9MN6cw0B9ARQ==",
+      "description": "How AI is Transforming Property Management in 2025 & Beyond - Bryckel.AI"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ32XGCgAHiabKaKD1eyse57kk_YHnhQuxwifsd5m_bdznoCiqlgcTfxZ_ISY9TVar5BSa_Z2QmCzEJSbn3mf22H440FtceCT96rZeRXsZSn8CVelacLY7x6zAp9pStsDyotrYE8H42UJtOBk6HTVXrmrpt8BRqMWug2aDVT0xW-hKR5dnMToeVRno5AU=",
+      "description": "Advertise Your Rental Property the Right Way | Avail"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNzDQjHMWFFJFNIRwolPoL5-3LS-o1gApru16LuRCxDjXFDbhONVNRdwn1vvGIs8Jx5Bssbr8h7h0CjgLIM0MuXfQPY7PYAwr3k2wtgVHbW3RiNS0tEpNnxMskmuyfIJ-jo3PbZWm5ITgYR-D7qWJ4g3_gVDuGipxKiWSv0fMjOftJeJ8FEbgMVJrTs_HCB23Zn5TX5jpO1KiHoQ==",
+      "description": "Identifying Your Target Audience in Property Marketing"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFABMGZXTl_qM8JYBT9f3Bq5ZVeZ8w6DzI-v2m3937LjM15eiQf9XTeZE0-9m_dg7piJA_K76YJgEJBhAHtgG26iQXgTF51dB7yv98UzbR60QRymEywhW9rbFsFxq8=",
+      "description": "Avail Review: Pricing, Features, Pros & Cons (2025) - The Close"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLtZozv3TpkPrTDHkh4hbeXMYLQS5oGEknT2A-345MCD-Vyry1ieoHr0K4d61qH-b-SWr9wC5dy-RrErP-KNJZnpuENv2GAP-jyubOJa8cOfBfsxxE7U6Hk-6qnud9ng==",
+      "description": "Avail - Pricing, Features, and Details in 2025 - Software Suggest"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF25fO03scvX8mMrWN9KAUIOT8WnyyEF8CYbdehds2mS3GkkkCZnzCs1v_Z0j6uZSk_MLw2grLTaWhl0zlsYKJzy7y8uS-JsVDE0vYiVYwDOgWUgYhuqHvtMkfzmV61c5h6h_ysG71W6HN",
+      "description": "Avail (Buildings and Property) 2025 Company Profile - PitchBook"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgmuy8bUu5YxDNKXbOzOzUBkJ13Xt49VlnQAVnxi929qt8mm_DruK5WHoC5wtVFEPW8wpuwLFf5iYcyQFnv7KcHGV0WcgYw0LAKfcac_cH19-xSN9SOky9twnd9hRGU2r3X2o6kQ=",
+      "description": "Avail Review 2025 - Features, Pricing & Deals - ToolsForHumans.ai"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH407bk2JG6bU_oaT7qEHYRxzr5hl_a30ezjgMxh3pDSCyZu626aZytHug269JFTAzZ6-mnRMkYno2MJIeYbCaM4CJcM0GrYjMbf3_4qA0YYBAUG8qF_nUGRBnUTJxK3kq3kzXrRQp2CygnIUiGnerYTcZeQQZB1UQGb3RnH6abEJnsxWFVzQxFoAbksw==",
+      "description": "Avail - 2025 Company Profile, Team, Funding & Competitors - Tracxn"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdnuZQdDMp2YaN9gmye9XUG6AwenhwhXL5I_SuTRKd5R0sKSdQJ73AxgSq-TsRQ4VviA-idK3_a-hi6v_2FvGzSLaiDXek4MN8gnANVCBIXJOBPg_T46gtThwgPv0R44O4MLliNd3xUDQZdSzBvsVvCs6U2tcS0pJG6R3p3tCdapVwhjvvLVOyTHZ0sitlJiTq5mdxVQ==",
+      "description": "13 Best Property Management Technology Tools for 2025 (Expert-Tested) - Arvy Realty"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3nZLRKwOcnZXwGMX5mf0Coy0wk4xyRYGOXKX_MiA7qaqQgUgLLAUZqb1OVv-LshCNyF9lEjuaOlknp2RAysWfwyku49hUgHV6V1c6tNwVr58W2eM8wqx02F_zYUD7c3ka4INLs0Ue6dQ=",
+      "description": "Avail (Business/Productivity Software) 2025 Company Profile - PitchBook"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHim3iqqR0Qajhacnpcu52L-UWP5grji8QC2aJ9HUKy3YhseD4-kekZ5M_z3uH3PXsl0dRF_l0vK2tHm-XqLMw0aqbAlVv6fKhCnjjsbLbpwWR_T9FkRh0jVYTM4bKr3u3uULOZ",
+      "description": "Avail Reviews 2025: Pricing & Features - Tekpon"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvacfgbQPHEXUdb0cSR9xxjrSqoW86XPokoxRZA4p_dVa1R6At44bmekutwYHAz6HZWqiADKxz5uwwn2H88riS7QRSBVrVb8ewxzi1I0Iy0OqqfQjoElRc88Ue9vIZb3B8aTyaGFHNhMXKryDozXl1Q2aGZ4-8pA==",
+      "description": "Avail: Reviews, Pricing & Free Demo - Software Finder - 2025"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdpp7iLT234zX2WcKjpASkWKB4jBLuPcpEG7RXDpSj4CN7Q4jQVAjVsXpWurmwgDCRgn0JvYY89bcPTDoFEzNC5EYKma8SngLCIs7wtaySb1WTqLak7w4tIxotAsn1zFWX4tPd1w==",
+      "description": "Avail Landlord Software Review (2025) : Truth You Won't Hear Elsewhere! - YouTube"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZp_vUriKQ6gsv30jsAktVrkI4ysWFXMLi37_GPNry3VARDGFEC2ZMTT752x51z3Z2ssrHwe5EUVwUBUBl8Lb2fYJ_rj_k_25g-tRPtt1zzNq79yeQOokAN1iQXctbz2DVu4NcH-qYLqP6UIVc5X4SuFO2PWIDQykS7eIYV2E=",
+      "description": "Avail, by Realtor.com alternatives 2025 | OMR Reviews"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLNgGH12lx7JQ5YwXbLdnxxv09fHE3rpM9Pd3DQazGD1LlsxeddOvaf_BVX_LVB0pkLMy3zwl3flXA9H6zszCUuQUNTfeUCvWVyM6x7nq2YCwfs14clvvoxVHSxWC01A==",
       "description": "Landlord and Tenant Guides - Avail"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdfVRTgRnD9jDtJsB85f-IJBLU8hV9yNcYOefSKrAeeMOSD1dgS3G4zV1oZk21aVKk4IGghlEzTRVVY1zshuTr7Gv9CA0z5tvtF10ZQn2G4TLUOrHQ2nmotK_F57aHuvigTDeyGV_rZm2QR6Oxpqd015gwpieKyP4jv9Tjwu0DX4bQ",
-      "description": "Steps to Successfully Launch an Mobile App 2025 - Aalpha Information Systems"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-vNBG_aUhG245cBuKCPpFhcE1A84lD06Vdq0QoHCv3N4KgDkkFUZrBnQbFzm9sYCm7N-dFqrusJ-kAbQpYHf09fulCuHywlrp8UHu7lpN7TJQj7wEu3bkVHIxx15DgDeVxd3eeg==",
+      "description": "Rental Property Software for DIY Landlords - UPDATED! Avail Review & Demo 2025"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHx43afaOYVYLUpRge_JZVVEHB2Zz_596eoyY1h27FJU7zfXpB6g8ydK8vfLFAopkXcjOMncRAaFF_3XAbt5BXsQaAg3JPpmSC0OwHjg0T-2Xj3V2phWQttJH3RAttJmC0j3cESHsDQMVOWEIrl-B4bjewMeVB7HgpYh_f9lrd6xqnaoJWvcm2c_ZRDSN3OVpuHcQ==",
-      "description": "15 Best AI Mobile Apps You Need in 2025 | by Tirupati Rao | Write A Catalyst | Medium"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYOpni9lEcPD7PAH9LfKEE-n_TvpNn2e1wKOy1u5HUrrlZ6aa1FbyRkWadE2CYNQeKZt_dQhKPDDbSPA8eUZ-xQrOnaBfP5NA2Nfgc2t6jGWEapmH95Cait8eNN9SLdSXdkNUpsHGU3JE9TPPM8nF6Hiz7MUxacXWvKe3oqb-5HpPQ4g==",
+      "description": "Your Complete Guide to BPCON 2025 (and Where to Find Avail)"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS5cONaAn3S5ZTETy-ADpUEoiC4Jw7XaUQ67ZGjL66LiXuKRsAfrAtvg50Dq8wY2Q3XRxPF7HQOZmb08FhFL5gDII4azlxC6W8KknCQlSwCbvInd5aABZdS_EMWrSVtnhmJ0an5lKYHI0nC4CdCc6JWZoAVZDk6cuxa3KlGoNeETdR",
-      "description": "The State of Fashion 2025: Challenges at every turn | McKinsey"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDVWlagEeKtzHK65WPyOqhIwaayYkO9v9aUwnTjCWcrDiYmXgdrsH_0oHxYp8ag1FRQN1Ls_oZPgVtFfwJvaBwSzhEQCD1TUuRpsdJwCfIm_jVxhBcPNUgdToiqPbPb4Zn8ux_8VZ1vA==",
+      "description": "Avail company information, funding & investors | Dealroom.co"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4eKOl54_CTAs8H1Zc4LCXe6edjWIJC-xYOfOGiiRNpf3P-BeBRIHg1X8au7c8e2gIFYkC69PonASfrZWTxT9M5LqpAtAQ-CgM7l_8d-daVm7ZWsP-oLBo",
-      "description": "Android Developers: Android Mobile App Developer Tools"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9Wkqoz-oluLGyGKkmA-F5J3XM_iYJF24THvuM2dzCFJ2sSzR7kIpQrg04LWSDJgkNxOtQwWO2byJIpssZIG6X1pXwYSiskB9ejhMu7od_OT04gCcRo2YuNFzijQzLD3r7BAjhR9Giqb6daGEKEwZH1IryTA==",
+      "description": "Avail | TechFinitive"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn27DG2WMjRMPxP2wHAQrXI-Fx9gr7HiocA_ZVGA-a7wjCQZN-FExbyI56ItcxX-aIvrCTyMSlGYH7rnxUBRDbQIitdoPVnpVSby3TBqpBNNw1Arp0ksNkTYgU6SVo7lOns6BgArZj_zhXoC1IsA8=",
-      "description": "The Global Findex Database 2025 - World Bank"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLEwVW5uvDq6DA_JIERTwBYNHapKoNMDjBX9gb409CgQ90P-2RjReo3neGvioEJWrCqPpIlo3G4Byi3jZAj80wy3au31VoYM2vTVFa-evZknxc2BF1kYgdR034",
+      "description": "Free Landlord Software: Rentals Management Tool | Avail - Realtor.com"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1z924gyA8khrA4_RfXvOLSzfqfx7Yf9ULnQ-CHltPfhhZ3u4JYcVBe_AlsSBYfq91OY-TnpP1FwkBlb7e0IH8iTxaZYhIvlv-uNZL9mlmPclXWLrt4HCuDgG2g2kam9Z81WGvG5B_bNPwtJVbfh6txUy9Z-l-CoyYmQufbFiPZpSqbGJc68jzIEBIbWgqCPEDhjPw",
-      "description": "Market research and competitive analysis | U.S. Small Business Administration"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3LWJiSyPH5NxDxRhxvLOy4k5c1N8CA-mmjASkkq89AC5sXFVNbHzUzcaq4fY18MdginqG9j5TJBx-lcYABeGraLiGoBc47WTo_MnmKfTn",
+      "description": "Avail Landlord Software: Online Property Management Tools"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZqY3oejRpjC1Tu1zdwpepONztzz6HwS89elC0T1WahofBKnSFfVpgJf6WWR-7_a_6wGhDA8gyJRxBJ-2dBV2YBq5E6UAuqRq71KqSy7ppjnc2Gvy6U6iuisZDpzsz",
-      "description": "Gemini Apps' release updates & improvements"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc6VXo9rFHaB8VLusOPKaF7s5_RkofoH7SUiwNv_HkhZIKopoU2zuuQP-9XRRfsJKgFg28_0TMkw_4em-clj0olzXIEc0MjUu6aZF86ATyDdMgyXbfkrL8_AasKoM=",
+      "description": "Avail.co: Revenue, Competitors, Alternatives - Growjo"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrUFg7glY6qhklnr9J7FBOoboZo2aBWN-ZkOjspjTYZJNVNBG0Ya7kqErwsWJC658s8VIT6Bd0JLKwoBUSl0mc-y982F7l8a-uzNH0g-x4tJPJnfz4D34yXnPaH9UWM3GH3FWeZbMqfekunCq-RiJ4Fh107r0GOYa-MVP",
-      "description": "Consumer Complaint Database"
+      "url": "https://www.google.com/search?q=time+in+Chicago,+IL,+US",
+      "description": "Current time information in Chicago, IL, US."
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFP25CGy0F6Lb-cDloCDjpSS3KLLDPE-rXEjjgmU0KTZNPlhlR21J1uy5LB5OLFNtNno10AhDSrhLsoVZ96jW0lVhluLd_UBGvXc41dDQlOGha2vBd0l_TQhv78x190QtkhQuB5oNM7Ckh9uWp8f9kFzDbaCTzz4WgJzixkXHpm8w==",
+      "description": "Avail Property Management, Inc - Overview, Competitors, News, and Employees"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQEj2COrGu4_F7hiwjVeURk7ZEcOmV0C7KiZXe_JbAyuT-5-5AJF3G1Jlouq449fWLyxpupUkIG2VaBTFXxaOXhZb2_z0ZtVsjeAPXUdG25aNBFMjqH-H9hAoILRdzXkrJulLcx6ukK0p325WvjO-w57icRjog-63j40q6YeMZe_ECOM=",
+      "description": "Compare Avail vs. Rental Property Manager in 2025"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTWY4x7Hl0r4DznMbspOD9xEV_ZGjCfc7Nxk08KIPH1iTP4KEGfuQMb8Oh7GaVyVY2SUNVhVWA0duW4FvkdDAb_D_hzp5J-QMOlFcaJ0lG",
+      "description": "Avail | AI Platforms for Real Estate Lawyers"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8bIFRmqvwxfg5FZcOTTP0yfRtUO6Ds53NehyKtOoieksx99QHM_9mpQDPfk4VAF1iUiinwotE8NSqQUhouJpaYX3jH2EOPhrEoOjQe1TN-JY7FwLwoACD-8BmmrpuWJcErxFqi8yMjGAZpYL7ga9Ws2-WL0Q1FwHE",
+      "description": "BPCON 2025 Las Vegas | Rental Scale-Up by PriceLabs"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSNDWmDRIBw_lAis4k8SEeh1vmwJIkPDA-WTqrpRvMDhlfSAIhhW-d6Ce9g27xMOWfPRdky2oE_gpaC4cXU4eDeZA-CLo29sflXffyqKF3k1eyxjqQ=",
+      "description": "About Avail (Part of Realtor.com) | Avail Landlord Software"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3CFeY7rUGAtoRlM57eb_YmEcdQtX1g2wBiJEj-VE-lqRgjxv15Poh6odGytT6mQ7ns2gqzHHwmybva9Ud99EOv1nlO6poZEyBIThPOPDiaQ8KIePYHp0oBbPI_eWTdXwH27pPloMDaklsYIeIDaOv",
+      "description": "BPCON2025 - Easy Street Capital"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzs15jGkZFVFPmvYFpN6MayqxyOTck07vqBnNd_-w0UHnfN3zfmdqDwU4rn2xh4yyKKKwNhsG2CfCADuLAJlNIppkCeTsm7gqqOelG0VfmHZ6QHo6BTaHmc7S9cdpxOqhgzPTROIIV5w==",
+      "description": "BPCON 2025 Las Vegas"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH88-btABEyBXrzvD79lsF-aGSqG6ZC1S3wSIJF__jUAMMq-SZkVrozmVhx8lInc8WeNXCr7LjyAl8AH3hSqYMS4PNZ2XPgF-ryCEr3v1FG7D_btY2_FZ2tFA-oe3_C",
+      "description": "BPCON (Oct 2025), Las Vegas USA - Conference - 10Times"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXM-JZ9yAkGi0ir72oVlnxgqkhd5rDb38462KX1UaNsUuioaLW_M6rVEJdbNqsmAXexCG2y5dV2Di01zME8vDa9p24bbbyVWnSx2HA43CcDSgc4hbdt94mwrtbmo1PHwHxwKtPNl7KpV5W83ih0JrQKGegg1Q1mA==",
+      "description": "6 Best AI Property Management Software Tools in 2025 - Drizzlex"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2h2aqoBfi4x8yxrDY1xrrZJgcpomFAfjncIESt5aaqVWPHe2Sy5_pknchN_A-cT8YN2vVAnxpXybLidezSptZld3-VEdP8_XdKeeHp14OUvtQdmzLAMTc-QzVcsa0DKehJAJdVbE=",
+      "description": "Rental Property Software for DIY Landlords - UPDATED! Avail Review & Demo 2025 (YouTube)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHj6vnEo9lAtHvwCPRaQ_PmQQk_UuDZV9qAppSKmXuHdkWU-cN0F66tkIHbqg1JLtbMahV8fpjrck78kQPboaq5y4P7JFF3MTkyaI4AHTfZ07S0Op-6pgZQY21hyWyABFGkB4CTwRaGEiCblbxjxjw=",
+      "description": "Introducing Avail Messages: A New Way to Stay Connected With Tenants (Avail Blog, Sep 2025)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRnul8UdRe_OXelT-gqWurVyFBFCjRAD5aGAco3sRIBuD1lLV4GaL1BQ2WUAS6jsjcvoLXZaQkLpJqL9SGJNbMze7E9IxwiU5tOFPC1Gt9ujo7PjIWGqqjEYcn9JHDuto0gXNHYZfoEym-lyPU0dWgQOZkCsaD46G1T-SEMVBsMwh2va1nUWJQxB9uuxltlw==",
+      "description": "Does Avail have a Mobile App? (Avail Help Center, Apr 2025)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtrWArpfbqw-BtxFvzajbZDWrefszz-6E-PHpVvRlQj_foQ0NRNQthAEmXKezmbIQ-nfCgF6PeBsDPW5SVrmW00VenP1lrsIf-5lRSoM6Ce8mVLk6E-vPO_QO6zAyDV9NsyeSAS1ZJ0-cIrrb0fnmt2gSq",
+      "description": "Avail, by Realtor.com Reviews 2025: Details, Pricing, & Features | G2"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe0QKmdbXDIIRbmpEohdfB_pzmZBgbzEF8tEpo196Gi7tUhOOq1CwObnf7zP5PvdgpK36xZpW430ZyCicYBx6Plq52tB07oirik_x8UV979AIYupWIiCySLivUb_o55ieBTR2Xag==",
+      "description": "Avail Property Management Software for Landlords Review 2025 - Real Estate Bees"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5j-MdUqCOVhZCF5PA20I1ryFQVhr0aoECOLj4vQK9F_h4r4s6N1q1XojONEB_94t-WoGJJmcYj5I1siUWwY8Pj0gXViXTZAdnE8UWqI2tDKXyrlpgXEvIxdeEQhZCab_u0jyltFIy84d6Zvd-nByY2xocSxldvYkQ8lxBwBMP4Os=",
+      "description": "Avail Property Management, Inc - Overview, Competitors, News, and Employees (ZoomInfo)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHT3RJuK55hIazjhUZ7R-F7HwA2tSFqXF_KYftO_6JXC6WYHmfKHwoj1EMy8Atn1lhmqPI2tQnpQwlaqUtzt4-BrnPEYKIsql21BwYDJ_DVKAUZoA96uoDl5OSOYkM1_JecuNRmI_3rgr8T37Py0OLxn9YEisQSc_8=",
+      "description": "Avail Raises $4.2 Million in Funding (Avail Blog, Feb 2022)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN-LyKFPY-1jd2fYsN4gibgfYIA-cX3ltyYmYjWXQVLgciglrKtS9yQmxgOQIBA2g8y3Vsf0fKQXzSaCqU0Rh-TMkxdiyho_u6XlVuRXGa-tpjV6mSpnHGVQy-uQLeXkvIn1LCHl3naKFqUJJ_TP8SY=",
+      "description": "Avail Ranks No. 970 on the 2020 Inc. 5000 List (Avail Blog, Feb 2022)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOeMjmwTTvjqp7rep1VGDqKA5FloD9sd6iOSJeysDLnPam093eBva5rND2OMtSrcl1oOIwRExvl8monIxVJaLTBnUO6oENsQehFbaaA5irN3dQJy4zIRgebfADS37YO4ClxbtFIS4=",
+      "description": "Revolutionizing Property Management: Boost ROI & Streamline Rentals with Avail (Rent To Retirement Podcast, Nov 2024)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGF4tO0Vz-DQl5gHliFxkZ3R1G89CghC6UwzENJQiN7MUvEe8GksMLEq6wBviMAM1VjCUC-ZEF6DZq7RGvbfI0i6sLGbM_gcpNnMeX8B5H2JiBURh8OIk3Dj0RxivKbuS7v_MqeXOQ=",
+      "description": "Avail Landlord Software Review (2025) : Truth You Won't Hear Elsewhere! (YouTube)"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRljEDdczOdlwqB_fBSX3-bR5MDQafJvXjpdErGKP_QnYcXR4WB--r-j6183GDAwfe-c-6IEf7rScPZ71Ne-28TFUt37obXMvRutkE6gmI7nvrgXcaEkzRRoFSTq8B2iJFPydaO9NEKqfQG3Pc3Pfitc8zuDfX",
+      "description": "Realtor.com Acquires Avail - The Mortgage Note (Dec 2020)"
     }
   ],
-  "CoreOffering_Summary": "Avail provides an all-in-one, cloud-based property management solution for independent landlords, enabling them to manage rental properties from listing and tenant screening to lease signing, online rent collection, maintenance tracking, and financial accounting. [1, 2, 5, 6, 8, 14, 15]",
+  "CoreOffering_Summary": "Avail provides an all-in-one, cloud-based property management solution for independent landlords, enabling them to manage rental properties from listing and tenant screening to lease signing, online rent collection, maintenance tracking, and financial accounting. [1, 2, 4, 8, 16, 22]",
   "KeyFeatures_FinancialManagement": [
-    "Online rent collection (bank transfers, credit/debit cards) [1, 2, 5, 6, 8, 14, 15, 26]",
-    "Automated late fees and rent reminders [1, 5, 6, 26]",
-    "Expense tracking and property accounting dashboard [1, 2, 5, 8, 14, 15]",
-    "1099-K tax information [8, 13]",
-    "Rent price analysis [1, 2, 6, 15]",
-    "Credit Boost (rent payments reported to credit bureaus) [1, 6, 26]",
-    "Next-day rent payments (FastPay) for Unlimited Plus users [1, 2, 5, 6, 14, 26]",
-    "Waived ACH fees for Unlimited Plus users [1, 2, 5, 14, 26]"
+    "Online rent collection (bank transfers, credit/debit cards) [1, 2, 4, 9, 11, 12, 14]",
+    "Automated late fees and rent reminders [1, 4, 14]",
+    "Expense tracking and property accounting dashboard [1, 2, 4, 5, 11, 14, 20]",
+    "1099-K tax information [11]",
+    "Rent price analysis [4, 5, 8]",
+    "Credit Boost (rent payments reported to credit bureaus) [1, 14]",
+    "Next-day rent payments (FastPay) for Unlimited Plus users [1, 4, 12, 14, 22]",
+    "Waived ACH fees for Unlimited Plus users [1, 4, 12, 14]"
   ],
   "KeyFeatures_OwnerCommunication": [
-    "In-app messaging with tenants (including the newly launched 'Avail Messages' feature) [1, 9]",
-    "Tenant portal [1, 2, 5, 6, 8, 14]",
+    "In-app messaging with tenants, leads, and applicants via the newly launched 'Avail Messages' feature (September 2025). [6, 26]",
+    "Tenant portal [1, 4, 8, 11]",
     "Landlord portal [8]",
-    "Customer service via phone and email [1, 8, 13]",
-    "Unlimited Plus offers 2x faster response time from customer care [26]",
-    "Website chat support is handled by a chatbot instead of a real person [1, 6]"
+    "Customer service via phone and email [1, 4, 11]",
+    "Unlimited Plus offers priority customer support [1, 4, 14]",
+    "Website chat support is handled by a chatbot instead of a real person [1]"
   ],
   "KeyFeatures_IncidentManagement": [
-    "Maintenance tracking: Tenants can submit requests with photos, landlords can track status and add vendor contacts [1, 2, 5, 6, 8, 14, 15]"
+    "Maintenance tracking: Tenants can submit requests with photos, landlords can track status and add vendor contacts [1, 2, 4, 5, 8, 11, 14]"
   ],
-  "KeyFeatures_AI_Specific": "An 'AI powered bot' is used for customer service. AI can also automatically request reference checks during tenant screening. [1, 6, 8, 14] These are the only explicit AI mentions for property management, lacking predictive analytics for profitability. It is crucial to distinguish this Avail from other entities like 'AVAIL' (AEC industry), 'Avail Lease' (legal tech), or the 'Avail' Web3/blockchain project which utilize more advanced AI/ML for different purposes. [7, 10, 11, 16, 18]",
-  "AI_Value_Proposition": "Limited to customer support and automated reference checks, not focused on predictive analytics for profitability. [1, 6, 8, 14]",
-  "Underlying_Technology": "Cloud-based SaaS solution. [2]",
-  "Integration_Capabilities": "Integrates with major listing sites (e.g., Zillow, Realtor.com, Trulia, Zumper, Hotpads, Apartments.com, Apartment List, Redfin, Padmapper, Walkscore, Doorsteps.com). Uses TransUnion for tenant screening. [1, 2, 5, 8, 14, 19]",
-  "Mobile_App_Presence": "No dedicated mobile app; mobile-friendly web interface available. Recent 2025 reviews consistently highlight the lack of a dedicated app as a weakness, with no indication of a released app despite previous mentions of planned development. [1, 6]",
-  "TargetAudience_Primary": "Independent landlords and small rental businesses (DIY landlords) managing anywhere from one to 10 properties, with some sources mentioning up to 50 units. [1, 2, 5, 6, 8, 14]",
-  "MarketSegment_Focus": "Small-scale or independent landlords, not large property management firms. [1, 2, 5, 6, 8, 14]",
-  "ValueProposition_USP": "An all-in-one platform that simplifies property management for DIY landlords, offering a comprehensive free plan and user-friendly tools for listing, screening, leasing, and rent collection. [1, 2, 6, 8, 13, 14, 15]",
-  "Positioning_Statement": "Avail positions itself as an end-to-end platform to help landlords scale from beginner to professional with tools, support, and education. [15]",
-  "BusinessModel": "Freemium model, offering a free plan with core features and a paid 'Unlimited Plus' plan for advanced functionalities. Revenue is generated through subscriptions, transaction fees, and tenant screening report fees. [1, 2, 5, 6, 14, 26]",
-  "PricingModel_Basis": "Per unit per month for the paid plan, or free for unlimited units with basic features. [1, 2, 5, 6, 14, 26]",
-  "Pricing_Tiers_Summary": "1. **Unlimited (Free)**: Includes unlimited units, syndicated listings, background screening, state-specific leases, online rent collection, maintenance tracking, property accounting, and online tenant portal. Tenants pay $2.50 per bank transfer. [1, 2, 5, 6, 14, 26] 2. **Unlimited Plus (Paid)**: Costs $9/unit/month. Includes all Unlimited features plus next-day rent payments (FastPay), waived ACH fees, custom applications and leases, property websites, and 2x faster customer support. [1, 2, 5, 6, 14, 26]",
+  "KeyFeatures_AI_Specific": "An 'AI powered bot' is used for customer service. AI can also automatically request reference checks during tenant screening. [1] These are the only explicit AI mentions for property management, lacking predictive analytics for profitability. It is crucial to distinguish this Avail from other entities like 'AVAIL' (AEC industry), 'Avail Lease' (legal tech), or the 'Avail' Web3/blockchain project, or 'Avail | AI Platforms for Real Estate Lawyers' which utilize more advanced AI/ML for different purposes. [3, 25]",
+  "AI_Value_Proposition": "Limited to customer support and automated reference checks, not focused on predictive analytics for profitability. [1]",
+  "Underlying_Technology": "Cloud-based SaaS solution. [4]",
+  "Integration_Capabilities": "Integrates with major listing sites (e.g., Zillow, Realtor.com, Trulia, Zumper, Hotpads, Apartments.com, Apartment List, Redfin, Padmapper, Walkscore, Doorsteps.com, Rentable). Uses TransUnion for tenant screening. [2, 4, 8, 11, 14]",
+  "Mobile_App_Presence": "No dedicated mobile app; mobile-friendly web interface available. Recent 2025 reviews consistently highlight the lack of a dedicated app as a weakness, with no indication of a released app despite previous mentions of planned development. Avail states that development of an app is 'planned for the future'. [1, 7]",
+  "TargetAudience_Primary": "Independent landlords and small rental businesses (DIY landlords) managing anywhere from one to 10 properties, with some sources mentioning up to 50 units. [1, 2, 4, 8, 9, 11, 16, 22]",
+  "MarketSegment_Focus": "Small-scale or independent landlords, not large property management firms. [1, 2, 4, 8, 9, 11, 16, 22]",
+  "ValueProposition_USP": "An all-in-one platform that simplifies property management for DIY landlords, offering a comprehensive free plan and user-friendly tools for listing, screening, leasing, and rent collection. [1, 2, 4, 8, 9, 11, 16, 22]",
+  "Positioning_Statement": "Avail positions itself as an end-to-end platform to help landlords scale from beginner to professional with tools, support, and education. [8, 16, 24]",
+  "BusinessModel": "Freemium model, offering a free plan with core features and a paid 'Unlimited Plus' plan for advanced functionalities. Revenue is generated through subscriptions, transaction fees, and tenant screening report fees. [1, 2, 4, 9, 12, 14, 15]",
+  "PricingModel_Basis": "Per unit per month for the paid plan, or free for unlimited units with basic features. [1, 2, 4, 9, 12, 14, 15]",
+  "Pricing_Tiers_Summary": "1. **Unlimited (Free)**: Includes unlimited units, syndicated listings, background screening, state-specific leases, online rent collection, maintenance tracking, property accounting, and online tenant portal. Tenants pay $2.50 per bank transfer. [1, 4, 9, 12, 14] 2. **Unlimited Plus (Paid)**: Costs $9/unit/month. Includes all Unlimited features plus next-day rent payments (FastPay), waived ACH fees, custom applications and leases, property websites, and priority customer support. [1, 4, 12, 14, 19]",
   "Pricing_EntryLevel_EUR": "Free plan: $0 USD. Paid plan: $9 USD/unit/month.",
-  "FreeTrial_Offered": "Yes, the 'Unlimited' plan serves as a comprehensive free offering. [1, 2, 5, 6]",
-  "Freemium_Offered": "Yes. [1, 2, 5, 6]",
+  "FreeTrial_Offered": "Yes, the 'Unlimited' plan serves as a comprehensive free offering. [1, 4, 9, 14]",
+  "Freemium_Offered": "Yes. [1, 4, 9, 14]",
   "MarketShare_Estimate": "N/A",
-  "CustomerBase_Size_Estimate": "Over 950,000 landlords and 1.46 million tenants (as of April 2023 for tenants). [13]",
-  "Funding_Total_EUR": "Approximately $9.7 million USD (prior to acquisition by Realtor.com). [17, 19]",
-  "Key_Investors": "Cultivation Capital, MetaProp NYC (prior to acquisition). [17]",
+  "CustomerBase_Size_Estimate": "Over 100,000 active landlords (as of November 2024). A 2022 article mentioned 'More than 600,000 landlords and renters use Avail'. [17, 20]",
+  "Funding_Total_EUR": "Approximately $9.67 million USD (prior to acquisition by Realtor.com). [3]",
+  "Key_Investors": "Cultivation Capital, MetaProp NYC (prior to acquisition). [3]",
   "Recent_News_KeyDevelopments": [
-    "Acquired by Realtor.com (Move, Inc.) in December 2020. [5, 19]",
-    "Continued focus on enhancing features for DIY landlords, including new tools like Promoted Listings, Property Tour Automation, Direct Applications, and Renters Insurance Options. [1, 5, 15]",
-    "The lack of a dedicated mobile app remains a consistent point of feedback in 2025 reviews, with no indication of a released app. [1, 6]",
-    "Avail is an official sponsor and will be attending BPCON 2025 (October 5-7, 2025) in Las Vegas at Caesars Palace. Matt Eatherton, Head of Avail, will moderate a breakout session titled 'From Nervous to Confident: The Rookie Landlord Survival Guide'. [9, 20, 21, 24, 25, 28]",
-    "Newly launched 'Avail Messages' feature will be showcased at BPCON 2025. [9]",
-    "BPCON 2025 showcase will also include lease automation tools, enhanced maintenance tracking, faster rent collection workflows, and rental property accounting upgrades. [9]",
-    "Reddit discussions from late 2024 indicate some existing users experienced price increases, with some reporting jumps from $4-5/month to $9/month or even $12/month for the Unlimited Plus plan, though the official listed price is $9/unit/month. [22]"
+    "Acquired by Realtor.com (Move, Inc.) in December 2020. [3, 23, 24]",
+    "Continued focus on enhancing features for DIY landlords, including new tools like Promoted Listings, Property Tour Automation, Direct Applications, and Renters Insurance Options. [1, 2, 4, 8, 11, 16, 22]",
+    "The lack of a dedicated mobile app remains a consistent point of feedback in 2025 reviews, with no indication of a released app despite previous mentions of planned development. Avail states that development of an app is 'planned for the future'. [1, 7]",
+    "Avail is an official sponsor and will be attending BPCON 2025 (October 5-7, 2025) in Las Vegas at Caesars Palace. [26]",
+    "Matt Eatherton, Head of Avail, will participate in BPCON 2025. [20]",
+    "BPCON 2025 showcase will also include new tools, expert insights, and exclusive ways for landlords to connect, including lease automation tools, enhanced maintenance tracking, faster rent collection workflows, and rental property accounting upgrades. [26]",
+    "Newly launched 'Avail Messages' feature (September 2025) provides centralized in-app communication for tenants, leads, and applicants. [6, 26]"
   ],
   "Reported_Strengths": [
-    "Easy to use, user-friendly interface. [1, 6, 8, 13]",
-    "Comprehensive features for DIY landlords (all-in-one solution). [1, 2, 5, 6, 8, 13, 14, 15]",
-    "Robust free plan. [1, 2, 5, 6, 14]",
-    "Online rent collection is a standout feature. [1, 2, 5, 6, 8, 13, 14, 15]",
-    "State-specific lease agreements. [1, 2, 5, 6, 8, 14, 15]",
-    "Good customer support (though chat is chatbot). [1, 6, 8, 13]",
-    "Listing syndication to multiple sites. [1, 2, 5, 8, 14]"
+    "Easy to use, user-friendly interface. [1, 2, 4, 8, 11, 22]",
+    "Comprehensive features for DIY landlords (all-in-one solution). [1, 2, 4, 8, 11, 16, 22]",
+    "Robust free plan. [1, 2, 4, 9, 14, 22]",
+    "Online rent collection is a standout feature. [1, 2, 4, 9, 11, 12, 14, 22]",
+    "State-specific lease agreements. [1, 2, 4, 8, 11, 14]",
+    "Good customer support (though chat is chatbot). [1, 4, 11]",
+    "Listing syndication to multiple sites. [2, 4, 8, 14]"
   ],
   "Reported_Weaknesses": [
-    "Premium features are locked behind the paid plan. [1, 2, 6, 14]",
-    "Fees for background checks vary and can be an extra cost. [1, 14, 26]",
-    "May not be robust enough for landlords with extensive portfolios or large property management firms. [1, 6, 14]",
-    "No dedicated mobile app. [1, 6]",
-    "Limited accounting capabilities. [2, 6, 14]",
-    "Website chat support is handled by a chatbot instead of a real person. [1, 6]",
-    "Occasional payment processing issues. [2]",
-    "Pricing for more extensive portfolios can become expensive compared to competitors. [1, 6, 14]",
-    "Navigation can be tricky for tenants setting up accounts. [2]"
+    "Premium features are locked behind the paid plan. [1, 4, 9, 14, 15, 22]",
+    "Fees for background checks vary and can be an extra cost. [1, 4, 11, 14]",
+    "May not be robust enough for landlords with extensive portfolios or large property management firms. [1, 4, 8, 9, 22]",
+    "No dedicated mobile app. [1, 7]",
+    "Limited accounting capabilities. [4, 5, 12]",
+    "Website chat support is handled by a chatbot instead of a real person. [1]",
+    "Occasional payment processing issues. [4]",
+    "Pricing for more extensive portfolios can become expensive compared to competitors. [15]",
+    "Navigation can be tricky for tenants setting up accounts. [4]"
   ],
   "Marketing_Channels_Primary": [
-    "Online presence (website, blog) [1, 2, 5, 6, 8, 9, 13, 14, 15, 26, 28]",
-    "Content marketing (educational content for landlords) [1, 5, 6, 8, 9, 15, 28]",
-    "Partnerships (e.g., Realtor.com network) [1, 2, 5, 6, 14, 19]",
-    "Review sites (The Close, ToolsForHumans.ai, PitchBook, YouTube, Tracxn, Growjo, G2, Trustpilot, Google Reviews) [1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14]",
-    "Social media (YouTube for reviews/tutorials, Reddit for discussions) [5, 6, 22]",
-    "Industry conferences (e.g., BPCON 2025) [9, 20, 21, 24, 25, 28]"
+    "Online presence (website, blog) [1, 2, 4, 8, 9, 11, 14, 16, 22, 24, 26]",
+    "Content marketing (educational content for landlords) [1, 2, 4, 8, 9, 11, 16, 22, 24, 26]",
+    "Partnerships (e.g., Realtor.com network) [1, 2, 4, 8, 16, 22, 24]",
+    "Review sites (The Close, ToolsForHumans.ai, YouTube, Tracxn, OMR Reviews, Tekpon, Software Finder, G2, Real Estate Bees) [1, 4, 8, 9, 15, 22]",
+    "Social media (YouTube for reviews/tutorials) [15, 20, 22]",
+    "Industry conferences (e.g., BPCON 2025) [26]"
   ],
-  "Sales_Approach": "Primarily self-service/online sign-up, with customer support available for assistance. [1, 2, 5, 6, 8, 13]",
-  "Geographic_Presence": "Primarily United States, offering state-specific leases and catering to US landlords. [2, 13]",
-  "ReviewSites_Presence": "Yes (G2, Trustpilot, Google Reviews, The Close, ToolsForHumans.ai, PitchBook, YouTube, Tracxn, Growjo). [1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14]",
-  "Average_Rating_Overall": "Generally positive, with specific ratings varying by platform. Reviews highlight ease of use and comprehensive features for small landlords. [1, 2, 6, 8, 13]",
+  "Sales_Approach": "Primarily self-service/online sign-up, with customer support available for assistance. [1, 2, 4, 8, 9, 11, 16, 22]",
+  "Geographic_Presence": "Primarily United States, offering state-specific leases and catering to US landlords. [1, 2, 4, 8, 9, 11, 16, 22]",
+  "ReviewSites_Presence": "Yes (G2, Trustpilot, Google Reviews, The Close, ToolsForHumans.ai, YouTube, Tracxn, OMR Reviews, Tekpon, Software Finder, Real Estate Bees). [1, 4, 8, 9, 15, 22]",
+  "Average_Rating_Overall": "Generally positive, with specific ratings varying by platform. Reviews highlight ease of use and comprehensive features for small landlords. [1, 4, 8, 9, 11, 22]",
   "Total_Reviews_Count": "N/A (No single aggregate number found across platforms).",
   "Review_CommonThemes_Positive": [
-    "Easy to use and user-friendly interface. [1, 6, 8, 13]",
-    "All-in-one solution for DIY landlords. [1, 2, 5, 6, 8, 13, 14, 15]",
-    "Efficient online rent collection. [1, 2, 5, 6, 8, 13, 14, 15]",
-    "Availability of state-specific lease agreements. [1, 2, 5, 6, 8, 14, 15]",
-    "Helpful customer support. [1, 6, 8, 13]",
-    "Listing syndication to multiple sites. [1, 2, 5, 8, 14]"
+    "Easy to use and user-friendly interface. [1, 2, 4, 8, 11, 22]",
+    "All-in-one solution for DIY landlords. [1, 2, 4, 8, 11, 16, 22]",
+    "Efficient online rent collection. [1, 2, 4, 9, 11, 12, 14, 22]",
+    "Availability of state-specific lease agreements. [1, 2, 4, 8, 11, 14]",
+    "Helpful customer support. [1, 4, 11]",
+    "Listing syndication to multiple sites. [2, 4, 8, 14]"
   ],
   "Review_CommonThemes_Negative": [
-    "Premium features require a paid subscription. [1, 2, 6, 14]",
-    "Additional fees for tenant screening reports. [1, 14, 26]",
-    "Not robust enough for larger portfolios or property management firms. [1, 6, 14]",
-    "No dedicated mobile app. [1, 6]",
-    "Limited accounting capabilities. [2, 6, 14]",
-    "Website chat support is handled by a chatbot instead of a real person. [1, 6]",
-    "Occasional payment processing issues. [2]",
-    "Pricing for more extensive portfolios can become expensive compared to competitors. [1, 6, 14]",
-    "Navigation can be tricky for tenants setting up accounts. [2]"
+    "Premium features require a paid subscription. [1, 4, 9, 14, 15, 22]",
+    "Additional fees for tenant screening reports. [1, 4, 11, 14]",
+    "Not robust enough for larger portfolios or property management firms. [1, 4, 8, 9, 22]",
+    "No dedicated mobile app. [1, 7]",
+    "Limited accounting capabilities. [4, 5, 12]",
+    "Website chat support is handled by a chatbot instead of a real person. [1]",
+    "Occasional payment processing issues. [4]",
+    "Pricing for more extensive portfolios can become expensive compared to competitors. [15]",
+    "Navigation can be tricky for tenants setting up accounts. [4]"
   ],
-  "Review_CommonThemes_AI_Opinions": "Reviews mention the use of an AI-powered bot for customer service and AI assisting with automated reference checks during tenant screening. [1, 6, 8, 14]",
+  "Review_CommonThemes_AI_Opinions": "Reviews mention the use of an AI-powered bot for customer service and AI assisting with automated reference checks during tenant screening. [1]",
   "Competitor_Type_Relative_To_Innovadmin": "Modern PropTech Platform",
-  "Automation_Depth": "Avail offers basic to moderate rule-based automation, primarily for reactive tasks such as rent reminders, late fees, listing syndication, and maintenance request management. It also uses AI for automated reference checks and has an AI-powered chatbot for customer service. Upcoming features at BPCON 2025 include lease automation tools. It lacks deep, proactive AI-driven automation for profitability optimization or predictive analytics. [1, 2, 5, 6, 9, 14, 26]",
-  "Focus_On_Business_Owner_ROI": "Avail's messaging focuses on simplifying property management for individual landlords and improving operational efficiency and basic financial tracking for their own properties. While it mentions 'optimizing for long-term growth' and 'maximizing your profit' [15], the emphasis is on the individual landlord's operational ease rather than granular, predictive profitability optimization for a property management firm owner with multiple communities. [1, 2, 5, 6, 8, 13, 14, 15]",
+  "Automation_Depth": "Avail offers basic to moderate rule-based automation, primarily for reactive tasks such as rent reminders, late fees, listing syndication, and maintenance request management. It also uses AI for automated reference checks and has an AI-powered chatbot for customer service. The newly launched 'Avail Messages' feature centralizes communication for tenants, leads, and applicants. Upcoming features to be showcased at BPCON 2025 include lease automation tools, enhanced maintenance tracking, faster rent collection workflows, and rental property accounting upgrades. It lacks deep, proactive AI-driven automation for profitability optimization or predictive analytics. [1, 2, 4, 5, 6, 8, 9, 11, 12, 14, 15, 26]",
+  "Focus_On_Business_Owner_ROI": "Avail's messaging focuses on simplifying property management for individual landlords and improving operational efficiency and basic financial tracking for their own properties. While it mentions 'optimizing for long-term growth' and 'maximizing your profit' [5, 16, 20], the emphasis is on the individual landlord's operational ease rather than granular, predictive profitability optimization for a property management firm owner with multiple communities. [1, 2, 4, 5, 8, 9, 11, 16, 20, 22]",
   "Innovadmin_Differentiation_Points": [
     "**Proactive AI for profitability optimization**: Innovadmin's 'Profit-Focused AI' with predictive analytics (payment defaults, budget optimization) is a core differentiator. While Avail uses AI for customer service and reference checks, it lacks explicit AI features for property management profitability.",
     "**Focus on scaling client portfolios**: Innovadmin targets property management firms seeking to scale client portfolios without linearly increasing staff, whereas Avail is designed for individual landlords managing their own properties.",
@@ -273,5 +365,5 @@
     "**AI & Predictive Analytics**: Avail's absence of AI-powered predictive analytics for profitability creates an opportunity for Innovadmin to highlight its 'Profit-Focused AI' as a key differentiator for management firm owners.",
     "**Business Intelligence**: Innovadmin can emphasize its owner-centric dashboards and strategic decision-making tools, which provide a deeper level of business intelligence than the operational and basic financial tracking offered by Avail."
   ],
-  "Notes_QualitativeInsights": "It is critical to distinguish between 'Avail' the property management software (acquired by Realtor.com) and other unrelated entities like 'Avail' the Web3/blockchain project, 'Avail Lease' for legal tech, or 'AVAIL' for the AEC industry. The property management Avail was originally founded in Chicago, its corporate HQ moved to Santa Clara, California, post-acquisition by Realtor.com, but its current operational HQ is listed as Austin, Texas. Recent 2025 reviews consistently highlight the lack of a dedicated mobile app as a weakness, with no indication of a released app despite previous mentions of planned development. The official pricing for the Unlimited Plus plan is $9/unit/month, though Reddit discussions from late 2024 indicate some existing users experienced price increases. Avail is an official sponsor of BPCON 2025 in October (5-7, 2025, Caesars Palace, Las Vegas), where it plans to showcase lease automation tools, enhanced maintenance tracking, faster rent collection workflows, rental property accounting upgrades, and will introduce a newly launched 'Avail Messages' feature. Its customer base is 'nearly a million landlords'. It continues to excel in user-friendliness and comprehensive features for its niche of DIY landlords but does not offer advanced AI for profitability or cater to the needs of larger property management firms. [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28]"
+  "Notes_QualitativeInsights": "It is critical to distinguish between 'Avail' the property management software (acquired by Realtor.com) and other unrelated entities like 'Avail' the Web3/blockchain project, 'Avail Lease' for legal tech, or 'Avail | AI Platforms for Real Estate Lawyers' for the AEC industry. [3, 25] The property management Avail was originally founded in Chicago. Its corporate HQ moved to Santa Clara, California, post-acquisition by Realtor.com, but Tracxn (2025-09-06) also lists Chicago, United States, and Lexington, Kentucky as a registered address for the main Avail entity. A separate entity, 'Avail Property Management, Inc.', founded in 2021, is based in Denver, CO. [3, 10, 23] Recent 2025 reviews consistently highlight the lack of a dedicated mobile app as a weakness, with no indication of a released app despite previous mentions of planned development; Avail states that development of an app is 'planned for the future'. [1, 7] The official pricing for the Unlimited Plus plan is consistently reported as $9/unit/month in recent 2025 reviews. [1, 4, 12, 19] Avail is an official sponsor of BPCON 2025 (October 5-7, 2025, Caesars Palace, Las Vegas), where it plans to showcase new tools, expert insights, and exclusive ways for landlords to connect, including lease automation tools, enhanced maintenance tracking, faster rent collection workflows, rental property accounting upgrades. [26] A significant new development is the launch of 'Avail Messages' in September 2025, providing centralized in-app communication for tenants, leads, and applicants. [6, 26] Its active customer base is estimated at over 100,000 landlords as of November 2024, while an older 2022 article mentioned over 600,000 landlords and renters using the platform. [17, 20] Conflicting employee count estimates exist, with PitchBook reporting 36 employees for 2025 (as per previous research), while Tracxn shows 5 employees for the main Avail entity as of Dec 2021, and a 2022 funding article mentioned 28 employees. [3, 17, 18, 23]"
 }

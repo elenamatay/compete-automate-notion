@@ -1,112 +1,120 @@
 {
   "Competitor Name": "Arteco Fincas",
-  "WebsiteURL": "https://artecoconsulting.com/creacion-software-saas-para-la-gestion-de-fincas/",
-  "Debrief": "Arteco Fincas is a comprehensive cloud-based property management software designed for real estate professionals and property managers, offering tools for tenancy, financial, and communication management. It aims to simplify and make efficient the administration of properties. [1, 2, 3]",
+  "WebsiteURL": "https://arteco-consulting.com/",
+  "Debrief": "Arteco Fincas is a comprehensive cloud-based property management software designed for real estate professionals and property managers, offering tools for tenancy, financial, and communication management. It aims to simplify and make efficient the administration of properties, positioning itself as one of the simplest and potentially cheapest options on the market. [1, 2, 3, 6, 19]",
   "Type": "Modern PropTech Platform",
   "DateAdded": "2025-09-24",
   "LastUpdated": "2025-09-25",
-  "HQ_Location": "Marratxi, Isles Baleares, Spain (near Mallorca), with an office in Palma, Balearic Islands.",
-  "CompanySize_Employees": "Estimated 1-10 employees (based on Arteco Consulting SL being a small custom software development firm and general sector averages, as specific numbers are not publicly disclosed; one source indicates a 30% reduction in workforce but still above sector average for IT consulting firms).",
-  "YearFounded": "2012 (Arteco Consulting SL, the developer of Arteco Fincas). One source mentions 'Arteco Fincas' was founded in 2009, but this likely refers to an earlier conceptualization or a different entity, as Arteco Consulting SL, the developer, was founded in 2012. [4, 5]",
+  "HQ_Location": "Marratxi, Isles Baleares, Spain (near Mallorca), with an office in Palma, Balearic Islands. [12]",
+  "CompanySize_Employees": "Estimated 20-100 employees (based on Arteco Consulting SL's 2024 balance sheet data from eInforma, which also notes a 30% reduction in staff; InfoJobs lists 5 employees, which might represent a core team or specific department). [11, 12]",
+  "YearFounded": "2012 (Arteco Consulting SL, the developer of Arteco Fincas). [9, 10]",
   "CompanyStatus": "Private",
   "Research_Sources": [
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuT0fJYRAVR3GZVszQzYAmsbaE908BXYyZjoCmtnXxom_31NMDDYxSgZhS8Df0gtlkKA4yfEu9rl6k1gcOV6b41zWq9O9G1e4Ixwql0L8vIojOkRjx8bh6cKgIGX9f57ahIrim_rl7BtOOyZbBymQJvnFJGjHNXcvWU2M=",
-      "description": "Arteco Fincas: Reviews, Prices & Features - Appvizer (English)"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxJXt_CyM5oYBTTt6WbI9r_ajayoGRPODhKoxhTbnJ1Wucs6t9wwxem0VZaRChWEs0ppEx4MMvgOtt0RgBQqQQ3ejBnUbfLGJ47XXEr23A6S0dcY3Ax37k4e4mZyyUmaxeC7Jbj2G9bYUSUkyoaRl8nvFMGigR68tzXnA=",
+      "description": "Arteco Fincas: Reviews, Prices & Features - Appvizer"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_6WtgfFWloRPobIFyUNdwEilAXXK5RkZxe4xqnLMWtK9gTjyrJpzXIgHvIcHwjNI55uEvYqmM-k4ClC1rzjLd6_cj0i9Vw1zjfaBGgxm5oS8Vz5vL_QyUzTgvQhQBh6CLvk1ePndo",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDkErXjRORBRyXFqOGwESQjyapRgPV43M2e2pFUDfNok2ym6-HV9LGB_seTzGak1ZoXZHCMl7DYqZ69miH4dUxL4Ga5u6JWGtFiDYwxoynG4ncWslLxSQ3lAnEEIZ6LZp66qLnxCmc",
       "description": "Arteco Fincas: precios, y opiniones - Espa\u00f1a 2025 - ComparaSoftware"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUF17C1MrdCWcadmUcj43uliqhJDet_xpGuKNfXZ0xyqw8aiOi6sYTBATHSc5LDu3446y_jCs0xn7-FnT4X7SaZHyavoBVBIv6si3rpKObDR562M3mX9_4SpOQ_B_COwaVQf_DMabZFDrO7rloyx1Nfr2mFUmA1MOoIuDzkPEu3aRODy7pQw==",
-      "description": "Arteco Fincas : Opiniones, precios & funcionalidades - Appvizer (Spanish)"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZ3qfyqnQtYw0xbH1sVZIkk3868HvrxC_gp2LOdL-Z4tN-RLMNeqmHqy51iVsvWYkpLQKZZONNTJL7RaUrSSqoh8cJROoAg5JNdDRT2EeboO3Req3c7qMJBo3zSX5OkLqM5wNio17TNxy48We-DjImAt9NRKOWQe8njj5GdoDhSqpv19bbMYQ=",
-      "description": "Arteco Fincas - property administrators in Balearic Islands - Catalog 2025 - Terrenos.es"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8EoSIOYcP-ugYX5W5LmfLs8DPJJVOIdW1RHEZ8cQuGJg3kVCYuSoURuxESy-Bn5ATXKKCeac9qNRhmE7h5fR3YQaglK16rzfNQX8VrmbkB1PrO_NxSkrG58lr2SQW9KIl0q7i3qDytooldkwJNjphErOKoHgr_DiiX7KnGxDYKLBBcanYYYQh9mkI",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-R0l1dPfsgJ5tY2nEAErERrIAJEM6z4Y1OKSKvEOmQuNi8tXzbqg1uJfKYZ7zA44vyAKZiNRln0z9__Flof7vPylEh8d3P5iS3WfLwvxyLmX3QRItjSfUv5wYPJryVOJ6tvj-SacvwqIwzdcXK8ji5lOMJZR6zwccYkcBb843CGQ4M1MgkxjwvMAW",
       "description": "Creaci\u00f3n Software SaaS para la gesti\u00f3n de fincas - Arteco Consulting (Project page)"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdWAC0xte8tpiHd9AMAUxgOdBWqSg5kHSH7sav6IQqBEbspoQKL6iEscMSNIKlN5MoMlrtTlb21mYyATNMRbegElpUpY7Yqx_vPK2TK2exgTDqcfB-fmUPw80xwLwLjnA=",
-      "description": "Apps, Custom Software, Integrations, and IT Consulting - Arteco Consulting"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQbPNhbuQLQDAvSEibZYQYFItAKeDv6oS5vfOMJwCylsL7M96I3nHlxUmdwnQ5J9H3eAMH13Ji4ud1Yy-wlcpacNSU4FMclgpKrQtFzZxies2UcUk-K9n0bL5Cs72MSW1xFUh5vwYX4gCkHXVHmK2KXfgGjTpnilQ84BsiFlXK-9rPbvm3Ogz01vs=",
+      "description": "Alternatives to Arteco Fincas: Compare Similar Programs - Appvizer"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfKku1oQxXaviIbrcnFJKuYKTvLfuEAkQby5g6iVA9Es93gnEnmsRrpDP4TCmCg0DTyYFUeeFcUvBFvGT3pSlW7-0S5dUWt1EPf4ad-VIv0rG7YuOgYn85Bo0zUrIoyvlIIsm6SWLgEzi_zfLaUEG0XOXJtHj8uYVcwQ==",
-      "description": "Integration, Automation, and Artificial Intelligence - Arteco Consulting"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn2bwBn8sSXbc7GKQnd0wrb_Q3cdF8p8WK9qC8yGGvIRiikOJkuBPyXy7tA-PPan_icTnKCL_DWNHxwFyfdQrzO01lr82cGuO4GMVyYO1hos74xT4rjS3mq2hXjUOqqp0YxIiwuZWPCE3w9oNpLsYKSolSwepNg==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfHzttPgRFJGLABnR1vhNPLSyCS6ZQHPR3zGfkIPFbcSaLcYzexXNjMrI0Co0t79Yf08hKyPMHROuWNtRDF1SIzP60WS1C_23IRxlH9xsPOFECzJnss6qGpfd9qAYEFOnNsU-Q4_P4C4tSkDvE0UtZi3i2uI6iqQ==",
       "description": "Arteco Fincas | SoftDOit"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyRKiRM5JR-5Es51Dd9GG3TC_LZud6Z6pipcDu8i59Ki1YfDTgeHI14prLa4Ds7mYuBweRBG_dX9rVntFf9bAkFDOalJCFPADl8psN7fiqtAm7GYcJPOfzfrbcext-WqP8yslnPsFAvSE=",
-      "description": "Check out our articles by role - Arteco Consulting"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwK6QJHhFYPDzwa2CswNktgNvtLMVd5iE3YfN2HSJe1L5cxrhPUCkcsZ9_CyLNvcXQu89mc5hwplJsG7ktPDgxiJWi1WJKQ34iIpdC0jjyYtXXorAqd7QvRO_j6603FUaIO6N1uBDznw==",
+      "description": "Arteco Fincas: precios, funciones y opiniones - ComparaSoftware"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHue4OZr6BHRidfSPRn_aLzpwyrXlGpCdYTmYOVWeKa-VlGFe4X80Gh0YYsoAhgGcm8lOUhKCKOucK-xIRDkqnZHxOWiFTOQM3FuJZaYkzMIokmAGTankEteOMT8X7CACejqQBsvTVV0I63jkdDdbJVhya2jx0KwER4S4hTselBit9w_4LWYBVesvq4iBr2uI1XUKAMeyMn0JG_wnP57g==",
-      "description": "Arteco and A.I. Tech: Italian excellences to conquer the world (Irrelevant to Arteco Fincas)"
-    },
-    {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHE3TgeWDMsWc6mZ1v6Np4EMW7aUQep3HeKVTPxVXQUWitaRE63NWB50Tt5-JxnvnXrTtU6H7t9TcZWphWlONubA_MtNDn7Chh7ES8S5r-sELvp9arBtaFWV5HQwvP5Wr0J8kFM3fx6",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcvPiXEhAD7yqp_uqFDcS9H0n2K0oAG2gCFAI6_XuW8AQa8wzELIkFPCcKAqF6QL0QljYLs8HWtoJEOGaYNOTe6Q1-BiQMQuFtcJEs6zWcigAnVkVww-sp4DK5fRoszKAngsujs7aK",
       "description": "Listado de proyectos realizados - Arteco Consulting"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWsTR2ZjegIppHEFmkUgTtl0UWGWHMra4B1KIRxrm1vTglZ2DPZxpMOdX2WgVlVcls1X1iUK-T6RevUAwkQmw51sEi_U6O3oVRyNxh9lUFKvxA9xLg4iSGdFCNThKSb36bf8nc5-IyOo_-Tai-PSJoxphOlSkupj_eanj2t2IylvoU3Z4ArmO7nQ==",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9OBkhA_mrs_TzvSi-UhvvWd2GSabLlTlaCxBZX5_SGAyTQOjaink2O3obg_ncKZl3dqEyhCdSm8wWB8PdFbL3IyerQRev_Dh5i37uOCkhtx08qjjFJwxNgqX1NmjKqJkCajR6DZkWNepWg6oQOhPckwCWxAP3OqIW0oECad-9LTNNgm-dCJVY",
+      "description": "Alternatives to Portal Fincas: Compare Similar Programs - Appvizer"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnqUtx0GOOC5C05nAzYXifTS831wmownKUHSicdj1uOUYVbt_tuy6fx3NXJQCvDRHVJeVJnUoN8ePo5oZiejctGx5EM590wiWFDCTMnmFLZq6Jwiz6qsuDbGTuGX9ktEB0xbgUpqCFZ9A=",
+      "description": "About us, our values, and our team - Arteco Consulting"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdjbuLAwkOZGk3fNd0mFzYf7yjmVl1Lo2j_H9h-yCYkxxJ3odTipsjmUXYRqrWFNYokA5NiD_zcLsh37uKlBmchSIX2MLisP6jvOsriGHCb__2o7VCKo-Zuj-dwc4UNlN9_SuDv43UYF_heGo=",
+      "description": "Acerca de nosotros, nuestros valores y nuestro equipo - Arteco Consulting"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkxJBIJf2AwIQ7N4XJZbeZoe5qmRna-npRlCPtaYV88XFTCe8Ts1jlWVemUY4Y6PtytAC00fUufSeUeRHGh4pwHULZ9ibekm8GjuqnbH6w5m5mjMVJJrC-AQ6qd-_-osL2NiG9kQ6JIJGx2xZkmiQwCbOwUoA3PjCPTBGilxtDDJ-pVcvxmblLLq4jnnrt38XQ__UmUG0soQ==",
+      "description": "Arteco Consulting - Ofertas de empleo y procesos de selecci\u00f3n abiertos - InfoJobs"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEj0mE4w4-O4TKjCoc-lCWLHnWjiYdlcZX0QARnFZFEScSRbiJGGyfXurJvTD8P6sd1XxIqSxRFkHt-nxiD7O_-Pjb96mJVGTy6mC-qFrjhLiNMlkDvjw00aczRpuPVw_cGCLZ6BObTDDWPSnNNN29XkPUc",
+      "description": "Arteco Consulting Sl. - Tel\u00e9fono y direcci\u00f3n - Empresite"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGa-6CHdIG9VhUFlM8L3GHCEWt4Hz0SEin92l74wQbTD0-RTuxkGCMIYtR4B_JhvN6DSFzLVyRTCVzCVPtpOWyH6Jih0Iilgg-xmgx5WT48VF5mK4s5PRclckpUYtpZjEC_KsKxY2d8wEbq9SOMiInFl2n048ZYz5dz5_u6OWbVIE3695hOrce1NB8cQaQuCMJnmvxs9hdJi2-WIwrWAOEP5dpDbW4AeS4=",
+      "description": "Descubre los 6 mejores software para la gesti\u00f3n y administraci\u00f3n de fincas - Appvizer"
+    },
+    {
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAiHT3PbCAxwUvnmKbi_RqwtKfIem-Ut0bCeAjQnzDaMS9pytKH63j2ljh19T2scF-PbvNGSsyjNcp1lqUEbOlv9ZSwOgzBPuOmoZyobFfhOxXj0JRx47Sp-7DVb8jq-UM0RWhKVCo7wVLpImookQhfT12kYPKQwITL6_Tye5rirf-kCsnIFSLww==",
       "description": "Business Transformation with AI - Arteco Consulting"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm7tBg3yZnkbRSxHHS-dm0LD8mc4HODSuJ96Co_2dJbrQtDIISsQZvMbIOQxyAr0cl_f0wO5f-09UYinAWk59wN7wheQjtODmzaLMxIzALx3U1L027xZ-nZUTVEVhl1mp_eUIZeyg4ufYCbSPddcVLVN1Z77merz7DlaTLHXwG8r2O45dy5AakBNz5",
-      "description": "Creation of a SaaS Software for Property Management - Arteco Consulting"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdXdu017YMz_i3cOPRvijaM3om9IV7CzWSVKP_MJ0pgedteSA_I_HLtV7BKgIveOldf6aUT7PfEot3xjFAB55vot9noMulY9UxVl2FeyP6Y_rJHuPn1_PTXehzjszjl8aAGk0NRKldwtFxZxO-nzgUsZz3nKlVCvzIir16EiszR1_C2OpYQ7zH4KVTIz_EN1zNcwc7TuAkVnn_BCN86rh-KxK_6Z0dIdmm0LcgL0aG6y6V3xA62NyiG9Ev15tV_Ymj1c7MDQ==",
+      "description": "Administraci\u00f3n de fincas y la era de la inteligencia artificial: hacia una gesti\u00f3n m\u00e1s eficiente"
     },
     {
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHchk_soiRYFlSpHcV3ZvdDxN8uki3URg2WNGawn8Z1CTxU8blyHW6FOu9U2Gc5_UW2eq84E5ein-ZK6X22zGfngJPZTsW0DY4BdRhcj0DzueQi3UKqbezE-jDJtzqeAGsKjbg4UNIbX1mRFhtaRACfWIesnbYMzz9g9gHZp-bU9j4w2VkApWDeUwmH9Hbl3BpflEDPmDCRGPFvrzcQGPD5I5Ef4ouyaxKsv0o=",
-      "description": "Cinco tendencias que transformar\u00e1n la administraci\u00f3n de fincas en 2025 - IESA (General industry article)"
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFI1GFhI5AfWuIfsKv5ZFuTd1p9FklPqIzkXlTCJQxP8kcu72dmXboaHPbJ5pu1Sf29PTzsr7YWUYTMgNQ357ZGvV8mDR0-F686dhTG8JKzBysDL1AvBwnUYSKAfKbX7JBYAtzyW3t4eyhGXHDOVN00Wt1lAh4KaZtM-YKYkuAz7bd1VE41ZsAJqB-k",
+      "description": "Creation of a SaaS Software for Property Management - Arteco Consulting"
     }
   ],
-  "CoreOffering_Summary": "Arteco Fincas is a comprehensive software solution for real estate professionals, tailored for property managers, offering tools for automated tenancy management, financial tracking, and real-time communication. [1, 2]",
-  "KeyFeatures_FinancialManagement": "Real-time dashboard for financial health, automated billing and invoicing, built-in accounting tools, expense distribution based on allocation coefficients, direct debit collection, and a management model based on bank transactions. [1, 2]",
-  "KeyFeatures_OwnerCommunication": "Owner portal for viewing liquidation results and documents, instant messaging platform, notification system for updates, and document sharing capabilities, allowing basic inquiries and management. [1, 2]",
+  "CoreOffering_Summary": "Arteco Fincas is a comprehensive software solution for real estate professionals, tailored for property managers, offering tools for automated tenancy management, financial tracking, and real-time communication. It covers all phases of property management, including meeting organization, voting, and expense settlement. [1, 3, 6, 19]",
+  "KeyFeatures_FinancialManagement": "Real-time dashboard for financial health, automated billing and invoicing, built-in accounting tools, expense distribution based on allocation coefficients, direct debit collection, and a management model based on bank transactions. [1, 3, 6, 19]",
+  "KeyFeatures_OwnerCommunication": "Owner portal for viewing liquidation results and documents, instant messaging platform, notification system for updates, and document sharing capabilities, allowing basic inquiries and management. [1, 3, 6, 19]",
   "KeyFeatures_IncidentManagement": "Integrated inspections management for easy scheduling and tracking. [1]",
-  "KeyFeatures_AI_Specific": "N/A (No specific AI features are promoted for the Arteco Fincas product itself. Arteco Consulting SL, the parent company, offers general AI services including predictive analytics and process optimization, and has developed platforms with Machine Learning for other sectors like hotel pricing, but these are not explicitly integrated into Arteco Fincas as a core feature for property management profitability. [5, 6, 7, 11, 12])",
+  "KeyFeatures_AI_Specific": "N/A (No specific AI features are promoted for the Arteco Fincas product itself. Arteco Consulting SL, the parent company, offers general AI services including predictive analytics and process optimization, and has developed platforms with Machine Learning for other sectors like hotel pricing, but these are not explicitly integrated into Arteco Fincas as a core feature for property management profitability. While the property management industry is seeing a trend towards AI integration, Arteco Fincas has not explicitly announced such features. [7, 16, 18])",
   "AI_Value_Proposition": "N/A",
-  "Underlying_Technology": "Initially Spring MVC with JSP, evolved to REST with AngularJS for the frontend, deployed on Kubernetes, utilizing Ehcache for Hibernate. Arteco Consulting also recommends Spring Boot, PostgreSQL, and Kubernetes for new projects in 2024, and SPA architecture. [5]",
-  "Integration_Capabilities": "N/A (No specific integrations for Arteco Fincas are mentioned as a product feature, though Arteco Consulting, the developer, offers general software integration services and has experience with various integrations in other projects. [6, 7, 11])",
-  "Mobile_App_Presence": "Web-responsive application accessible from any device with an internet connection and updated web browser. One source mentions an 'online service via an app' which likely refers to the web-responsive access. The 'ARTECO connect' mobile app found in searches is for vehicle tracking by a different company (ARTECO GmbH) and is not related to Arteco Fincas. [1, 2]",
-  "TargetAudience_Primary": "Real estate professionals, property managers, and administrators of communities/condominiums. [1, 2, 3]",
-  "MarketSegment_Focus": "Property management firms, suitable for managing a large number of properties and small to medium-sized portfolios. [1, 2, 3]",
-  "ValueProposition_USP": "Simplicity, efficiency, comprehensive management, scalability, cloud-based access, and a dedicated owner portal. [1, 2, 3]",
-  "Positioning_Statement": "Positioned as a simple, efficient, and comprehensive online property management software. [1, 2, 3]",
+  "Underlying_Technology": "Initially Spring MVC with JSP, evolved to REST with AngularJS for the frontend, deployed on Kubernetes, utilizing Ehcache for Hibernate. [3, 19]",
+  "Integration_Capabilities": "N/A (No specific integrations for Arteco Fincas are mentioned as a product feature, though Arteco Consulting, the developer, offers general software integration services and has experience with various integrations in other projects. [7])",
+  "Mobile_App_Presence": "Web-responsive application accessible from any device with an internet connection and updated web browser. [1, 6]",
+  "TargetAudience_Primary": "Real estate professionals, property managers, and administrators of communities/condominiums. [1, 3, 6, 19]",
+  "MarketSegment_Focus": "Property management firms, suitable for managing a large number of properties and small to medium-sized portfolios. [1, 6, 13]",
+  "ValueProposition_USP": "Simplicity, efficiency, comprehensive management, scalability, cloud-based access, a dedicated owner portal, and a claim of being one of the simplest and cheapest options on the market. [1, 2, 3, 6, 19]",
+  "Positioning_Statement": "Positioned as a simple, efficient, comprehensive, and potentially cheapest online property management software. [1, 2, 3, 6]",
   "BusinessModel": "SaaS (Software as a Service). [2]",
-  "PricingModel_Basis": "On-demand rate / Upon request. [1, 2]",
-  "Pricing_Tiers_Summary": "Standard rate, pricing available upon request. ComparaSoftware also mentions 'Plan gratuito' (Free plan) for 'Team', 'Small Office', and 'Business' tiers. [1, 2]",
-  "Pricing_EntryLevel_EUR": "N/A (Pricing is 'on demand' or 'upon request', though free plans are mentioned). [1, 2]",
-  "FreeTrial_Offered": "Yes, a free demo is offered. [1]",
-  "Freemium_Offered": "Yes, a 'free version' is mentioned, and ComparaSoftware explicitly lists 'Plan gratuito' for various tiers. [1, 2]",
+  "PricingModel_Basis": "On-demand rate / Upon request. [1]",
+  "Pricing_Tiers_Summary": "Standard rate, pricing available upon request. [1]",
+  "Pricing_EntryLevel_EUR": "N/A (Pricing is 'on demand' or 'upon request'). [1]",
+  "FreeTrial_Offered": "Yes, a free demo is offered. [5]",
+  "Freemium_Offered": "No",
   "MarketShare_Estimate": "N/A",
   "CustomerBase_Size_Estimate": "N/A",
   "Funding_Total_EUR": "N/A (Arteco Consulting SL is a custom software development company; no funding rounds for Arteco Fincas or the parent company are publicly disclosed).",
   "Key_Investors": "N/A",
-  "Recent_News_KeyDevelopments": "Arteco Fincas was developed as a project by Arteco Consulting SL, which specializes in custom software solutions. The Arteco Consulting website describes the creation and evolution of the software. No recent news specifically about Arteco Fincas product developments has been found. Arteco Consulting continues to highlight its general AI services and custom software development capabilities, including integration, automation, and artificial intelligence for business transformation, and has undertaken projects involving Machine Learning for dynamic pricing in other sectors. [5, 6, 7, 11, 12]",
-  "Reported_Strengths": "User-friendly interface, comprehensive features for tenancy and financial management, efficient communication tools, scalability, and cloud-based accessibility. [1, 2, 3]",
+  "Recent_News_KeyDevelopments": "Arteco Fincas was developed as a project by Arteco Consulting SL, which specializes in custom software solutions. The Arteco Consulting website describes the creation and evolution of the software. No recent news specifically about Arteco Fincas product developments has been found. Arteco Consulting continues to highlight its general AI services and custom software development capabilities, including integration, automation, and artificial intelligence for business transformation, and has undertaken projects involving Machine Learning for dynamic pricing in other sectors. [3, 7, 16, 19]",
+  "Reported_Strengths": "User-friendly interface, comprehensive features for tenancy and financial management, efficient communication tools, scalability, cloud-based accessibility, and a claim of being one of the simplest and cheapest options on the market. [1, 2, 3, 4, 6, 8, 19]",
   "Reported_Weaknesses": "N/A (No specific weaknesses were highlighted in the available public information).",
-  "Marketing_Channels_Primary": "Online review platforms (Appvizer, ComparaSoftware, SoftDOit) and the developer's corporate website (Arteco Consulting). [1, 2, 8]",
-  "Sales_Approach": "Direct sales with demo requests. [1, 8]",
-  "Geographic_Presence": "Primarily Spain (based on language, 'fincas' terminology, and HQ location in Marratxi, Isles Baleares). [2, 4]",
-  "ReviewSites_Presence": "Appvizer, ComparaSoftware, SoftDOit. [1, 2, 8]",
+  "Marketing_Channels_Primary": "Online review platforms (Appvizer, ComparaSoftware, SoftDOit) and the developer's corporate website (Arteco Consulting). [1, 2, 4, 5, 6]",
+  "Sales_Approach": "Direct sales with demo requests. [5]",
+  "Geographic_Presence": "Primarily Spain (based on language, 'fincas' terminology, and HQ location in Marratxi, Isles Baleares). [2, 12]",
+  "ReviewSites_Presence": "Appvizer, ComparaSoftware, SoftDOit. [1, 2, 4, 5, 6]",
   "Average_Rating_Overall": "N/A (Appvizer explicitly states 'No user review' for Arteco Fincas, and no specific overall rating was found on other review sites). [1]",
   "Total_Reviews_Count": "N/A (Appvizer explicitly states 'No user review' for Arteco Fincas, and no specific review count was found on other review sites). [1]",
-  "Review_CommonThemes_Positive": "Ease of use, comprehensive features, efficiency in managing properties, good for financial tracking, and effective communication tools. [1, 2, 3]",
+  "Review_CommonThemes_Positive": "Ease of use, comprehensive features, efficiency in managing properties, good for financial tracking, effective communication tools, and a claim of being simple and cheap. [1, 2, 3, 6, 19]",
   "Review_CommonThemes_Negative": "N/A",
   "Review_CommonThemes_AI_Opinions": "N/A (No AI features are promoted for the product).",
   "Competitor_Type_Relative_To_Innovadmin": "Modern PropTech Platform",
-  "Automation_Depth": "Rule-based automation for tasks like lease renewals, payment reminders, billing, invoicing, expense distribution, meeting organization, and voting. It focuses on operational efficiency rather than deep, proactive AI for profitability optimization. [1, 2, 5]",
-  "Focus_On_Business_Owner_ROI": "While it includes an owner portal for basic information access, its primary messaging and features are centered on easing management processes for property managers and operational efficiency. It does not explicitly highlight granular, profit-focused ROI for business owners in the same way Innovadmin does. [1, 2, 5]",
-  "Innovadmin_Differentiation_Points": "Innovadmin differentiates itself through its proactive, profit-focused AI for granular profitability optimization, its emphasis on scaling client portfolios without linearly increasing staff, and direct ROI metrics and business intelligence specifically for owners. Arteco Fincas, as a Modern PropTech Platform, offers comprehensive operational management but lacks this advanced AI-driven, owner-centric profitability focus. [1, 2, 5]",
-  "Threat_Level_To_Innovadmin": "Low to Medium. Arteco Fincas competes in the broader property management software market, offering comprehensive operational features. However, its lack of explicit AI for profitability optimization and a less pronounced owner-centric ROI focus means it does not directly target Innovadmin's Ideal Customer Profile (owners of mid-to-large firms valuing ROI) with the same core value proposition. [1, 2, 5]",
-  "Opportunity_For_Innovadmin": "Arteco Fincas's focus on operational efficiency and comprehensive management leaves a strategic gap that Innovadmin can exploit. Innovadmin can target property management firms currently using solutions like Arteco Fincas who are looking to move beyond basic operational management to advanced, AI-driven profitability optimization and strategic business growth for owners. [1, 2, 5]",
+  "Automation_Depth": "Rule-based automation for tasks like lease renewals, payment reminders, billing, invoicing, expense distribution, meeting organization, and voting. It focuses on operational efficiency rather than deep, proactive AI for profitability optimization. [1, 3, 6, 19]",
+  "Focus_On_Business_Owner_ROI": "While it includes an owner portal for basic information access, its primary messaging and features are centered on easing management processes for property managers and operational efficiency. It does not explicitly highlight granular, profit-focused ROI for business owners in the same way Innovadmin does. [1, 3, 6, 19]",
+  "Innovadmin_Differentiation_Points": "Innovadmin differentiates itself through its proactive, profit-focused AI for granular profitability optimization, its emphasis on scaling client portfolios without linearly increasing staff, and direct ROI metrics and business intelligence specifically for owners. Arteco Fincas, as a Modern PropTech Platform, offers comprehensive operational management but lacks this advanced AI-driven, owner-centric profitability focus. [1, 3, 6, 19]",
+  "Threat_Level_To_Innovadmin": "Low to Medium. Arteco Fincas competes in the broader property management software market, offering comprehensive operational features. However, its lack of explicit AI for profitability optimization and a less pronounced owner-centric ROI focus means it does not directly target Innovadmin's Ideal Customer Profile (owners of mid-to-large firms valuing ROI) with the same core value proposition. [1, 3, 6, 19]",
+  "Opportunity_For_Innovadmin": "Arteco Fincas's focus on operational efficiency and comprehensive management leaves a strategic gap that Innovadmin can exploit. Innovadmin can target property management firms currently using solutions like Arteco Fincas who are looking to move beyond basic operational management to advanced, AI-driven profitability optimization and strategic business growth for owners. [1, 3, 6, 19]",
   "CompetitorID": "e000f0bf-c8c6-4e4e-b681-6c0e4ca9e955"
 }

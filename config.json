@@ -2,6 +2,7 @@
   "initial_research": {
     "output_folder": "competitor_research_json",
     "company_context": [
+      "REPLACE ALL OF THIS WITH YOUR COMPANY'S CONTEXT",
       "InnovAdmin is an AI-powered PropTech startup focused on property management firms (50-500 communities).",
       "Core Value Proposition: 'Profit-Focused AI' that optimizes profitability at a granular level through predictive analytics (payment defaults, budget optimization, identifying profitable communities).",
       "Our target: Management firm owners as our primary buyer, providing owner-centric dashboards for business visibility and strategic decision-making.",
@@ -13,6 +14,7 @@
       "We compete in the 'AI-Powered PropTech Platform' category and aim to help owners tackle soaring fixed costs while driving measurable business growth."
     ],
     "csv_schema": [
+      "REPLACE ALL OF THIS WITH YOUR RESEARCH'S SCHEMA",
       "Competitor Name", "WebsiteURL", "Debrief", "Type",
       "DateAdded", "LastUpdated", "HQ_Location", "CompanySize_Employees",
       "YearFounded", "CompanyStatus", "Research_Sources",
@@ -29,12 +31,12 @@
       "Sales_Approach", "Geographic_Presence", "ReviewSites_Presence",
       "Average_Rating_Overall", "Total_Reviews_Count",
       "Review_CommonThemes_Positive", "Review_CommonThemes_Negative",
-      "Review_CommonThemes_AI_Opinions", "Competitor_Type_Relative_To_Innovadmin",
-      "Automation_Depth", "Focus_On_Business_Owner_ROI",
-      "Innovadmin_Differentiation_Points", "Threat_Level_To_Innovadmin",
-      "Opportunity_For_Innovadmin", "Notes_QualitativeInsights"
+      "Review_CommonThemes_AI_Opinions", "Competitor_Type_Relative_To_Company",
+      "Automation_Depth", "Company_Differentiation_Points", "Threat_Level_To_Company",
+      "Opportunity_For_Company", "Notes_QualitativeInsights"
     ],
     "competitor_type_definitions": {
+      "REPLACE ALL OF THIS WITH THE CATEGORIES YOU WANT TO CLASSIFY YOUR COMPETITORS INTO": "COMPETITOR_TYPE_1",
       "Traditional Management ERP": "Desktop or legacy cloud software. Functionally comprehensive but often complex, with an outdated UX and little to no smart automation. (e.g., Gesfincas, IESA).",
       "Modern PropTech Platform": "A cloud-native SaaS solution. Focuses on user experience (UX), mobility, and connectivity, but with rule-based automations, not AI. (e.g., Tucomunida).",
       "AI-Powered PropTech Platform": "A SaaS solution that already incorporates and actively promotes AI-based functionalities to automate tasks (e.g., invoice categorization, AI-assisted writing). They are our most direct competitors in terms of vision.",
