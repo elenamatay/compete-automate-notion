@@ -43,7 +43,12 @@ sudo apt install python3.12 python3.12-pip python3.12-venv
 
 ## Step 2: Install IDE (Choose One)
 
-### Option A: Visual Studio Code (Recommended)
+### Option A: Cursor
+1. Go to https://cursor.sh/
+2. Download and install Cursor
+3. Python and Jupyter extensions come pre-installed
+
+### Option B: Visual Studio Code
 1. Go to https://code.visualstudio.com/
 2. Download and install VS Code
 3. Install Python extension:
@@ -52,11 +57,6 @@ sudo apt install python3.12 python3.12-pip python3.12-venv
    - Search "Python" 
    - Install the Microsoft Python extension
    - Install "Jupyter" extension for notebook support
-
-### Option B: Cursor (Alternative)
-1. Go to https://cursor.sh/
-2. Download and install Cursor
-3. Python and Jupyter extensions come pre-installed
 
 ---
 
@@ -231,47 +231,7 @@ gcloud --version
 
 ## Troubleshooting Common Issues
 
-### Python Issues:
-- **"python not found"**: Make sure Python is in your PATH
-- **"pip not found"**: Try `python -m pip` instead of `pip`
-- **Virtual environment issues**: Make sure it's activated (you should see `(compete-automate-venv)` in your terminal)
-
-### Google Cloud Issues:
-- **Authentication errors**: Run `gcloud auth application-default login` again
-- **Project not set**: Run `gcloud config set project YOUR_PROJECT_ID`
-- **API not enabled**: Check Google Cloud Console → APIs & Services → Enabled APIs
-
-### Notion Issues:
-- **Invalid token**: Double-check your integration token in `.env`
-- **Page not found**: Verify the Page ID is correct (32 characters)
-- **Permission denied**: Make sure you shared the page with your integration
-
-### IDE Issues:
-- **Jupyter not working**: Install Jupyter extension in VS Code
-- **Python interpreter not found**: Select the correct Python interpreter (from your virtual environment)
-
----
-
-## What to Bring to Class
-
-✅ Laptop with all software installed
-✅ Stable internet connection  
-✅ Google Cloud account with authentication working
-✅ Notion account with integration set up
-✅ Project files downloaded and opened in IDE
-✅ Virtual environment created and tested
-✅ `.env` and `config.json` files configured
-
----
-
-## During Class
-
-We'll walk through:
-1. Understanding the competitor research workflow
-2. Running each notebook cell step by step
-3. Customizing the research parameters
-4. Interpreting the results in Notion
-5. Updating and maintaining the competitor database
+For detailed troubleshooting help with common setup problems, see `TROUBLESHOOTING_GUIDE.md`.
 
 ---
 
@@ -280,7 +240,5 @@ We'll walk through:
 If you encounter issues during setup:
 1. Check the troubleshooting section above
 2. Search the error message online
-3. Ask in our class forum/chat
-4. Come 15 minutes early to class for setup help
 
 **Important**: Please complete this setup BEFORE class. We'll have limited time for troubleshooting during the session.
