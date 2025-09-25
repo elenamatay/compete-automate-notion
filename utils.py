@@ -683,7 +683,8 @@ async def setup_notion_database(
 # --- Competitor Research Update ---
 
 async def update_single_competitor_async(
-    json_file_path: str
+    json_file_path: str,
+    company_context: str
 ) -> Tuple[str, str] | None:
     """
     Reads existing competitor data, performs a new full research,
@@ -700,7 +701,7 @@ async def update_single_competitor_async(
     print(f"Performing full re-research for '{competitor_name}'...")
 
     # Simplified prompt for a full re-research and comparison.
-    prompt = f"""**Role:** You are a Senior Market Research Analyst for 'InnovAdmin'.
+    prompt = f"""**Role:** You are a Senior Market Research Analyst for a company with this context: `{company_context}`.
 
     **Objective:**
     Perform a fresh, deep-dive research on '{competitor_name}'. Then, compare your new findings against the `PREVIOUS_RESEARCH_DATA` provided below to identify any changes.
@@ -856,6 +857,61 @@ async def append_text_to_notion_page_async(
         print(f"An unexpected error occurred while appending to Notion: {e}")
 
 
+def dedupe_sources_preserve_order(sources: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Return sources deduplicated by URL, preserving original order."""
+    seen: set[str] = set()
+    unique: List[Dict[str, Any]] = []
+    for src in sources or []:
+        if isinstance(src, dict):
+            url = src.get("url")
+            if url and url not in seen:
+                seen.add(url)
+                unique.append(src)
+    return unique
+
+
+def build_inline_source_refs(unique_sources: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Build Notion rich_text parts like [1] [2] ... each linked to its source URL."""
+    parts: List[Dict[str, Any]] = []
+    for idx, src in enumerate(unique_sources, start=1):
+        url = src.get("url")
+        if not url:
+            continue
+        parts.append({
+            "type": "text",
+            "text": {"content": f"[{idx}] ", "link": {"url": url}}
+        })
+    return parts
+
+
+def build_sources_toggle_block(title: str, unique_sources: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Create a Notion toggle block titled with the competitor name containing bulleted linked sources with [n] labels."""
+    children: List[Dict[str, Any]] = []
+    for idx, src in enumerate(unique_sources, start=1):
+        url = src.get("url")
+        if not url:
+            continue
+        desc = src.get("description") or url
+        children.append({
+            "object": "block",
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+                "rich_text": [
+                    {"type": "text", "text": {"content": f"[{idx}] "}},
+                    {"type": "text", "text": {"content": desc, "link": {"url": url}}}
+                ]
+            }
+        })
+
+    return {
+        "object": "block",
+        "type": "toggle",
+        "toggle": {
+            "rich_text": [{"type": "text", "text": {"content": title}}],
+            "children": children
+        }
+    }
+
 async def discover_new_competitors_async(
     days_ago: int,
     existing_competitors: List[str],
@@ -908,7 +964,7 @@ async def discover_new_competitors_async(
     model = generative_models.GenerativeModel("gemini-2.5-flash")
     try:
         response = await model.generate_content_async([prompt], **request_args)
-        response_text = "".join(part.text for part in response.candidates.content.parts).strip()
+        response_text = "".join(part.text for part in response.candidates[0].content.parts).strip()
 
         if response_text.startswith("```json"):
             response_text = response_text[7:-3].strip()

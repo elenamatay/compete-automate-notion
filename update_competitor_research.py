@@ -13,7 +13,10 @@ from utils import (
     generate_top_changes_summary_async,
     populate_notion_db_from_folder,
     append_text_to_notion_page_async,
-    discover_new_competitors_async
+    discover_new_competitors_async,
+    dedupe_sources_preserve_order,
+    build_inline_source_refs,
+    build_sources_toggle_block
 )
 from notion_client import AsyncClient
 from vertexai.generative_models import GenerationConfig
@@ -143,6 +146,74 @@ async def main_update():
         title=update_summary_title,
         content=top_changes_summary
     )
+
+    # Append compact competitor updates with inline source links [1] [2] ...
+    if successful_updates:
+        try:
+            updates_children = [{
+                "object": "block",
+                "type": "heading_2",
+                "heading_2": {"rich_text": [{"type": "text", "text": {"content": "Competitor Updates (with source links)"}}]}
+            }]
+
+            for json_path, summary_text in successful_updates:
+                # Load sources and dedupe by URL for consistent numbering
+                try:
+                    with open(json_path, "r") as f:
+                        data = json.load(f)
+                except Exception:
+                    data = {}
+                unique_sources = dedupe_sources_preserve_order(data.get("Research_Sources") or [])
+
+                # Build paragraph with summary and inline linked refs
+                rich_text_parts = [{"type": "text", "text": {"content": summary_text}}]
+                if unique_sources:
+                    rich_text_parts.append({"type": "text", "text": {"content": "  Sources: "}})
+                    rich_text_parts.extend(build_inline_source_refs(unique_sources))
+
+                updates_children.append({
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {"rich_text": rich_text_parts}
+                })
+
+            await notion_client.blocks.children.append(
+                block_id=NOTION_SUMMARY_PAGE_ID,
+                children=updates_children
+            )
+        except Exception as e:
+            print(f"Warning: Failed to append competitor updates with inline source links: {e}")
+
+    # Append clickable sources for each updated competitor (limit per competitor for brevity)
+    if successful_updates:
+        try:
+            children_blocks = [{
+                "object": "block",
+                "type": "heading_2",
+                "heading_2": {"rich_text": [{"type": "text", "text": {"content": "Sources for Updated Competitors"}}]}
+            }]
+
+            # Collect all sources (no limit)
+
+            for json_path, _ in successful_updates:
+                try:
+                    with open(json_path, "r") as f:
+                        data = json.load(f)
+                except Exception:
+                    continue
+
+                comp_name = data.get("Competitor Name") or os.path.basename(json_path).replace("_", " ").replace(".json", "")
+                unique_sources = dedupe_sources_preserve_order(data.get("Research_Sources") or [])
+                children_blocks.append(build_sources_toggle_block(comp_name, unique_sources))
+
+            # Only append if there is at least the heading and one child after
+            if len(children_blocks) > 1:
+                await notion_client.blocks.children.append(
+                    block_id=NOTION_SUMMARY_PAGE_ID,
+                    children=children_blocks
+                )
+        except Exception as e:
+            print(f"Warning: Failed to append clickable sources section: {e}")
 
     if newly_discovered_competitors:
         discovery_summary_title = "Potential New Competitors Discovered"
