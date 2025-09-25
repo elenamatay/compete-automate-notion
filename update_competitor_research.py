@@ -15,8 +15,7 @@ from utils import (
     append_text_to_notion_page_async,
     discover_new_competitors_async,
     dedupe_sources_preserve_order,
-    build_inline_source_refs,
-    build_sources_toggle_block
+    build_inline_source_refs
 )
 from notion_client import AsyncClient
 from vertexai.generative_models import GenerationConfig
@@ -183,37 +182,6 @@ async def main_update():
             )
         except Exception as e:
             print(f"Warning: Failed to append competitor updates with inline source links: {e}")
-
-    # Append clickable sources for each updated competitor (limit per competitor for brevity)
-    if successful_updates:
-        try:
-            children_blocks = [{
-                "object": "block",
-                "type": "heading_2",
-                "heading_2": {"rich_text": [{"type": "text", "text": {"content": "Sources for Updated Competitors"}}]}
-            }]
-
-            # Collect all sources (no limit)
-
-            for json_path, _ in successful_updates:
-                try:
-                    with open(json_path, "r") as f:
-                        data = json.load(f)
-                except Exception:
-                    continue
-
-                comp_name = data.get("Competitor Name") or os.path.basename(json_path).replace("_", " ").replace(".json", "")
-                unique_sources = dedupe_sources_preserve_order(data.get("Research_Sources") or [])
-                children_blocks.append(build_sources_toggle_block(comp_name, unique_sources))
-
-            # Only append if there is at least the heading and one child after
-            if len(children_blocks) > 1:
-                await notion_client.blocks.children.append(
-                    block_id=NOTION_SUMMARY_PAGE_ID,
-                    children=children_blocks
-                )
-        except Exception as e:
-            print(f"Warning: Failed to append clickable sources section: {e}")
 
     if newly_discovered_competitors:
         discovery_summary_title = "Potential New Competitors Discovered"

@@ -884,33 +884,6 @@ def build_inline_source_refs(unique_sources: List[Dict[str, Any]]) -> List[Dict[
     return parts
 
 
-def build_sources_toggle_block(title: str, unique_sources: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Create a Notion toggle block titled with the competitor name containing bulleted linked sources with [n] labels."""
-    children: List[Dict[str, Any]] = []
-    for idx, src in enumerate(unique_sources, start=1):
-        url = src.get("url")
-        if not url:
-            continue
-        desc = src.get("description") or url
-        children.append({
-            "object": "block",
-            "type": "bulleted_list_item",
-            "bulleted_list_item": {
-                "rich_text": [
-                    {"type": "text", "text": {"content": f"[{idx}] "}},
-                    {"type": "text", "text": {"content": desc, "link": {"url": url}}}
-                ]
-            }
-        })
-
-    return {
-        "object": "block",
-        "type": "toggle",
-        "toggle": {
-            "rich_text": [{"type": "text", "text": {"content": title}}],
-            "children": children
-        }
-    }
 
 async def discover_new_competitors_async(
     days_ago: int,
