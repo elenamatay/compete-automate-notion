@@ -35,7 +35,7 @@ python --version
 
 These need to be typed in the **terminal** inside your IDE:
 - Open your IDE (VS Code or Cursor)
-- Go to View menu → Terminal (or press Ctrl+` on Windows/Linux, Cmd+` on Mac)
+- Go to View menu → Terminal (or press Ctrl+\` on Windows/Linux, Cmd+\` on Mac)
 - Type the command exactly as shown, then press Enter
 
 ---
