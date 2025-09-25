@@ -35,7 +35,7 @@ python --version
 
 These need to be typed in the **terminal** inside your IDE:
 - Open your IDE (VS Code or Cursor)
-- Go to View menu → Terminal (or press Ctrl+\` on Windows/Linux, Cmd+\` on Mac)
+- Go to View menu → Terminal (or press the shortcut, which might be either Ctrl + \` or Cmd + \`)
 - Type the command exactly as shown, then press Enter
 
 ---
@@ -43,7 +43,7 @@ These need to be typed in the **terminal** inside your IDE:
 ## Step 2: Install Python 3.12
 
 ### Windows:
-1. Go to https://www.python.org/downloads/
+1. Go to https://www.python.org/downloads/windows/
 2. Download Python 3.12.x (latest version)
 3. **IMPORTANT**: During installation, check "Add Python to PATH"
 4. Choose "Install for all users" if prompted
@@ -54,7 +54,7 @@ These need to be typed in the **terminal** inside your IDE:
    Should show Python 3.12.x
 
 ### macOS:
-1. Go to https://www.python.org/downloads/
+1. Go to https://www.python.org/downloads/macos/
 2. Download Python 3.12.x for macOS
 3. Install the downloaded package
 4. Verify installation: Open Terminal and type:
@@ -118,13 +118,7 @@ gcloud --version
    - Name it: "competitor-research-class"
    - Note your Project ID
 
-3. **Enable Required APIs**:
-   - Go to https://console.cloud.google.com/apis/library
-   - Search and enable:
-     - "Vertex AI API"
-     - "Generative AI API"
-
-4. **Authenticate locally**:
+3. **Authenticate locally**:
    ```bash
    gcloud auth application-default login
    ```
@@ -132,7 +126,7 @@ gcloud --version
    - Sign in with your Google account
    - Grant permissions
 
-5. **Set your project**:
+4. **Set your project**:
    ```bash
    gcloud config set project YOUR_PROJECT_ID
    ```
@@ -144,15 +138,7 @@ gcloud --version
 1. **Create Notion Account** (if you don't have one):
    - Go to https://notion.so and sign up
 
-2. **Create Integration**:
-   - Go to https://www.notion.so/my-integrations
-   - Click "New integration"
-   - Name: "Competitor Research Bot"
-   - Select your workspace
-   - Click "Submit"
-   - **SAVE THE SECRET TOKEN** - you'll need it later
-
-3. **Create Parent Page**:
+2. **Create Parent Page**:
    - In Notion, create a new page called "Competitor Analysis"
    - Share this page with your integration:
      - Click "Share" → "Add people"
@@ -160,19 +146,30 @@ gcloud --version
      - Give it "Full access"
    - **SAVE THE PAGE URL** - you'll need the ID from it
 
+3. **Create Integration**:
+   - Go to https://www.notion.so/my-integrations
+   - Click "New integration"
+   - Name: "Competitor Research Bot"
+   - Type: "Internal"
+   - Capabilities: Read, Update and Insert content; No user information.
+   - In the Access tab, select your new page
+   - Click "Submit"
+   - **SAVE THE SECRET TOKEN** - you'll need it later
+
 ---
 
-## Step 6: Download Course Materials
+## Step 6: Clone the repo
 
-1. **Download the project files** from the shared link (instructor will provide)
-2. **Extract** the files to a folder like `Desktop/competitor-research/`
-3. **Open the folder** in your chosen IDE (VS Code or Cursor)
+1. **Open the IDE and its terminal** again 
+2. (If not done) **Create a new folder for your code projects**: `mkdir Code`
+3. **Move into the new folder**: `cd Code`
+4. Once in the new folder, **clone the repo**: `git clone https://github.com/elenamatay/compete-automate-notion.git`. You'll see the repo being copied automatically, and since now you'll be able to open and interact with the repo files -your local version of it- in the left bar.
 
 ---
 
 ## Step 7: Set Up Python Environment
 
-1. **Open terminal/command prompt** in your project folder
+1. **Open terminal/command prompt** in your project folder (called `compete-automate-notion`)
 2. **Create virtual environment**:
    ```bash
    # Windows
