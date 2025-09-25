@@ -10,7 +10,37 @@
 
 ---
 
-## Step 1: Install Python 3.12
+## Step 1: Install IDE (Choose One)
+
+### Option A: Cursor
+1. Go to https://cursor.sh/
+2. Download and install Cursor
+3. Python and Jupyter extensions come pre-installed
+
+### Option B: Visual Studio Code
+1. Go to https://code.visualstudio.com/
+2. Download and install VS Code
+3. Install Python extension:
+   - Open VS Code
+   - Click Extensions icon (left sidebar)
+   - Search "Python" 
+   - Install the Microsoft Python extension
+   - Install "Jupyter" extension for notebook support
+
+### About Terminal/Command Line
+Throughout this guide, you'll see commands in code blocks like this:
+```bash
+python --version
+```
+
+These need to be typed in the **terminal** inside your IDE:
+- Open your IDE (VS Code or Cursor)
+- Go to View menu → Terminal (or press Ctrl+` on Windows/Linux, Cmd+` on Mac)
+- Type the command exactly as shown, then press Enter
+
+---
+
+## Step 2: Install Python 3.12
 
 ### Windows:
 1. Go to https://www.python.org/downloads/
@@ -38,25 +68,6 @@
 sudo apt update
 sudo apt install python3.12 python3.12-pip python3.12-venv
 ```
-
----
-
-## Step 2: Install IDE (Choose One)
-
-### Option A: Cursor
-1. Go to https://cursor.sh/
-2. Download and install Cursor
-3. Python and Jupyter extensions come pre-installed
-
-### Option B: Visual Studio Code
-1. Go to https://code.visualstudio.com/
-2. Download and install VS Code
-3. Install Python extension:
-   - Open VS Code
-   - Click Extensions icon (left sidebar)
-   - Search "Python" 
-   - Install the Microsoft Python extension
-   - Install "Jupyter" extension for notebook support
 
 ---
 
