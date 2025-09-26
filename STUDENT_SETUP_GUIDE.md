@@ -173,7 +173,7 @@ gcloud --version
    ```bash
    git clone https://github.com/elenamatay/compete-automate-notion.git
    ```
-   You'll see the repo being copied automatically, and since now you'll be able to open and interact with the repo files -your local version of it- in the left bar.
+5. Open Project and open the new folder created inside the Code folder, called `compete-automation-notion`, which contains the repo. Since now, you'll be able to open and interact with the repo files shown in the left bar -your local version of it-.
 
 ---
 
