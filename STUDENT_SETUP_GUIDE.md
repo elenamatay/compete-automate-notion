@@ -179,7 +179,21 @@ gcloud --version
 
 ## Step 7: Set Up Python Environment
 
-1. **Open terminal/command prompt** in your project folder (called `compete-automate-notion`)
+1. **Navigate to your project folder**:
+   - Open the terminal in your IDE
+   - Check where you are currently:
+     ```bash
+     pwd  # Shows current directory
+     ```
+   - If you're not in the `compete-automate-notion` folder, navigate to it:
+     ```bash
+     cd Code/compete-automate-notion
+     ```
+   - Verify you're in the right place by listing the files:
+     ```bash
+     ls  # Should show files like compete.ipynb, requirements.txt, config.json
+     ```
+
 2. **Create virtual environment**:
    ```bash
    # Windows
@@ -200,8 +214,9 @@ gcloud --version
 
 ## Step 8: Configure Environment Files
 
-1. **Copy the template**:
-   - Copy `env_template.txt` to `.env`
+1. **Create `.env` file**:
+   - In your project root folder (`compete-automate-notion`), create a new file called `.env`
+   - Copy the content from `env_template.txt` and paste it into your new `.env` file
 
 2. **Edit `.env` file** with your information:
    ```
@@ -215,7 +230,7 @@ gcloud --version
    - The Page ID is the last 32 characters (after the last dash)
    - Example: if URL is `https://notion.so/My-Page-abc123def456789`, the ID is `abc123def456789`
 
-4. **Edit `config.json`** if needed:
+4. **Edit `config.json`**:
    - Update company context for your use case
    - Modify competitor list in `competitors.csv`
 
@@ -232,18 +247,29 @@ gcloud --version
    source compete-automate-venv/bin/activate
    ```
 
-2. **Test Google Cloud connection**:
+2. **Set up Google Cloud Application Default Credentials**:
    ```bash
-   gcloud auth list
+   gcloud auth application-default login
    ```
-   Should show your authenticated account
+   - This will open a browser window
+   - **Important**: Sign in with the same Google account you used to create your Google Cloud project (the one with free credits)
+   - If the browser opens with a different Google profile, copy the URL and paste it in an incognito window or the correct profile
+   - Grant permissions when prompted
+   - You may see a message about billing/quota project not being set
 
-3. **Open the notebook**:
-   - In VS Code: Open `compete.ipynb`
-   - In Cursor: Open `compete.ipynb`
+3. **Set your project for billing** (if prompted):
+   ```bash
+   gcloud config set project YOUR_PROJECT_ID
+   ```
+   - Replace `YOUR_PROJECT_ID` with your actual project ID
+   - You can find your project ID in Google Cloud Console → Project selector (top bar)
+   - Continue until you see "Quota project is set to [your-project-id]"
 
-4. **Run the first cell** to test imports
+4. **Open the notebook**: `compete.ipynb`
+
+5. **Run the first cell** to test imports
    - If you see errors, check the troubleshooting section below
+   - If you don't see errors, you're good to go, congrats! 🚀
 
 ---
 
@@ -259,4 +285,4 @@ If you encounter issues during setup:
 1. Check the troubleshooting section above
 2. Search the error message online
 
-**Important**: Please complete this setup BEFORE class. We'll have limited time for troubleshooting during the session.
+**Important**: Please try to complete this setup BEFORE class. We'll have limited time for troubleshooting during the session.
