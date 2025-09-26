@@ -13,30 +13,36 @@ from notion_client import AsyncClient, Client # type: ignore
 from notion_client.errors import APIResponseError
 from tenacity import retry, wait_random_exponential
 
-
-
-# Derive the list of types from the dictionary keys for validation
-COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
-
-# Attempt to override schema and type definitions from config.json (initial_research section)
+# Load configuration from config.json (required)
 try:
     repo_root = os.path.abspath(os.path.dirname(__file__))
     config_path = os.path.join(repo_root, 'config.json')
-    if os.path.exists(config_path):
-        with open(config_path, 'r') as _f:
-            _cfg = json.load(_f)
-        initial_research_cfg = _cfg.get('initial_research', {})
-        # csv_schema override
-        if isinstance(initial_research_cfg.get('csv_schema'), list) and initial_research_cfg['csv_schema']:
-            CSV_SCHEMA = initial_research_cfg['csv_schema']
-        # competitor_type_definitions override
-        if isinstance(initial_research_cfg.get('competitor_type_definitions'), dict) and initial_research_cfg['competitor_type_definitions']:
-            COMPETITOR_TYPE_DEFINITIONS = initial_research_cfg['competitor_type_definitions']
-        # Recompute dependent constants
-        COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"config.json not found at {config_path}")
+        
+    with open(config_path, 'r') as _f:
+        _cfg = json.load(_f)
+    initial_research_cfg = _cfg.get('initial_research', {})
+    
+    # Load csv_schema from config (required)
+    if isinstance(initial_research_cfg.get('csv_schema'), list) and initial_research_cfg['csv_schema']:
+        CSV_SCHEMA = initial_research_cfg['csv_schema']
+    else:
+        raise ValueError("csv_schema not found or invalid in config.json initial_research section")
+        
+    # Load competitor_type_definitions from config (required)
+    if isinstance(initial_research_cfg.get('competitor_type_definitions'), dict) and initial_research_cfg['competitor_type_definitions']:
+        COMPETITOR_TYPE_DEFINITIONS = initial_research_cfg['competitor_type_definitions']
+    else:
+        raise ValueError("competitor_type_definitions not found or invalid in config.json initial_research section")
+        
+    # Derive the list of types from the dictionary keys for validation
+    COMPETITOR_TYPES = list(COMPETITOR_TYPE_DEFINITIONS.keys())
+    
 except Exception as _e:
-    # Non-fatal: if config.json is malformed, continue with built-ins
-    print(f"Warning: could not load initial_research config from config.json: {_e}")
+    print(f"Error: Could not load required configuration from config.json: {_e}")
+    print("Please ensure config.json exists and has valid 'csv_schema' and 'competitor_type_definitions' in the 'initial_research' section.")
+    sys.exit(1)
 
 
 # Add the root directory to the Python path
