@@ -15,7 +15,6 @@
 ### Option A: Cursor
 1. Go to https://cursor.sh/
 2. Download and install Cursor
-3. Python and Jupyter extensions come pre-installed
 
 ### Option B: Visual Studio Code
 1. Go to https://code.visualstudio.com/
@@ -138,15 +137,7 @@ gcloud --version
 1. **Create Notion Account** (if you don't have one):
    - Go to https://notion.so and sign up
 
-2. **Create Parent Page**:
-   - In Notion, create a new page called "Competitor Analysis"
-   - Share this page with your integration:
-     - Click "Share" → "Add people"
-     - Search for your integration name
-     - Give it "Full access"
-   - **SAVE THE PAGE URL** - you'll need the ID from it
-
-3. **Create Integration**:
+2. **Create Integration**:
    - Go to https://www.notion.so/my-integrations
    - Click "New integration"
    - Name: "Competitor Research Bot"
@@ -155,6 +146,14 @@ gcloud --version
    - In the Access tab, select your new page
    - Click "Submit"
    - **SAVE THE SECRET TOKEN** - you'll need it later
+
+3. **Create Parent Page**:
+   - In Notion, create a new page called "Competitor Analysis"
+   - Share this page with your integration:
+     - Click "Share" → "Add people"
+     - Search for your integration name
+     - Give it "Full access"
+   - **SAVE THE PAGE URL** - you'll need the ID from it
 
 ---
 
